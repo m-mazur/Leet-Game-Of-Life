@@ -8,6 +8,23 @@ namespace Leet_Game_Of_Life.Models
 {
     public class Grid
     {
-        public IEnumerable<Row> CollectionOfRows { get; set; }
+        private List<Row> tempGrid;
+        
+        public Grid()
+        {
+            tempGrid = new List<Row>();
+        }
+
+        public void AddRowToGrid(Row row)
+        {
+            tempGrid.Add(row);
+        }
+
+        public List<Row> CollectionOfRows {
+            get 
+            {
+                return tempGrid;
+            }
+        }
     }
 }
