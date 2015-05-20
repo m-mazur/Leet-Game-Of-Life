@@ -19,8 +19,8 @@ namespace Leet_Game_Of_Life.Models
         {
             tempCollectionOfCells.Add(cell);
         }
-        
-        public List<Cell> CollectionOfCells 
+
+        public List<Cell> CollectionOfCells
         {
             get
             {
