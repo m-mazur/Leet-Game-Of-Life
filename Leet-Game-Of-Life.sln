@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leet-Game-Of-Life", "Leet-Game-Of-Life\Leet-Game-Of-Life.csproj", "{23139389-3730-4A66-9473-BC3AEE1C2126}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leet-Game-Of-Life.Core", "Leet-Game-Of-Life\Leet-Game-Of-Life.Core.csproj", "{23139389-3730-4A66-9473-BC3AEE1C2126}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
