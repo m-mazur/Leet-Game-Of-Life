@@ -8,7 +8,24 @@ namespace Leet_Game_Of_Life.Models
 {
     public class Row
     {
-        public int X { get; set; }
-        public IEnumerable<Cell> CollectionOfCells { get; set; }
+        private List<Cell> tempCollectionOfCells;
+        
+        public Row()
+        {
+            tempCollectionOfCells = new List<Cell>();
+        }
+
+        public void AddCellToRow(Cell cell)
+        {
+            tempCollectionOfCells.Add(cell);
+        }
+        
+        public List<Cell> CollectionOfCells 
+        {
+            get
+            {
+                return tempCollectionOfCells;
+            }
+        }
     }
 }
