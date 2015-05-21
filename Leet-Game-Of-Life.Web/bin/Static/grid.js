@@ -3,11 +3,11 @@ var ViewModel = function () {
 
     self.grid = ko.observableArray(createGrid(5, 5));
 
-    function createGrid (rows, columns) {
+    function createGrid(rows, columns) {
         var columnList = [null],
             cellList = [null];
 
-        for(var row = 0; row < rows; row++) {
+        for (var row = 0; row < rows; row++) {
 
             for (var column = 0; column < columns; column++) {
                 columnList[column] = {
@@ -20,16 +20,14 @@ var ViewModel = function () {
 
             cellList[row] = columnList;
             columnList = [null];
-         }
+        }
 
         return cellList;
     }
 
-    function updateGrid(grid) {
-        self.grid(grid);
-
-        //self.grid.removeAll();
-        //self.grid(JSON.parse(gridAsJson));
+    function updateGrid(gridAsJson) {
+        self.grid.removeAll();
+        self.grid(JSON.parse(gridAsJson));
     }
 
     function groupAndSortGrid(data) {
@@ -51,12 +49,13 @@ var ViewModel = function () {
             cell.IsDead = false;
         }
 
-        self.grid.remove();
+        console.log(ko.toJSON(self.grid));
         updateGrid(ko.toJSON(self.grid));
+        ajaxHelper("../api/game/", 'POST', ko.toJSON(self.grid));
     };
 
-    ajaxHelper("../api/game/" + "2", "GET").done(function (data) {
-        updateGrid(groupAndSortGrid(data));
+    ajaxHelper("../api/game/", 'GET').done(function (data) {
+        self.grid(groupAndSortGrid(data));
     });
 
     function ajaxHelper(uri, method, data) {

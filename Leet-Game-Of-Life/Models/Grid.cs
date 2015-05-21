@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Leet_Game_Of_Life.Models
 {
-    class Grid
+    public class Grid
     {
         private Cell dummyCell;
         private List<Cell> cellList;
@@ -14,12 +14,13 @@ namespace Leet_Game_Of_Life.Models
         public Grid()
         {
             //dummyCell = new Cell();
-            cellList = new List<Cell>();    
+            cellList = new List<Cell>();
         }
-       
-        public List<Cell> createGrid(int column, int row){
 
-            for (int i = 0;  i< row; i++)
+        public List<Cell> CreateGrid(int column, int row)
+        {
+
+            for (int i = 0; i < row; i++)
             {
                 for (int j = 0; j < column; j++)
                 {
