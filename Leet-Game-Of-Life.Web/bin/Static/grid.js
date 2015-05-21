@@ -1,8 +1,7 @@
 var ViewModel = function () {
     var self = this;
 
-    self.grid = ko.observableArray(createGrid(14, 22));
-    //self.jsonFromView = ko.observable();
+    self.grid = ko.observableArray(createGrid(5, 5));
 
     function createGrid (rows, columns) {
         var columnList = [null],
@@ -12,9 +11,9 @@ var ViewModel = function () {
 
             for (var column = 0; column < columns; column++) {
                 columnList[column] = {
-                    x: row,
-                    y: column,
-                    isDead: true,
+                    X: row,
+                    Y: column,
+                    IsDead: true,
                     cellName: (row + 1) + ", " + (column + 1)
                 };
             }
@@ -26,29 +25,49 @@ var ViewModel = function () {
         return cellList;
     }
 
-    function updateGrid (gridAsJson) {
-        self.grid.removeAll();
-        self.grid(JSON.parse(gridAsJson));
+    function updateGrid(grid) {
+        self.grid(grid);
 
-        console.log(gridAsJson);
-        //self.jsonFromView(gridAsJson);
+        //self.grid.removeAll();
+        //self.grid(JSON.parse(gridAsJson));
+    }
+
+    function groupAndSortGrid(data) {
+        var groupedGrid = _.groupBy(data, function (data) {
+            return data.Y;
+        });
+
+        var mappedGrid = _.chain(groupedGrid).map(function (grid) {
+            return grid;
+        }).value();
+
+        return mappedGrid;
     }
 
     self.changeCellState = function (cell) {
-        if (!cell.isDead) {
-            cell.isDead = true;
+        if (!cell.IsDead) {
+            cell.IsDead = true;
         } else {
-            cell.isDead = false;
+            cell.IsDead = false;
         }
 
         self.grid.remove();
-
         updateGrid(ko.toJSON(self.grid));
     };
 
-    /*self.jsonFromView.subscribe(function(newValue) {
-        updateGrid(newValue);
-    });*/
+    ajaxHelper("../api/game/" + "2", "GET").done(function (data) {
+        updateGrid(groupAndSortGrid(data));
+    });
+
+    function ajaxHelper(uri, method, data) {
+        return $.ajax({
+            type: method,
+            url: uri,
+            dataType: 'json',
+            contentType: 'application/json',
+            data: data ? JSON.stringify(data) : null
+        });
+    };
 };
 
 ko.applyBindings(new ViewModel());

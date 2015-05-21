@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
 
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="bower_components/knockout/dist/knockout.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
     <script type="text/javascript" src="grid.js" defer="defer"></script>
 
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -12,23 +13,23 @@
     <title></title>
 </head>
 <body>
-<div class="outer">
-    <div class="grid-wrapper">
-        <table>
-            <tbody data-bind="foreach: grid">
-            <tr>
-                <td data-bind="foreach: $data">
-                    <div class="cell">
-                        <button data-bind="text: $data.cellName, click: $root.changeCellState, style: { backgroundColor: $data.isDead === true ? 'white' : 'red'}"></button>
-                    </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+    <div class="outer">
+        <div class="grid-wrapper">
+            <table>
+                <tbody data-bind="foreach: grid">
+                    <tr>
+                        <td data-bind="foreach: $data">
+                            <div class="cell">
+                                <button data-bind="text: X, click: $root.changeCellState, style: { backgroundColor: IsDead === true ? 'white' : 'red'}"></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="textarea-wrapper">
+            <!--<textarea rows="20" cols="220" data-bind="value: jsonFromView"></textarea>-->
+        </div>
     </div>
-    <div class="textarea-wrapper">
-        <!--<textarea rows="20" cols="220" data-bind="value: jsonFromView"></textarea>-->
-    </div>
-</div>
 </body>
 </html>

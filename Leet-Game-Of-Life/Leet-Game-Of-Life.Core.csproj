@@ -42,8 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Cell.cs" />
-    <Compile Include="Models\Grid.cs" />
-    <Compile Include="Models\Row.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
