@@ -31,6 +31,14 @@ namespace Leet_Game_Of_Life.Models
             return cellList;
         }
 
+        public List<Cell> IllustrateGrid(List<Cell> cellList)
+        {
+            foreach (var item in cellList)
+            {
+                item.IsDead = !item.IsDead;
+            }
+            return cellList;
+        }
 
         public Cell DummyCell
         {

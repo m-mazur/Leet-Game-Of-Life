@@ -30,7 +30,7 @@ var ViewModel = function () {
         self.grid(JSON.parse(gridAsJson));
     }
 
-    function groupAndSortGrid(data) {
+    function groupGrid(data) {
         var groupedGrid = _.groupBy(data, function (data) {
             return data.Y;
         });
@@ -42,12 +42,16 @@ var ViewModel = function () {
         return mappedGrid;
     }
 
-    function unGroupAndUnSortGrid(data) {
-        var unGroupedGrid = _.groupBy(data, function (data) {
-            return data;
+    function unGroupGrid(data) {
+        var ungroupedListOfCells = [];
+
+        data.forEach(function (item) {
+            item.forEach(function (object) {
+                ungroupedListOfCells.push(object);
+            });
         });
 
-        console.log(unGroupedGrid);
+        return ungroupedListOfCells;
     }
 
     self.changeCellState = function (cell) {
@@ -57,13 +61,13 @@ var ViewModel = function () {
             cell.IsDead = false;
         }
 
-        console.log(unGroupAndUnSortGrid(self.grid));s
         updateGrid(ko.toJSON(self.grid));
-        //ajaxHelper("../api/game/", 'POST', ko.toJSON(self.grid));
+        ajaxHelper("../api/game/", 'POST', unGroupGrid(self.grid()));
     };
 
     ajaxHelper("../api/game/", 'GET').done(function (data) {
-        self.grid(groupAndSortGrid(data));
+
+        self.grid(groupGrid(data));
     });
 
     function ajaxHelper(uri, method, data) {
