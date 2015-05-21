@@ -19,7 +19,7 @@ namespace Leet_Game_Of_Life.Web.Controllers
         //POST api/game/1
         public void Post(List<Cell> listCells)
         {
-            Console.WriteLine(listCells);
+            List<Cell> list = listCells;
         }
     }
 }
