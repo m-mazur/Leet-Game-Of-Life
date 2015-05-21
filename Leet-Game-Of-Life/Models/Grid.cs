@@ -36,6 +36,7 @@ namespace Leet_Game_Of_Life.Models
             foreach (var item in cellList)
             {
                 item.IsDead = !item.IsDead;
+                Console.WriteLine("Hello");
             }
             return cellList;
         }
