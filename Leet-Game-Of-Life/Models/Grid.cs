@@ -9,6 +9,27 @@ namespace Leet_Game_Of_Life.Models
     class Grid
     {
         private Cell dummyCell;
+        private List<Cell> cellList;
+
+        public Grid()
+        {
+            //dummyCell = new Cell();
+            cellList = new List<Cell>();    
+        }
+       
+        public List<Cell> createGrid(int column, int row){
+
+            for (int i = 0;  i< row; i++)
+            {
+                for (int j = 0; j < column; j++)
+                {
+                    cellList.Add(new Cell(i, j, true));
+                }
+            }
+
+            return cellList;
+        }
+
 
         public Cell DummyCell
         {

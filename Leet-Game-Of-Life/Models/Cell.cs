@@ -8,6 +8,7 @@ namespace Leet_Game_Of_Life.Models
 {
     public class Cell
     {
+        public Cell() { }
         public Cell(int x, int y, bool isDead)
         {
             X = x;
