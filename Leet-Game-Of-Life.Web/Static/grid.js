@@ -62,8 +62,12 @@ var ViewModel = function () {
         }
 
         updateGrid(ko.toJSON(self.grid));
+    };
+
+    self.test = function () {
         ajaxHelper("../api/game/", 'POST', unGroupGrid(self.grid())).done(function (data) {
             self.grid.removeAll();
+            console.log(data);
             self.grid(groupGrid(data));
         });
     };

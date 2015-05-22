@@ -13,7 +13,7 @@ namespace Leet_Game_Of_Life.Web.Controllers
         //GET api/game/
         public IEnumerable<Cell> Get()
         {
-            List<Cell> grid = new Grid().CreateGrid(20, 30);
+            List<Cell> grid = new Grid().CreateGrid(5, 5);
             return grid;
         }
 
@@ -21,7 +21,8 @@ namespace Leet_Game_Of_Life.Web.Controllers
         //POST api/game/1
         public IEnumerable<Cell> Post(List<Cell> listCells)
         {
-            return new Grid().IllustrateGrid(listCells);
+            List<Cell> newGrid = new Grid().IllustrateGrid(listCells);
+            return newGrid;
         }
     }
 }

@@ -20,13 +20,14 @@
                     <tr>
                         <td data-bind="foreach: $data">
                             <div class="cell">
-                                <button data-bind="text: X, click: $root.changeCellState, style: { backgroundColor: IsDead === true ? 'white' : 'red'}"></button>
+                                <button data-bind="text: Y, click: $root.changeCellState, style: { backgroundColor: IsDead === true ? 'white' : 'red'}"></button>
                             </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        <button data-bind="click: test">Update</button>
         <div class="textarea-wrapper">
             <!--<textarea rows="20" cols="220" data-bind="value: jsonFromView"></textarea>-->
         </div>

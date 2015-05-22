@@ -10,6 +10,7 @@ namespace Leet_Game_Of_Life.Models
     {
         private Cell dummyCell;
         private List<Cell> cellList;
+        private Rules rules;
 
         public Grid()
         {
@@ -33,12 +34,20 @@ namespace Leet_Game_Of_Life.Models
 
         public List<Cell> IllustrateGrid(List<Cell> cellList)
         {
-            foreach (var item in cellList)
+            /*foreach (var item in cellList)
             {
                 item.IsDead = !item.IsDead;
                 Console.WriteLine("Hello");
+            }*/
+
+            var rules = new Rules();
+ 
+            foreach (var cell in cellList) 
+            {
+                rules.CheckForNeighborsAndIncrementNeighborCount(cellList, cell);
             }
-            return cellList;
+
+            return rules.GetHoldingList();
         }
 
         public Cell DummyCell
