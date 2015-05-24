@@ -32,7 +32,7 @@ namespace Leet_Game_Of_Life.Models
             return cellList;
         }
 
-        public List<Cell> IllustrateGrid(List<Cell> cellList)
+        public List<Cell> IllustrateGrid(List<Cell> cellList, Cell cell)
         {
             /*foreach (var item in cellList)
             {
@@ -41,11 +41,8 @@ namespace Leet_Game_Of_Life.Models
             }*/
 
             var rules = new Rules();
- 
-            foreach (var cell in cellList) 
-            {
-                rules.CheckForNeighborsAndIncrementNeighborCount(cellList, cell);
-            }
+
+            rules.CheckForNeighborsAndIncrementNeighborCount(cellList, cell);
 
             return rules.GetHoldingList();
         }

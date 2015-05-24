@@ -13,16 +13,16 @@ namespace Leet_Game_Of_Life.Web.Controllers
         //GET api/game/
         public IEnumerable<Cell> Get()
         {
-            List<Cell> grid = new Grid().CreateGrid(5, 5);
+            List<Cell> grid = new Grid().CreateGrid(15, 25);
             return grid;
         }
 
 
         //POST api/game/1
-        public IEnumerable<Cell> Post(List<Cell> listCells)
+        public IEnumerable<Cell> Post(List<Cell> gridSnapshot)
         {
-            List<Cell> newGrid = new Grid().IllustrateGrid(listCells);
-            return newGrid;
+            RulesProcessor rules = new RulesProcessor(gridSnapshot);
+            return rules.CheckNeighborStateAndRunLogic();
         }
     }
 }

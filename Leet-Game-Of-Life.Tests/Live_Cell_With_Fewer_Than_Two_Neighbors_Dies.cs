@@ -33,6 +33,7 @@ namespace Leet_Game_Of_Life.Tests
                 }
             }
 
+            //Act
             foreach (var cell in initialList)
             {
                 CheckForNeighborsAndIncrementNeighborCount(initialList, cell);
@@ -54,34 +55,42 @@ namespace Leet_Game_Of_Life.Tests
                 if ((referenceCell.X.Equals(cell.X - 1) && referenceCell.Y.Equals(cell.Y - 1)))
                 {
                     CheckIfAliveNeighborExists(cell);
+                    Console.WriteLine(cell);
                 }
                 else if ((referenceCell.X.Equals(cell.X) && referenceCell.Y.Equals(cell.Y - 1)))
                 {
                     CheckIfAliveNeighborExists(cell);
+                    Console.WriteLine(cell);
                 }
                 else if ((referenceCell.X.Equals(cell.X + 1) && referenceCell.Y.Equals(cell.Y - 1)))
                 {
                     CheckIfAliveNeighborExists(cell);
+                    Console.WriteLine(cell);
                 }
                 else if ((referenceCell.X.Equals(cell.X - 1) && referenceCell.Y.Equals(cell.Y)))
                 {
                     CheckIfAliveNeighborExists(cell);
+                    Console.WriteLine(cell);
                 }
                 else if ((referenceCell.X.Equals(cell.X + 1) && referenceCell.Y.Equals(cell.Y)))
                 {
                     CheckIfAliveNeighborExists(cell);
+                    Console.WriteLine(cell);
                 }
                 else if ((referenceCell.X.Equals(cell.X - 1) && referenceCell.Y.Equals(cell.Y + 1)))
                 {
                     CheckIfAliveNeighborExists(cell);
+                    Console.WriteLine(cell);
                 }
                 else if ((referenceCell.X.Equals(cell.X) && referenceCell.Y.Equals(cell.Y + 1)))
                 {
                     CheckIfAliveNeighborExists(cell);
+                    Console.WriteLine(cell);
                 }
                 else if ((referenceCell.X.Equals(cell.X + 1) && referenceCell.Y.Equals(cell.Y + 1)))
                 {
                     CheckIfAliveNeighborExists(cell);
+                    Console.WriteLine(cell);
                 }
 
                 if (neighborCount < 2)
