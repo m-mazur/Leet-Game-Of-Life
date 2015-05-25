@@ -137,7 +137,7 @@ h1 {
   background-size: cover; }
   .header h1 {
     margin: 0;
-    padding: 6rem; }
+    padding-top: 6rem; }
   .header button {
     font-family: 'Radikal';
     text-transform: uppercase;
@@ -146,6 +146,7 @@ h1 {
     background-color: #8cc63c;
     width: 10rem;
     border: none;
+    margin-top: 4.5rem;
     padding: 18px 28px 16px 28px; }
 
 .row-id {
