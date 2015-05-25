@@ -13,6 +13,10 @@
     <title></title>
 </head>
 <body>
+    <section class="header">
+        <h1>Game of leet</h1>
+        <button data-bind="click: test">Start</button>
+    </section>
     <div class="outer">
         <div class="grid-wrapper">
             <table>
@@ -20,16 +24,12 @@
                     <tr>
                         <td data-bind="foreach: $data">
                             <div class="cell">
-                                <button data-bind="text: Y, click: $root.changeCellState, style: { backgroundColor: IsDead === true ? 'white' : 'red'}"></button>
+                                <button data-bind="click: $root.changeCellState, style: { backgroundColor: IsDead === true ? '#f7f8f9' : '#565e67'}"></button>
                             </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <button data-bind="click: test">Update</button>
-        <div class="textarea-wrapper">
-            <!--<textarea rows="20" cols="220" data-bind="value: jsonFromView"></textarea>-->
         </div>
     </div>
 </body>

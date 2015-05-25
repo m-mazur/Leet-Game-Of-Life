@@ -238,3 +238,6 @@ C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Gam
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\obj\Debug\Leet-Game-Of-Life.Web.csprojResolveAssemblyReference.cache
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\obj\Debug\Leet-Game-Of-Life.Web.dll
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\obj\Debug\Leet-Game-Of-Life.Web.pdb
+C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\i\background.png
+C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\_colors.scss
+C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\_fonts.scss
