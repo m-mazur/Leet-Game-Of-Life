@@ -53,12 +53,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Live_Cell_With_Fewer_Than_Two_Neighbors_Dies.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Leet-Game-Of-Life\Leet-Game-Of-Life.Core.csproj">
-      <Project>{23139389-3730-4a66-9473-bc3aee1c2126}</Project>
-      <Name>Leet-Game-Of-Life.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

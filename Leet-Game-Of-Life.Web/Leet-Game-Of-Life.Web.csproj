@@ -153,6 +153,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Cell.cs" />
+    <Compile Include="Models\Grid.cs" />
     <Compile Include="Models\RulesProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -559,12 +560,6 @@
     <Content Include="Static\bower_components\underscore\underscore-min.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Leet-Game-Of-Life\Leet-Game-Of-Life.Core.csproj">
-      <Project>{23139389-3730-4a66-9473-bc3aee1c2126}</Project>
-      <Name>Leet-Game-Of-Life.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

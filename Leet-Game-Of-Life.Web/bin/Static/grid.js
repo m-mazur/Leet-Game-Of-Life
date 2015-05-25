@@ -65,11 +65,13 @@ var ViewModel = function () {
     };
 
     self.test = function () {
-        ajaxHelper("../api/game/", 'POST', unGroupGrid(self.grid())).done(function (data) {
-            self.grid.removeAll();
-            console.log(data);
-            self.grid(groupGrid(data));
-        });
+        setInterval(function () {
+            ajaxHelper("../api/game/", 'POST', unGroupGrid(self.grid())).done(function (data) {
+                self.grid.removeAll();
+                console.log(data);
+                self.grid(groupGrid(data));
+            });
+        }, 100);
     };
 
     ajaxHelper("../api/game/", 'GET').done(function (data) {

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Leet_Game_Of_Life.Models
+namespace Leet_Game_Of_Life.Web.Models
 {
     public class Grid
     {
@@ -36,7 +35,5 @@ namespace Leet_Game_Of_Life.Models
             get { return dummyCell; }
             set { dummyCell = value; }
         }
-
-
     }
 }
