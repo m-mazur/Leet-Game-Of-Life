@@ -141,6 +141,7 @@ h1 {
     padding-top: 6rem; }
   .header button {
     font-family: 'Radikal';
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 1rem;
     color: #f7f8f9;
