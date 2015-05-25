@@ -118,7 +118,7 @@
   src: url("/assets/fonts/2B0027_D_0.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/2B0027_D_0.woff") format("woff"), url("/assets/fonts/2B0027_D_0.ttf") format("truetype"); }
 body {
   font-size: 16px;
-  background-image: url("i/background.png");
+  background-image: url("http://i.imgur.com/kb9B7ca.jpg");
   background-size: cover; }
 
 h1 {
