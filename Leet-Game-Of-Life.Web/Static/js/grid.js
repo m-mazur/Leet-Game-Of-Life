@@ -1,5 +1,6 @@
 var ViewModel = function (gridService) {
-    var self = this;
+    var self = this,
+        update;
 
     self.grid = ko.observableArray([]);
 
@@ -37,6 +38,12 @@ var ViewModel = function (gridService) {
         self.grid(groupGrid(data));
     }
 
+    function getUpdatedGrid () {
+        gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
+            populateGrid(data);
+        });
+    }
+
     self.changeCellState = function (cell) {
         if (!cell.IsDead) {
             cell.IsDead = true;
@@ -48,15 +55,11 @@ var ViewModel = function (gridService) {
     };
 
     self.startGame = function () {
-        self.update = setInterval(function () {
-            gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
-                populateGrid(data);
-            });
-        }, 100);
+        update = setInterval(getUpdatedGrid, 100);
     };
 
     self.pausGame = function () {
-        self.startGame.update();
+        clearInterval(update);
     }
 
     gridService.getInitialGrid().done(function (data) {
