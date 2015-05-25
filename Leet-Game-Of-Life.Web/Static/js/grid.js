@@ -44,16 +44,20 @@ var ViewModel = function (gridService) {
             cell.IsDead = false;
         }
 
-        self.grid(self.grid());
+        updateGrid(ko.toJSON(self.grid));
     };
 
-    self.test = function () {
-        setInterval(function () {
+    self.startGame = function () {
+        var update = setInterval(function () {
             gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
                 populateGrid(data);
             });
         }, 100);
     };
+
+    self.paus = function () {
+        clearInterval(self.startGame.update());
+    }
 
     gridService.getInitialGrid().done(function (data) {
         populateGrid(data);
