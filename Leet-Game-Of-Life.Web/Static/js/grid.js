@@ -74,7 +74,7 @@ var ViewModel = function (gridService) {
     };
 
     gridService.getInitialGrid().done(function (data) {
-        self.grid = ko.observableArray(groupGrid(data));
+        self.grid(unGroupGrid(data));
     });
 
     function ajaxHelper(uri, method, data) {
