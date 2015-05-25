@@ -1,4 +1,4 @@
-var ViewModel = function () {
+var ViewModel = function (gridService) {
     var self = this;
 
     self.grid = ko.observableArray(createGrid(5, 5));
@@ -66,15 +66,14 @@ var ViewModel = function () {
 
     self.test = function () {
         setInterval(function () {
-            ajaxHelper("../api/game/", 'POST', unGroupGrid(self.grid())).done(function (data) {
+            gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
                 self.grid.removeAll();
-                console.log(data);
                 self.grid(groupGrid(data));
             });
         }, 100);
     };
 
-    ajaxHelper("../api/game/", 'GET').done(function (data) {
+    gridService.getInitialGrid.done(function (data) {
         self.grid(groupGrid(data));
     });
 
@@ -89,4 +88,4 @@ var ViewModel = function () {
     };
 };
 
-ko.applyBindings(new ViewModel());
+ko.applyBindings(new ViewModel(new GridService()));

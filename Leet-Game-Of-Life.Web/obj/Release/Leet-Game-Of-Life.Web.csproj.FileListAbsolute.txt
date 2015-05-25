@@ -70,7 +70,6 @@ C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Le
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\underscore\underscore-min.js
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\underscore\underscore.js
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\grid.html
-C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\grid.js
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\main.css
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\.DS_Store
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\.idea\.name
@@ -116,3 +115,8 @@ C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Le
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Antlr3.Runtime.pdb
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\obj\Release\Leet-Game-Of-Life.Web.dll
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\obj\Release\Leet-Game-Of-Life.Web.pdb
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\i\background.png
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.js
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.service.js
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\_colors.scss
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\_fonts.scss

@@ -1,6 +1,5 @@
 var GridService = function () {
     var gridUri = '../api/game/';
-    this.hello = "hello";
 
     this.getInitialGrid = function () {
         return ajaxHelper(gridUri, 'GET');

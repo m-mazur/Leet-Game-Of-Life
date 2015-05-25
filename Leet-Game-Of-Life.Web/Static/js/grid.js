@@ -1,8 +1,6 @@
 var ViewModel = function (gridService) {
     var self = this;
 
-    self.grid = ko.observableArray(createGrid(5, 5));
-
     function createGrid(rows, columns) {
         var columnList = [null],
             cellList = [null];
@@ -73,7 +71,7 @@ var ViewModel = function (gridService) {
         }, 100);
     };
 
-    gridService.getInitialGrid.done(function (data) {
+    gridService.getInitialGrid().done(function (data) {
         self.grid(groupGrid(data));
     });
 
