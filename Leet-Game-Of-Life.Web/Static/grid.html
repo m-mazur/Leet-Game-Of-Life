@@ -13,7 +13,6 @@
     <title></title>
 </head>
 <body>
-    <h1>Test</h1>
     <div class="outer">
         <div class="grid-wrapper">
             <table>
@@ -21,13 +20,14 @@
                     <tr>
                         <td data-bind="foreach: $data">
                             <div class="cell">
-                                <button data-bind="text: Y, click: $root.changeCellState, style: { backgroundColor: IsDead === true ? 'white' : 'red'}"></button>
+                                <button data-bind="text: Y, click: $root.changeCellState, style: { backgroundColor: IsDead === true ? '$leetgreen' : '$coderwhite'}"></button>
                             </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        <button data-bind="click: test">Start</button>
     </div>
 </body>
 </html>

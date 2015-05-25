@@ -1,3 +1,9 @@
+@import "_colors";
+
+body {
+  background-color: $leetgreen;
+}
+
 .row-id {
   background-color: black;
   color: white;
@@ -13,7 +19,6 @@ button {
   width: 30px;
   padding: 1px;
   margin: 2px;
-  border: solid 1px #000;
 }
 
 textarea {
@@ -23,6 +28,11 @@ textarea {
 .grid-wrapper {
   float: left;
   width: 100%;
+
+  button {
+    background-color: $leetgreen;
+    border: solid 2px $coderwhite;
+  }
 }
 
 .textarea-wrapper {

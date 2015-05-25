@@ -1,3 +1,6 @@
+body {
+  background-color: #8cc63c; }
+
 .row-id {
   background-color: black;
   color: white; }
@@ -10,8 +13,7 @@ button {
   height: 30px;
   width: 30px;
   padding: 1px;
-  margin: 2px;
-  border: solid 1px #000; }
+  margin: 2px; }
 
 textarea {
   float: right; }
@@ -19,6 +21,9 @@ textarea {
 .grid-wrapper {
   float: left;
   width: 100%; }
+  .grid-wrapper button {
+    background-color: #8cc63c;
+    border: solid 2px #f7f8f9; }
 
 .textarea-wrapper {
   float: left; }
