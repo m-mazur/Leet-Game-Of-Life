@@ -44,7 +44,7 @@ var ViewModel = function (gridService) {
             cell.IsDead = false;
         }
 
-        self.grid(self.grid);
+        self.grid(self.grid());
     };
 
     self.test = function () {
