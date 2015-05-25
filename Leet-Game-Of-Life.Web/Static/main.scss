@@ -1,7 +1,19 @@
 @import "_colors";
+@import "_fonts";
 
 body {
-  background-color: $leetgreen;
+  font-size: 16px;
+  background-image: url('i/background.png');
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: $coderwhite;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-family: 'Radikal';
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
 .row-id {
@@ -14,11 +26,7 @@ body {
 }
 
 button {
-  font-size: 8px;
-  height: 30px;
-  width: 30px;
-  padding: 1px;
-  margin: 2px;
+
 }
 
 textarea {
@@ -32,6 +40,16 @@ textarea {
   button {
     background-color: transparent;
     border: solid 2px $coderwhite;
+    font-size: 8px;
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    margin: 3px;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
