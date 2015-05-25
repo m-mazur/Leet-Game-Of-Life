@@ -1,6 +1,8 @@
 var ViewModel = function (gridService) {
     var self = this;
 
+    self.grid = ko.observableArray([]);
+
     function createGrid(rows, columns) {
         var columnList = [null],
             cellList = [null];
