@@ -48,7 +48,7 @@ var ViewModel = function (gridService) {
     };
 
     self.startGame = function () {
-        this.update = setInterval(function () {
+        self.update = setInterval(function () {
             gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
                 populateGrid(data);
             });
@@ -58,6 +58,7 @@ var ViewModel = function (gridService) {
     self.pausGame = function () {
         console.log("stop");
         clearInterval(self.startGame.update);
+        clearInterval(self.startGame().update);
     }
 
     gridService.getInitialGrid().done(function (data) {
