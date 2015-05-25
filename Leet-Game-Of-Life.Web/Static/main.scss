@@ -36,10 +36,15 @@ h1 {
     font-size: 1rem;
     color: $coderwhite;
     background-color: $skyred;
-    width: 10rem;
+    min-width: 200px;
     border: none;
-    margin-top: 4.5rem;
+    margin: 4.5rem -2px 0 -2px;
     padding: 18px 28px 16px 28px;
+  }
+
+  button:hover {
+    background-color: $skyredLight;
+    transition: all 0.3s ease 0s;
   }
 }
 
