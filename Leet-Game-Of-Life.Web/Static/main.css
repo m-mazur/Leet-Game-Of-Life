@@ -118,8 +118,9 @@
   src: url("/assets/fonts/2B0027_D_0.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/2B0027_D_0.woff") format("woff"), url("/assets/fonts/2B0027_D_0.ttf") format("truetype"); }
 body {
   font-size: 16px;
-  background-image: url("http://i.imgur.com/kb9B7ca.jpg");
-  background-size: cover; }
+  padding: 0;
+  margin: 0;
+  background-color: #f7f8f9; }
 
 h1 {
   text-align: center;
@@ -128,6 +129,15 @@ h1 {
   font-size: 4rem;
   font-family: 'Radikal';
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
+
+.header {
+  width: 100%;
+  height: 17rem;
+  background: url("http://i.imgur.com/kb9B7ca.jpg");
+  background-size: cover; }
+  .header h1 {
+    margin: 0;
+    padding: 6rem; }
 
 .row-id {
   background-color: black;
@@ -140,22 +150,20 @@ textarea {
   float: right; }
 
 .grid-wrapper {
-  float: left;
-  width: 100%; }
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem; }
   .grid-wrapper button {
     background-color: transparent;
-    border: solid 2px #f7f8f9;
+    border: solid 2px #565e67;
     font-size: 8px;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     padding: 1px;
-    margin: 3px; }
+    margin: 2px; }
   .grid-wrapper table {
     margin-left: auto;
     margin-right: auto; }
-
-.textarea-wrapper {
-  float: left; }
 
 .outer {
   overflow: auto; }

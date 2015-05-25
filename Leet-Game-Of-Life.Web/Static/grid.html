@@ -13,7 +13,9 @@
     <title></title>
 </head>
 <body>
-    <h1>Game of leet</h1>
+    <section class="header">
+        <h1>Game of leet</h1>
+    </section>
     <div class="outer">
         <div class="grid-wrapper">
             <table>
@@ -21,7 +23,7 @@
                     <tr>
                         <td data-bind="foreach: $data">
                             <div class="cell">
-                                <button data-bind="text: Y, click: $root.changeCellState, style: { backgroundColor: IsDead === true ? '$leetgreen' : '#f7f8f9'}"></button>
+                                <button data-bind="text: Y, click: $root.changeCellState, style: { backgroundColor: IsDead === true ? '#f7f8f9' : '#565e67'}"></button>
                             </div>
                         </td>
                     </tr>
