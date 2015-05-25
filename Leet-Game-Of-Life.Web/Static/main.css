@@ -22,7 +22,7 @@ textarea {
   float: left;
   width: 100%; }
   .grid-wrapper button {
-    background-color: #8cc63c;
+    background-color: transparent;
     border: solid 2px #f7f8f9; }
 
 .textarea-wrapper {
