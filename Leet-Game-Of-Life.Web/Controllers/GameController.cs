@@ -15,7 +15,7 @@ namespace Leet_Game_Of_Life.Web.Controllers
         {
             List<Cell> grid = new Grid().CreateGrid(15, 40);
             return grid;
-        }
+        } 
 
 
         //POST api/game/1
