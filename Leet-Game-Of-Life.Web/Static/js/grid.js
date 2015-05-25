@@ -55,7 +55,7 @@ var ViewModel = function (gridService) {
         }, 100);
     };
 
-    self.paus = function () {
+    self.pausGame = function () {
         clearInterval(self.startGame.update());
     }
 
