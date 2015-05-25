@@ -1,0 +1,34 @@
+.row-id {
+  background-color: black;
+  color: white;
+}
+
+.cell {
+  float: left;
+}
+
+button {
+  font-size: 8px;
+  height: 30px;
+  width: 30px;
+  padding: 1px;
+  margin: 2px;
+  border: solid 1px #000;
+}
+
+textarea {
+  float: right;
+}
+
+.grid-wrapper {
+  float: left;
+  width: 100%;
+}
+
+.textarea-wrapper {
+  float: left;
+}
+
+.outer {
+  overflow: auto;
+}
