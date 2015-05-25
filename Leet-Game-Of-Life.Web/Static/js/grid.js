@@ -32,6 +32,11 @@ var ViewModel = function (gridService) {
         return ungroupedListOfCells;
     }
 
+    function populateGrid (data) {
+        self.grid.removeAll();
+        self.grid(groupGrid(data));
+    }
+
     self.changeCellState = function (cell) {
         if (!cell.IsDead) {
             cell.IsDead = true;
@@ -45,14 +50,13 @@ var ViewModel = function (gridService) {
     self.test = function () {
         setInterval(function () {
             gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
-                self.grid.removeAll();
-                self.grid(groupGrid(data));
+                populateGrid(data);
             });
         }, 100);
     };
 
     gridService.getInitialGrid().done(function (data) {
-        self.grid(groupGrid(data));
+        populateGrid(data);
     });
 };
 
