@@ -94,7 +94,7 @@ namespace Leet_Game_Of_Life.Web.Models
 
                 neighborCount = 0;
             }
-
+            
             return holdingList;
         }
 
