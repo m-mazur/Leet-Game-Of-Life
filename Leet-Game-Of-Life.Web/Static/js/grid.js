@@ -44,6 +44,12 @@ var ViewModel = function (gridService) {
         });
     }
 
+    function getInitialGrid () {
+        gridService.getInitialGrid().done(function (data) {
+            populateGrid(data);
+        });
+    }
+
     self.changeCellState = function (cell) {
         if (!cell.IsDead) {
             cell.IsDead = true;
@@ -60,11 +66,13 @@ var ViewModel = function (gridService) {
 
     self.pausGame = function () {
         clearInterval(update);
-    }
+    };
 
-    gridService.getInitialGrid().done(function (data) {
-        populateGrid(data);
-    });
+    self.resetGame = function () {
+        getInitialGrid();
+    };
+
+    getInitialGrid();
 };
 
 ko.applyBindings(new ViewModel(new GridService()));
