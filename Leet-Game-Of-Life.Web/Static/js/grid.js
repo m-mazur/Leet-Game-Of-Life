@@ -3,6 +3,11 @@ var ViewModel = function (gridService) {
 
     self.grid = ko.observableArray([]);
 
+    function updateGrid(gridAsJson) {
+        self.grid.removeAll();
+        self.grid(JSON.parse(gridAsJson));
+    }
+
     function groupGrid(data) {
         var groupedGrid = _.groupBy(data, function (data) {
             return data.Y;
@@ -39,8 +44,7 @@ var ViewModel = function (gridService) {
             cell.IsDead = false;
         }
 
-        self.grid.removeAll();
-        self.grid(JSON.parse(gridAsJson));
+        populateGrid(self.grid());
     };
 
     self.test = function () {
