@@ -56,9 +56,9 @@ var ViewModel = function (gridService) {
     };
 
     self.pausGame = function () {
-        console.log("stop");
-        clearInterval(self.startGame.update);
-        clearInterval(self.startGame().update);
+        console.log(self.startGame.update);
+        console.log(self.startGame().update);
+        console.log(self.startGame.update());
     }
 
     gridService.getInitialGrid().done(function (data) {
