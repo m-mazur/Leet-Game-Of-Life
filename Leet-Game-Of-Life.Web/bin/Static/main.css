@@ -141,14 +141,18 @@ h1 {
     padding-top: 6rem; }
   .header button {
     font-family: 'Radikal';
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 1rem;
     color: #f7f8f9;
     background-color: #db4352;
-    width: 10rem;
+    min-width: 200px;
     border: none;
-    margin-top: 4.5rem;
+    margin: 4.5rem -2px 0 -2px;
     padding: 18px 28px 16px 28px; }
+  .header button:hover {
+    background-color: #ea8294;
+    transition: all 0.3s ease 0s; }
 
 .row-id {
   background-color: black;

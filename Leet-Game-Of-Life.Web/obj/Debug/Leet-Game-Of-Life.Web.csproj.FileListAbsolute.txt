@@ -68,7 +68,6 @@ C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Le
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\jquery\src\var\support.js
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\jquery\src\var\toString.js
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\grid.html
-C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\grid.js
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\main.css
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\.DS_Store
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\.idea\.name
@@ -241,3 +240,5 @@ C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Gam
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\i\background.png
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\_colors.scss
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\_fonts.scss
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.js
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.service.js
