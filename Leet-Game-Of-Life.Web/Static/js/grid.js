@@ -56,7 +56,7 @@ var ViewModel = function (gridService) {
     };
 
     self.pausGame = function () {
-        clearInterval(self.startGame.update());
+        self.startGame.update();
     }
 
     gridService.getInitialGrid().done(function (data) {
