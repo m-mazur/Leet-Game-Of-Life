@@ -66,9 +66,8 @@ var ViewModel = function (gridService) {
 
     self.test = function () {
         setInterval(function () {
-            ajaxHelper("../api/game/", 'POST', unGroupGrid(self.grid())).done(function (data) {
+            gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
                 self.grid.removeAll();
-                console.log(data);
                 self.grid(groupGrid(data));
             });
         }, 100);

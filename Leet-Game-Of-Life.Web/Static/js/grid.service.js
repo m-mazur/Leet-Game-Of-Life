@@ -5,6 +5,10 @@ var GridService = function () {
         return ajaxHelper(gridUri, 'GET');
     }
 
+    this.postAndGetUpdateGrid = function (gridSnapshot) {
+        return ajaxHelper(gridUri, 'POST', gridSnapshot);
+    }
+
     function ajaxHelper(uri, method, data) {
         return $.ajax({
             type: method,
