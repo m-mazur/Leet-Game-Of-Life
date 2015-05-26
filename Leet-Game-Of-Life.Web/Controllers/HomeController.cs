@@ -10,9 +10,7 @@ namespace Leet_Game_Of_Life.Web.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-
-            return View();
+            return Redirect("static/grid.html");;
         }
     }
 }
