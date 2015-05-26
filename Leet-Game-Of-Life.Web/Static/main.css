@@ -52,9 +52,7 @@ textarea {
 .grid-wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
-  background-color: #f7f8f9;
-  width: 75vw; }
+  margin-top: 3rem; }
   .grid-wrapper button {
     background-color: transparent;
     border: solid 1px #565e67;
@@ -69,7 +67,7 @@ textarea {
     margin-left: auto;
     margin-right: auto; }
 
-.counter-wrapper {
+.counter {
   width: 550px;
   color: #4f5664;
   text-align: center;
@@ -78,17 +76,18 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   padding: 18px 28px 16px 28px; }
-  .counter-wrapper img {
+  .counter img {
     margin-top: 1rem;
     max-height: 2rem; }
-  .counter-wrapper p {
+  .counter p {
     margin: 0;
     padding: 0;
     font-size: 1rem;
     color: #f7f8f9; }
 
 .game {
-  overflow: auto; }
+  overflow: auto;
+  background-color: #f7f8f9; }
 
 footer {
   bottom: 0;
