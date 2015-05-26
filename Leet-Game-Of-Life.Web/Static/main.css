@@ -52,7 +52,8 @@ textarea {
 .grid-wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
   .grid-wrapper button {
     background-color: transparent;
     border: solid 1px #565e67;
@@ -71,11 +72,9 @@ textarea {
   width: 550px;
   color: #4f5664;
   text-align: center;
-  margin-top: 2rem;
   background-color: #4f5664;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 18px 28px 16px 28px; }
+  padding: 18px 28px 16px 28px;
+  margin: -2rem auto 0 auto; }
   .counter img {
     margin-top: 1rem;
     max-height: 2rem; }
