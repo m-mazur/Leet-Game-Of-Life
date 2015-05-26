@@ -4,7 +4,7 @@ var ViewModel = function (gridService) {
         generationCount = 0;
 
     self.grid = ko.observableArray([]);
-    self.generationCount = ko.observable();
+    self.generationCount = ko.observable(generationCount);
 
     function updateGrid(data) {
         self.grid(JSON.parse(data));

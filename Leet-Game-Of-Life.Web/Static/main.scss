@@ -87,10 +87,23 @@ textarea {
 }
 
 .counter-wrapper {
+  width: 600px;
   color: $ninjagray;
   text-align: center;
   margin-top: 2rem;
-  font-size: 1.5rem;
+  background-color: $ninjagray;
+  margin-right: auto;
+  margin-left: auto;
+
+  img {
+    margin-top: 1rem;
+    max-height: 2rem;
+  }
+
+  p {
+    margin-top: 0.3rem;
+    font-size: 2rem;
+  }
 }
 
 .game {
