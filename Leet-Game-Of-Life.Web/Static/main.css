@@ -70,7 +70,9 @@ textarea {
 
 .counter-wrapper {
   color: #4f5664;
-  text-align: center; }
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem; }
 
 .game {
   overflow: auto; }
