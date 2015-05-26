@@ -61,10 +61,7 @@ textarea {
 }
 
 .grid-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 3rem auto 3rem auto;
 
   button {
     background-color: transparent;
@@ -109,6 +106,7 @@ textarea {
 
 .game {
   overflow: auto;
+  margin: 0 150px 0 150px;
   background-color: $coderwhite;
 }
 

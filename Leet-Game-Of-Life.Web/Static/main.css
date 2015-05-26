@@ -50,10 +50,7 @@ textarea {
   float: right; }
 
 .grid-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
+  margin: 3rem auto 3rem auto; }
   .grid-wrapper button {
     background-color: transparent;
     border: solid 1px #565e67;
@@ -86,6 +83,7 @@ textarea {
 
 .game {
   overflow: auto;
+  margin: 0 150px 0 150px;
   background-color: #f7f8f9; }
 
 footer {
