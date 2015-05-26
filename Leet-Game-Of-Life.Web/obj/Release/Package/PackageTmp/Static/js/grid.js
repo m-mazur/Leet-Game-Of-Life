@@ -1,29 +1,8 @@
 var ViewModel = function (gridService) {
-    var self = this;
+    var self = this,
+        update;
 
-    self.grid = ko.observableArray(createGrid(5, 5));
-
-    function createGrid(rows, columns) {
-        var columnList = [null],
-            cellList = [null];
-
-        for (var row = 0; row < rows; row++) {
-
-            for (var column = 0; column < columns; column++) {
-                columnList[column] = {
-                    X: row,
-                    Y: column,
-                    IsDead: true,
-                    cellName: (row + 1) + ", " + (column + 1)
-                };
-            }
-
-            cellList[row] = columnList;
-            columnList = [null];
-        }
-
-        return cellList;
-    }
+    self.grid = ko.observableArray([]);
 
     function updateGrid(gridAsJson) {
         self.grid.removeAll();
@@ -54,6 +33,23 @@ var ViewModel = function (gridService) {
         return ungroupedListOfCells;
     }
 
+    function populateGrid (data) {
+        self.grid.removeAll();
+        self.grid(groupGrid(data));
+    }
+
+    function getUpdatedGrid () {
+        gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
+            populateGrid(data);
+        });
+    }
+
+    function getInitialGrid () {
+        gridService.getInitialGrid().done(function (data) {
+            populateGrid(data);
+        });
+    }
+
     self.changeCellState = function (cell) {
         if (!cell.IsDead) {
             cell.IsDead = true;
@@ -64,28 +60,19 @@ var ViewModel = function (gridService) {
         updateGrid(ko.toJSON(self.grid));
     };
 
-    self.test = function () {
-        setInterval(function () {
-            gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
-                self.grid.removeAll();
-                self.grid(groupGrid(data));
-            });
-        }, 100);
+    self.startGame = function () {
+        update = setInterval(getUpdatedGrid, 100);
     };
 
-    gridService.getInitialGrid.done(function (data) {
-        self.grid(groupGrid(data));
-    });
-
-    function ajaxHelper(uri, method, data) {
-        return $.ajax({
-            type: method,
-            url: uri,
-            dataType: 'json',
-            contentType: 'application/json',
-            data: data ? JSON.stringify(data) : null
-        });
+    self.pausGame = function () {
+        clearInterval(update);
     };
+
+    self.resetGame = function () {
+        getInitialGrid();
+    };
+
+    getInitialGrid();
 };
 
 ko.applyBindings(new ViewModel(new GridService()));
