@@ -56,15 +56,14 @@ textarea {
   margin-top: 3rem; }
   .grid-wrapper button {
     background-color: transparent;
-    border: solid 1px #8cc63c;
+    border: solid 1px #565e67;
     font-size: 8px;
     height: 20px;
     width: 20px;
-    padding: 1px;
-    margin: 1.5px; }
+    padding: 2px;
+    margin: 2px; }
   .grid-wrapper button:hover {
-    background-color: transparent;
-    transition: all 0.3s ease 0s; }
+    background-color: #8cc63c; }
   .grid-wrapper table {
     margin-left: auto;
     margin-right: auto; }
