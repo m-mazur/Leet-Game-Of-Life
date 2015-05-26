@@ -16,16 +16,9 @@ namespace Leet_Game_Of_Life.Web.Models
 
         public RulesProcessor(List<Cell> initialList)
         {
-            /*this.grid = new Grid();
-            this.initialList = initialList;
-            this.initialList = ProcessList(this.initialList);
-            this.holdingList = new List<Cell>(this.initialList);
-            this.neighborCount = 0;
-            column = FindColumnCount();
-            row = FindRowCount();*/
-
             this.grid = new Grid();
             this.initialList = initialList;
+            this.initialList = ProcessList(this.initialList);
             this.holdingList = new List<Cell>(this.initialList);
             this.neighborCount = 0;
             column = FindColumnCount();
