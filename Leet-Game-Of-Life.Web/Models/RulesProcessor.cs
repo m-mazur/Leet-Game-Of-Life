@@ -21,43 +21,29 @@ namespace Leet_Game_Of_Life.Web.Models
             this.initialList = ProcessList(this.initialList);
             this.holdingList = new List<Cell>(this.initialList);
             this.neighborCount = 0;
-            column = FindColumnCount();
-            row = FindRowCount();
+            this.column = 0;
+            this.row = 0;
         }
-
-        private List<Cell> ProcessList(List<Cell> list) 
+        
+        public List<Cell> ProcessList(List<Cell> list)
         {
-            List<Cell> processedList = grid.CreateGrid(15, 40);
-            List<Cell> justAnotherListYaj = new List<Cell>(processedList);
-
-            foreach (var cell in processedList)
+            row = 15;
+            column = 40;
+            List<Cell> processedList = grid.CreateGrid(row, column);
+            foreach (var cell in processedList.Reverse<Cell>())
             {
-                var newCell = initialList.Find(tempCell => (tempCell.X.Equals(cell.X)) && (tempCell.Y.Equals(cell.Y)));
-
+                var newCell = list.Find(tempCell => (tempCell.X.Equals(cell.X)) && (tempCell.Y.Equals(cell.Y)));
+                var index = processedList.IndexOf(cell);
                 if (newCell != null)
                 {
-                    justAnotherListYaj.RemoveAt(processedList.IndexOf(cell));
-                    justAnotherListYaj.Insert(processedList.IndexOf(cell), newCell);
+                    processedList.Remove(cell);
+                    processedList.Insert(index, newCell);
                 }
             }
 
-            return justAnotherListYaj;
+            return processedList;
         }
-
-        public int FindRowCount()
-        {
-            int rowCount = 0;
-            rowCount = initialList.FindAll(tempCell => tempCell.X.Equals(0)).Count;
-            return rowCount;
-        }
-
-        public int FindColumnCount()
-        {
-            int colCount = 0;
-            colCount = initialList.FindAll(tempCell => tempCell.Y.Equals(0)).Count;
-            return colCount;
-        }
-
+        
         public int WrapEdges(int referenceCellPosition, bool isRow)
         {
             int value = 0;
@@ -74,8 +60,7 @@ namespace Leet_Game_Of_Life.Web.Models
 
             return referenceCellPosition;
         }
-
-
+        
         private List<Cell> CreateContextGrid(List<Cell> initialGrid, Cell referenceCell)
         {
             var tempList = new List<Cell>();
@@ -115,7 +100,7 @@ namespace Leet_Game_Of_Life.Web.Models
 
                 neighborCount = 0;
             }
-            
+
             return holdingList;
         }
 
@@ -135,6 +120,20 @@ namespace Leet_Game_Of_Life.Web.Models
                 holdingList.RemoveAt(initialList.IndexOf(cell));
                 holdingList.Insert(initialList.IndexOf(cell), new Cell(cell.X, cell.Y, false));
             }
+        }
+
+        public int FindRowCount()
+        {
+            int rowCount = 0;
+            rowCount = initialList.FindAll(tempCell => tempCell.X.Equals(0)).Count;
+            return rowCount;
+        }
+
+        public int FindColumnCount()
+        {
+            int colCount = 0;
+            colCount = initialList.FindAll(tempCell => tempCell.Y.Equals(0)).Count;
+            return colCount;
         }
     }
 }
