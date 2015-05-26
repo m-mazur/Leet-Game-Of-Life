@@ -20,13 +20,14 @@ h1 {
 .header {
   text-align: center;
   width: 100%;
-  height: 14rem;
+  height: 12rem;
   background: url('http://i.imgur.com/kb9B7ca.jpg');
   background-size: cover;
 
   h1 {
     margin: 0;
-    padding-top: 6rem;
+    padding-top: 4rem;
+    font-size: 3rem;
   }
 
   button {
@@ -37,7 +38,7 @@ h1 {
     background-color: $skyred;
     min-width: 200px;
     border: none;
-    margin: 4.5rem -2px 0 -2px;
+    margin: 2.5rem -2px 0 -2px;
     padding: 18px 28px 16px 28px;
   }
 
