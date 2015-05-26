@@ -21,15 +21,13 @@ namespace Leet_Game_Of_Life.Web.Models
             this.initialList = ProcessList(this.initialList);
             this.holdingList = new List<Cell>(this.initialList);
             this.neighborCount = 0;
-            this.column = 0;
-            this.row = 0;
+            this.column = FindColumnCount();
+            this.row = FindRowCount();
         }
         
         public List<Cell> ProcessList(List<Cell> list)
         {
-            row = 15;
-            column = 40;
-            List<Cell> processedList = grid.CreateGrid(row, column);
+            List<Cell> processedList = grid.CreateGrid(15, 40);
             foreach (var cell in processedList.Reverse<Cell>())
             {
                 var newCell = list.Find(tempCell => (tempCell.X.Equals(cell.X)) && (tempCell.Y.Equals(cell.Y)));

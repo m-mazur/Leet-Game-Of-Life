@@ -487,6 +487,9 @@
     <Content Include="Static\i\background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Static\i\grid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Static\js\grid.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

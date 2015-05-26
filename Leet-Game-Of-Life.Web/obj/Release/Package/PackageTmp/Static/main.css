@@ -68,6 +68,21 @@ textarea {
     margin-left: auto;
     margin-right: auto; }
 
+.counter-wrapper {
+  width: 600px;
+  color: #4f5664;
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #4f5664;
+  margin-right: auto;
+  margin-left: auto; }
+  .counter-wrapper img {
+    margin-top: 1rem;
+    max-height: 2rem; }
+  .counter-wrapper p {
+    margin-top: 0.3rem;
+    font-size: 2rem; }
+
 .game {
   overflow: auto; }
 
