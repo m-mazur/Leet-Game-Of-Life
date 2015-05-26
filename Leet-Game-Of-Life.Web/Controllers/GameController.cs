@@ -17,7 +17,6 @@ namespace Leet_Game_Of_Life.Web.Controllers
             return grid;
         } 
 
-
         //POST api/game/1
         public IEnumerable<Cell> Post(List<Cell> gridSnapshot)
         {
