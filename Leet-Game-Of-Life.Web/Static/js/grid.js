@@ -1,10 +1,10 @@
 var ViewModel = function (gridService) {
     var self = this,
-        update;
+        update,
+        generationCount;
 
     self.grid = ko.observableArray([]);
     self.generationCount = ko.observable();
-    self.aliveCellCount = ko.observable();
 
     function updateGrid(data) {
         self.grid(JSON.parse(data));
@@ -12,7 +12,6 @@ var ViewModel = function (gridService) {
 
     function populateGrid(data) {
         self.grid(groupGrid(data));
-        self.aliveCellCount(data.length);
     }
 
     function groupGrid(data) {
@@ -42,7 +41,11 @@ var ViewModel = function (gridService) {
     }
 
     function getUpdatedGrid () {
+        generationCount = 0;
+
         gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
+            generationCount++;
+            self.generationCount(generationCount);
             populateGrid(data);
         });
     }
