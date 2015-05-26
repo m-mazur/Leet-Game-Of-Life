@@ -20,10 +20,10 @@ h1 {
 .header {
   text-align: center;
   width: 100%;
-  height: 12rem; }
+  height: 8.5rem; }
   .header h1 {
     margin: 0;
-    padding-top: 4rem;
+    padding-top: 2rem;
     font-size: 3rem; }
   .header button {
     font-weight: 300;
@@ -33,7 +33,7 @@ h1 {
     background-color: #db4352;
     min-width: 200px;
     border: none;
-    margin: 2.5rem -2px 0 -2px;
+    margin: 18px -2px 0 -2px;
     padding: 18px 28px 16px 28px; }
   .header button:hover {
     background-color: #ea8294;
@@ -83,7 +83,7 @@ textarea {
 
 .game {
   overflow: auto;
-  margin: 0 150px 0 150px;
+  margin: 0 170px 0 170px;
   background-color: #f7f8f9; }
 
 footer {
