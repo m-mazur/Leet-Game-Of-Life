@@ -61,8 +61,8 @@
           <file leaf-file-name="grid.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.49191687" vertical-offset="51" max-vertical-offset="1350">
-                  <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+                <state vertical-scroll-proportion="0.034642033" vertical-offset="0" max-vertical-offset="1320">
+                  <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -85,8 +85,8 @@
           <file leaf-file-name="grid.service.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.service.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.23094688" vertical-offset="0" max-vertical-offset="1299">
-                  <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+                <state vertical-scroll-proportion="0.09237875" vertical-offset="0" max-vertical-offset="1299">
+                  <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
@@ -563,14 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23094688" vertical-offset="0" max-vertical-offset="1299">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="1320">
@@ -595,10 +587,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09237875" vertical-offset="0" max-vertical-offset="1299">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49191687" vertical-offset="51" max-vertical-offset="1350">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.034642033" vertical-offset="0" max-vertical-offset="1320">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding />
         </state>
       </provider>
