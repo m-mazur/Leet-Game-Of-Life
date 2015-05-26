@@ -4,9 +4,8 @@ var ViewModel = function (gridService) {
 
     self.grid = ko.observableArray([]);
 
-    function updateGrid(gridAsJson) {
-        self.grid.removeAll();
-        self.grid(JSON.parse(gridAsJson));
+    function updateGrid(data) {
+        self.grid(JSON.parse(data));
     }
 
     function groupGrid(data) {
@@ -34,7 +33,6 @@ var ViewModel = function (gridService) {
     }
 
     function populateGrid (data) {
-        self.grid.removeAll();
         self.grid(groupGrid(data));
     }
 

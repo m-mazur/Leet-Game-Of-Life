@@ -244,3 +244,6 @@ C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Gam
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.service.js
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\_colors.scss
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\_fonts.scss
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.eot
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.ttf
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.woff
