@@ -74,6 +74,7 @@ var ViewModel = function (gridService) {
     };
 
     self.resetGame = function () {
+        generationCount = 0;
         getInitialGrid();
     };
 

@@ -68,6 +68,10 @@ textarea {
     margin-left: auto;
     margin-right: auto; }
 
+.counter-wrapper {
+  color: #4f5664;
+  text-align: center; }
+
 .game {
   overflow: auto; }
 
