@@ -6,13 +6,13 @@ body {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  background-color: #f7f8f9; }
+  background-color: #f7f8f9;
+  font-family: 'Radikal'; }
 
 h1 {
   color: #f7f8f9;
   text-transform: uppercase;
   font-size: 4rem;
-  font-family: 'Radikal';
   font-weight: 300;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
 
@@ -26,7 +26,6 @@ h1 {
     margin: 0;
     padding-top: 6rem; }
   .header button {
-    font-family: 'Radikal';
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1rem;
@@ -68,7 +67,15 @@ textarea {
     margin-left: auto;
     margin-right: auto; }
 
-.outer {
+.game {
   overflow: auto; }
+
+footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  height: 4rem;
+  background-color: #4f5664; }
 
 /*# sourceMappingURL=main.css.map */

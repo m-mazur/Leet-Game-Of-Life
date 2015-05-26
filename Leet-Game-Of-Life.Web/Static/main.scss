@@ -6,13 +6,13 @@ body {
   padding: 0;
   margin: 0;
   background-color: $coderwhite;
+  font-family: 'Radikal';
 }
 
 h1 {
   color: $coderwhite;
   text-transform: uppercase;
   font-size: 4rem;
-  font-family: 'Radikal';
   font-weight: 300;
   text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
@@ -30,7 +30,6 @@ h1 {
   }
 
   button {
-    font-family: 'Radikal';
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1rem;
@@ -86,6 +85,15 @@ textarea {
   }
 }
 
-.outer {
+.game {
   overflow: auto;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  height: 4rem;
+  background-color: $ninjagray;
 }

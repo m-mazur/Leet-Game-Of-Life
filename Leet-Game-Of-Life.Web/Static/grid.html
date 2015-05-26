@@ -20,20 +20,23 @@
         <button data-bind="click: pausGame">Paus</button>
         <button data-bind="click: resetGame">Reset</button>
     </section>
-    <div class="outer">
+    <section class="game">
         <div class="grid-wrapper">
             <table>
                 <tbody data-bind="foreach: grid">
-                    <tr>
-                        <td data-bind="foreach: $data">
-                            <div class="cell">
-                                <button data-bind="click: $root.changeCellState, style: { backgroundColor: IsDead === false ? '#565e67' : ''}"></button>
-                            </div>
-                        </td>
-                    </tr>
+                <tr>
+                    <td data-bind="foreach: $data">
+                        <div class="cell">
+                            <button data-bind="click: $root.changeCellState, style: { backgroundColor: IsDead === false ? '#565e67' : ''}"></button>
+                        </div>
+                    </td>
+                </tr>
                 </tbody>
             </table>
         </div>
-    </div>
+    </section>
+    <footer>
+        
+    </footer>
 </body>
 </html>
