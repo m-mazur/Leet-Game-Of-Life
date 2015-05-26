@@ -45,6 +45,7 @@ var ViewModel = function (gridService) {
 
         gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
             generationCount++;
+            console.log(generationCount);
             self.generationCount(generationCount);
             populateGrid(data);
         });
