@@ -18,4 +18,4 @@ var GridService = function () {
             data: data ? JSON.stringify(data) : null
         });
     };
-};
+}

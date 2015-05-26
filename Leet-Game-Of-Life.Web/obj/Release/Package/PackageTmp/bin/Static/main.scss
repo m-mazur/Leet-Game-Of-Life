@@ -6,13 +6,13 @@ body {
   padding: 0;
   margin: 0;
   background-color: $coderwhite;
+  font-family: 'Radikal';
 }
 
 h1 {
   color: $coderwhite;
   text-transform: uppercase;
   font-size: 4rem;
-  font-family: 'Radikal';
   font-weight: 300;
   text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
@@ -30,7 +30,6 @@ h1 {
   }
 
   button {
-    font-family: 'Radikal';
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1rem;
@@ -68,17 +67,16 @@ textarea {
 
   button {
     background-color: transparent;
-    border: solid 1px $leetgreen;
+    border: solid 1px $katanagray;
     font-size: 8px;
     height: 20px;
     width: 20px;
-    padding: 1px;
-    margin: 1.5px;
+    padding: 2px;
+    margin: 2px;
   }
 
   button:hover {
-    background-color: transparent;
-    transition: all 0.3s ease 0s;
+    background-color: $leetgreen;
   }
 
   table {
@@ -87,6 +85,15 @@ textarea {
   }
 }
 
-.outer {
+.game {
   overflow: auto;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  height: 3rem;
+  background-color: $ninjagray;
 }
