@@ -29,7 +29,9 @@ var ViewModel = function (gridService) {
 
         data.forEach(function (item) {
             item.forEach(function (object) {
-                ungroupedListOfCells.push(object);
+                if (!object.IsDead) {
+                    ungroupedListOfCells.push(object);
+                }
             });
         });
 
@@ -59,7 +61,7 @@ var ViewModel = function (gridService) {
     };
 
     self.startGame = function () {
-        update = setInterval(getUpdatedGrid, 200);
+        update = setInterval(getUpdatedGrid, 150);
     };
 
     self.pausGame = function () {

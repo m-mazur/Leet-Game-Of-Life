@@ -9,18 +9,46 @@ namespace Leet_Game_Of_Life.Web.Models
     {
         private List<Cell> initialList;
         private List<Cell> holdingList;
+        private Grid grid;
         private int neighborCount;
         private int column;
         private int row;
 
         public RulesProcessor(List<Cell> initialList)
         {
+            /*this.grid = new Grid();
             this.initialList = initialList;
-            this.holdingList = new List<Cell>(initialList);
+            this.initialList = ProcessList(this.initialList);
+            this.holdingList = new List<Cell>(this.initialList);
+            this.neighborCount = 0;
+            column = FindColumnCount();
+            row = FindRowCount();*/
+
+            this.grid = new Grid();
+            this.initialList = initialList;
+            this.holdingList = new List<Cell>(this.initialList);
             this.neighborCount = 0;
             column = FindColumnCount();
             row = FindRowCount();
+        }
 
+        private List<Cell> ProcessList(List<Cell> list) 
+        {
+            List<Cell> processedList = grid.CreateGrid(15, 40);
+            List<Cell> justAnotherListYaj = new List<Cell>(processedList);
+
+            foreach (var cell in processedList)
+            {
+                var newCell = initialList.Find(tempCell => (tempCell.X.Equals(cell.X)) && (tempCell.Y.Equals(cell.Y)));
+
+                if (newCell != null)
+                {
+                    justAnotherListYaj.RemoveAt(processedList.IndexOf(cell));
+                    justAnotherListYaj.Insert(processedList.IndexOf(cell), newCell);
+                }
+            }
+
+            return justAnotherListYaj;
         }
 
         public int FindRowCount()
