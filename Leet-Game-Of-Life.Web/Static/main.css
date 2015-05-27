@@ -35,8 +35,7 @@ h1 {
     margin: 18px -2px 0 -2px;
     padding: 18px 28px 16px 28px; }
   .header button:hover {
-    background-color: #ea8294;
-    transition: all 0.3s ease 0s; }
+    background-color: #ea8294; }
 
 .row-id {
   background-color: black;
