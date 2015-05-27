@@ -2,42 +2,46 @@
   font-family: 'Radikal';
   src: url("fonts/Radikal.eot");
   src: url("fonts/Radikal.woff") format("woff"), url("fonts/Radikal.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Radikal-Thin';
+  src: url("Radikal-Thin.eot");
+  src: url("Radikal-Thin.eot?#iefix") format("embedded-opentype"), url("Radikal-Thin.woff") format("woff"), url("Radikal-Thin.ttf") format("truetype"); }
 body {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  font-family: 'Radikal';
-  background: url("http://i.imgur.com/kb9B7ca.jpg");
-  background-size: cover; }
+  font-family: 'Radikal-Thin';
+  background-color: #4f5664; }
 
 h1 {
   color: #f7f8f9;
   text-transform: uppercase;
   font-size: 4rem;
-  font-weight: 300;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
 
 .header {
+  background: url("http://i.imgur.com/kb9B7ca.jpg");
+  background-size: cover;
   text-align: center;
   width: 100%;
-  height: 8.5rem; }
+  height: 12rem; }
   .header h1 {
     margin: 0;
-    padding-top: 2rem;
-    font-size: 3rem; }
+    padding-top: 4rem;
+    font-size: 3rem;
+    font-weight: 100; }
   .header button {
-    font-weight: 300;
+    font-weight: 100;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #f7f8f9;
     background-color: #db4352;
     min-width: 200px;
     border: none;
-    margin: 18px -2px 0 -2px;
-    padding: 18px 28px 16px 28px; }
+    margin: 40px -2px 0 -2px;
+    padding: 16px 28px 16px 28px; }
   .header button:hover {
-    background-color: #ea8294;
-    transition: all 0.3s ease 0s; }
+    background-color: #ea8294; }
 
 .row-id {
   background-color: black;
@@ -51,9 +55,12 @@ textarea {
 
 .grid-wrapper {
   margin: 3rem auto 3rem auto; }
+  .grid-wrapper td {
+    padding: 0;
+    margin: 0; }
   .grid-wrapper button {
-    background-color: transparent;
-    border: solid 1px #565e67;
+    background-color: #dcdde0;
+    border: none;
     font-size: 8px;
     height: 20px;
     width: 20px;
@@ -67,31 +74,28 @@ textarea {
 
 .counter {
   width: 550px;
-  color: #4f5664;
+  color: #f7f8f9;
   text-align: center;
-  background-color: #4f5664;
+  background-color: #565e67;
   padding: 18px 28px 16px 28px;
-  margin: -2rem auto 0 auto; }
+  margin: -1.5rem auto 0 auto; }
   .counter img {
     margin-top: 1rem;
     max-height: 2rem; }
   .counter p {
     margin: 0;
     padding: 0;
-    font-size: 1rem;
-    color: #f7f8f9; }
+    font-size: 0.8rem; }
 
 .game {
   overflow: auto;
-  margin: 0 170px 0 170px;
   background-color: #f7f8f9; }
 
-footer {
-  bottom: 0;
+.bottom-line {
   width: 100%;
+  height: 5px;
   position: fixed;
   text-align: center;
-  height: 3rem;
-  background-color: #4f5664; }
+  background-color: #deddde; }
 
 /*# sourceMappingURL=main.css.map */

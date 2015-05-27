@@ -14,7 +14,7 @@ namespace Leet_Game_Of_Life.Web.Controllers
         //GET api/game/
         public IEnumerable<Cell> Get()
         {
-            List<Cell> grid = new Grid().CreateGrid(15, 40);
+            List<Cell> grid = new Grid().CreateGrid(14, 34);
             return grid;
         } 
 

@@ -19,7 +19,7 @@ namespace Leet_Game_Of_Life.Core.Logic
 
         public List<Cell> CreateProcessedList(List<Cell> unProcessedGrid)
         {
-            var processedList = grid.CreateGrid(15, 40);
+            var processedList = grid.CreateGrid(14, 34);
 
             foreach (var cell in processedList.Reverse<Cell>())
             {

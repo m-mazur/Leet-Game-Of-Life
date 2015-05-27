@@ -27,7 +27,7 @@
                 <tr>
                     <td data-bind="foreach: $data">
                         <div class="cell">
-                            <button data-bind="click: $root.changeCellState, style: { backgroundColor: IsDead === false ? '#565e67' : ''}"></button>
+                            <button data-bind="click: $root.changeCellState, style: { backgroundColor: IsDead === false ? '#8cc63c' : ''}"></button>
                         </div>
                     </td>
                 </tr>
@@ -35,8 +35,10 @@
             </table>
         </div>
     </section>
-    <section class="counter">
-        <!-- <img src="i/grid.png">---> <p data-bind="text: generationCount"></p>
+    <section class="bottom-line">
+        <div class="counter">
+            <!-- <img src="i/grid.png">---> <p data-bind="text: generationCount"></p>
+        </div>
     </section>
 </body>
 </html>

@@ -250,3 +250,6 @@ C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Le
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Antlr3.Runtime.pdb
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\obj\Debug\Leet-Game-Of-Life.Web.dll
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\obj\Debug\Leet-Game-Of-Life.Web.pdb
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal-Thin.eot
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal-Thin.ttf
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal-Thin.woff
