@@ -22,15 +22,13 @@ namespace Leet_Game_Of_Life.Core.Logic
             this.grid = gridProcessor.CreateProcessedList(snapshot);
             this.holdingList = gridProcessor.CreateHoldingGrid(grid);
 
-            CheckRules(grid);
+            CheckRules();
 
             return holdingList;
         }
 
-        private void CheckRules (List<Cell> list) 
+        private void CheckRules () 
         {
-            var holdingList = gridProcessor.CreateHoldingGrid(list);
-
             foreach (var cell in grid)
             {
                 var contextGrid = gridProcessor.CreateContextGrid(grid, cell);
@@ -44,8 +42,20 @@ namespace Leet_Game_Of_Life.Core.Logic
                     }
                 }
 
-                IfCellHasTwoOrThreeLivingNeighbors(cell, neighborCount);
-                IfCellIsDeadAndHasThreeNeighbors(cell, neighborCount);
+                if (neighborCount < 2 || neighborCount > 3)
+                {
+                    holdingList.RemoveAt(grid.IndexOf(cell));
+                    holdingList.Insert(grid.IndexOf(cell), new Cell(cell.X, cell.Y, true));
+                }
+
+                if (cell.IsDead && neighborCount == 3)
+                {
+                    holdingList.RemoveAt(grid.IndexOf(cell));
+                    holdingList.Insert(grid.IndexOf(cell), new Cell(cell.X, cell.Y, false));
+                }
+
+                /*IfCellHasTwoOrThreeLivingNeighbors(cell, neighborCount);
+                IfCellIsDeadAndHasThreeNeighbors(cell, neighborCount);*/
             }
         }
 
