@@ -83,15 +83,12 @@ textarea {
 
 .game {
   overflow: auto;
-  margin: 0 170px 0 170px;
-  background-color: #f7f8f9; }
+  background-color: #deddde; }
 
-footer {
-  bottom: 0;
+.footer {
   width: 100%;
   position: fixed;
   text-align: center;
-  height: 3rem;
   background-color: #4f5664; }
 
 /*# sourceMappingURL=main.css.map */

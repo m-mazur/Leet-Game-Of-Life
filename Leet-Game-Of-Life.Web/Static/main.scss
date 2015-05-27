@@ -106,15 +106,12 @@ textarea {
 
 .game {
   overflow: auto;
-  margin: 0 170px 0 170px;
-  background-color: $coderwhite;
+  background-color: $ninjagraySuperLight;
 }
 
-footer {
-  bottom: 0;
+.footer {
   width: 100%;
   position: fixed;
   text-align: center;
-  height: 3rem;
   background-color: $ninjagray;
 }
