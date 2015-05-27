@@ -16,8 +16,21 @@ namespace Leet_Game_Of_Life.Core.Logic
         }
 
         public List<Cell> CheckNeighborStateAndRunLogic(List<Cell> snapshot)
-        { 
+        {
             return CheckRules(gridProcessor.CreateProcessedList(snapshot));
+        }
+
+        public List<List<Cell>> CheckNeighborStateAndRunLogicAndCreateDataSet(List<Cell> snapshot)
+        {
+            var theList = new List<List<Cell>>();
+            theList.Add(CheckRules(gridProcessor.CreateProcessedList(snapshot)));
+
+            for (var i = 0; i < 10; i++)
+            {
+                theList.Add(CheckRules(theList[i]));
+            }
+
+            return theList;
         }
 
         private List<Cell> CheckRules (List<Cell> grid) 

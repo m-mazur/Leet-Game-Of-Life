@@ -4,8 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Leet_Game_Of_Life.Core.Models;
 using Leet_Game_Of_Life.Core.Logic;
+using Leet_Game_Of_Life.Core.Models;
 
 namespace Leet_Game_Of_Life.Web.Controllers
 {
@@ -19,10 +19,10 @@ namespace Leet_Game_Of_Life.Web.Controllers
         } 
 
         //POST api/game/1
-        public IEnumerable<Cell> Post(List<Cell> gridSnapshot)
+        public IEnumerable<List<Cell>> Post(List<Cell> gridSnapshot)
         {
             RulesProcessor rules = new RulesProcessor();
-            return rules.CheckNeighborStateAndRunLogic(gridSnapshot);
+            return rules.CheckNeighborStateAndRunLogicAndCreateDataSet(gridSnapshot);
         }
     }
 }
