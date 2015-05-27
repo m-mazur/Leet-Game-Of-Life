@@ -57,7 +57,7 @@ textarea {
   margin: 3rem auto 3rem auto; }
   .grid-wrapper button {
     background-color: transparent;
-    border: solid 0, 5px #565e67;
+    border: none;
     font-size: 8px;
     height: 20px;
     width: 20px;
