@@ -2,11 +2,15 @@
   font-family: 'Radikal';
   src: url("fonts/Radikal.eot");
   src: url("fonts/Radikal.woff") format("woff"), url("fonts/Radikal.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Radikal-Thin';
+  src: url("Radikal-Thin.eot");
+  src: url("Radikal-Thin.eot?#iefix") format("embedded-opentype"), url("Radikal-Thin.woff") format("woff"), url("Radikal-Thin.ttf") format("truetype"); }
 body {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  font-family: 'Radikal';
+  font-family: 'Radikal-Thin';
   background-color: #4f5664; }
 
 h1 {
@@ -27,9 +31,9 @@ h1 {
     font-size: 3rem;
     font-weight: 100; }
   .header button {
-    font-weight: 300;
+    font-weight: 100;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #f7f8f9;
     background-color: #db4352;
     min-width: 200px;
@@ -78,7 +82,7 @@ textarea {
   .counter p {
     margin: 0;
     padding: 0;
-    font-size: 1rem; }
+    font-size: 0.8rem; }
 
 .game {
   overflow: auto;
