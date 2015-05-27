@@ -10,15 +10,6 @@ var ViewModel = function (gridService) {
         self.grid(JSON.parse(data));
     }
 
-    function populateGrid2(data) {
-        var i = 0;
-
-        setInterval(function () {
-            populateGrid(data[i]);
-            i++;
-        }, 150);
-    }
-
     function populateGrid(data) {
         self.grid(groupGrid(data));
     }
@@ -51,10 +42,9 @@ var ViewModel = function (gridService) {
 
     function getUpdatedGrid () {
         gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
-            //generationCount++;
-            //self.generationCount(generationCount);
-            populateGrid2(data);
-            console.log(data);
+            generationCount++;
+            self.generationCount(generationCount);
+            populateGrid(data);
         });
     }
 
@@ -75,8 +65,7 @@ var ViewModel = function (gridService) {
     };
 
     self.startGame = function () {
-        //update = setInterval(getUpdatedGrid, 150);
-        getUpdatedGrid();
+        update = setInterval(getUpdatedGrid, 150);
     };
 
     self.pausGame = function () {
