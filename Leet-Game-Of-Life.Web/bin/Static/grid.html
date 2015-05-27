@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/knockout/dist/knockout.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+    <script type="text/javascript" src="js/grid.service.js" defer="defer"></script>
+    <script type="text/javascript" src="js/grid.js" defer="defer"></script>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <title></title>
+</head>
+<body>
+    <section class="header">
+        <h1>Game of leet</h1>
+        <button data-bind="click: startGame">Start</button>
+        <button data-bind="click: pausGame">Paus</button>
+        <button data-bind="click: resetGame">Reset</button>
+    </section>
+    <section class="game">
+        <div class="grid-wrapper">
+            <table>
+                <tbody data-bind="foreach: grid">
+                <tr>
+                    <td data-bind="foreach: $data">
+                        <div class="cell">
+                            <button data-bind="click: $root.changeCellState, style: { backgroundColor: IsDead === false ? '#565e67' : ''}"></button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="counter">
+        <!-- <img src="i/grid.png">---> <p data-bind="text: generationCount"></p>
+    </section>
+</body>
+</html>

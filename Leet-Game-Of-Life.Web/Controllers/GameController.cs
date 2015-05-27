@@ -4,7 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Leet_Game_Of_Life.Core;
+using Leet_Game_Of_Life.Core.Models;
+using Leet_Game_Of_Life.Core.Logic;
 
 namespace Leet_Game_Of_Life.Web.Controllers
 {

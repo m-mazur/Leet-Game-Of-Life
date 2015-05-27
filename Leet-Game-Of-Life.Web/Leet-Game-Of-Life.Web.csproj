@@ -574,6 +574,12 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Leet-Game-Of-Life.Core\Leet-Game-Of-Life.Core.csproj">
+      <Project>{5027da51-bc19-4dbd-8c46-c921c79b8c8c}</Project>
+      <Name>Leet-Game-Of-Life.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
