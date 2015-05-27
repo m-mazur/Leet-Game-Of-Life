@@ -8,8 +8,6 @@ namespace Leet_Game_Of_Life.Core.Logic
 {
     public class RulesProcessor
     {
-        private List<Cell> grid;
-        private List<Cell> holdingList;
         private GridProcessor gridProcessor;
 
         public RulesProcessor()
@@ -19,16 +17,13 @@ namespace Leet_Game_Of_Life.Core.Logic
 
         public List<Cell> CheckNeighborStateAndRunLogic(List<Cell> snapshot)
         { 
-            this.grid = gridProcessor.CreateProcessedList(snapshot);
-            this.holdingList = gridProcessor.CreateHoldingGrid(grid);
-
-            CheckRules();
-
-            return holdingList;
+            return CheckRules(gridProcessor.CreateProcessedList(snapshot));
         }
 
-        private void CheckRules () 
+        private List<Cell> CheckRules (List<Cell> grid) 
         {
+            var holdingList = gridProcessor.CreateHoldingGrid(grid);
+
             foreach (var cell in grid)
             {
                 var contextGrid = gridProcessor.CreateContextGrid(grid, cell);
@@ -53,28 +48,9 @@ namespace Leet_Game_Of_Life.Core.Logic
                     holdingList.RemoveAt(grid.IndexOf(cell));
                     holdingList.Insert(grid.IndexOf(cell), new Cell(cell.X, cell.Y, false));
                 }
-
-                /*IfCellHasTwoOrThreeLivingNeighbors(cell, neighborCount);
-                IfCellIsDeadAndHasThreeNeighbors(cell, neighborCount);*/
             }
-        }
 
-        private void IfCellHasTwoOrThreeLivingNeighbors(Cell cell, int neighborCount)
-        {
-            if (neighborCount < 2 || neighborCount > 3)
-            {
-                holdingList.RemoveAt(grid.IndexOf(cell));
-                holdingList.Insert(grid.IndexOf(cell), new Cell(cell.X, cell.Y, true));
-            }
-        }
-
-        private void IfCellIsDeadAndHasThreeNeighbors(Cell cell, int neighborCount)
-        {
-            if (cell.IsDead && neighborCount == 3)
-            {
-                holdingList.RemoveAt(grid.IndexOf(cell));
-                holdingList.Insert(grid.IndexOf(cell), new Cell(cell.X, cell.Y, false));
-            }
+            return holdingList;
         }
     }
 }
