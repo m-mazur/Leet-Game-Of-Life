@@ -20,8 +20,8 @@ namespace Leet_Game_Of_Life.Web.Controllers
         //POST api/game/1
         public IEnumerable<Cell> Post(List<Cell> gridSnapshot)
         {
-            RulesProcessor rules = new RulesProcessor(gridSnapshot);
-            return rules.CheckNeighborStateAndRunLogic();
+            RulesProcessor rules = new RulesProcessor();
+            return rules.CheckNeighborStateAndRunLogic(gridSnapshot);
         }
     }
 }

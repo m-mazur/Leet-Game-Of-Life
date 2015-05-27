@@ -14,72 +14,29 @@ namespace Leet_Game_Of_Life.Web.Models
         private int column;
         private int row;
 
-        public RulesProcessor(List<Cell> initialList)
+        public RulesProcessor()
         {
             this.grid = new Grid();
-            this.initialList = initialList;
-            this.initialList = ProcessList(this.initialList);
-            this.holdingList = new List<Cell>(this.initialList);
             this.neighborCount = 0;
-            this.column = FindColumnCount();
-            this.row = FindRowCount();
         }
-        
-        public List<Cell> ProcessList(List<Cell> list)
+
+        public List<Cell> CheckNeighborStateAndRunLogic(List<Cell> snapshot)
         {
-            List<Cell> processedList = grid.CreateGrid(15, 40);
-            foreach (var cell in processedList.Reverse<Cell>())
-            {
-                var newCell = list.Find(tempCell => (tempCell.X.Equals(cell.X)) && (tempCell.Y.Equals(cell.Y)));
-                var index = processedList.IndexOf(cell);
-                if (newCell != null)
-                {
-                    processedList.Remove(cell);
-                    processedList.Insert(index, newCell);
-                }
-            }
+            initialList = ProcessList(snapshot);
+            holdingList = new List<Cell>(initialList);
+            List<List<Cell>> finalList = new List<List<Cell>>();
+            column = FindColumnCount();
+            row = FindRowCount();
 
-            return processedList;
-        }
-        
-        public int WrapEdges(int referenceCellPosition, bool isRow)
-        {
-            int value = 0;
-            value = isRow ? row : column;
+            CheckRules(initialList);
 
-            if (referenceCellPosition < 0)
-            {
-                referenceCellPosition += value;
-            }
-            if (referenceCellPosition > value - 1)
-            {
-                referenceCellPosition -= value;
-            }
 
-            return referenceCellPosition;
-        }
-        
-        private List<Cell> CreateContextGrid(List<Cell> initialGrid, Cell referenceCell)
-        {
-            var tempList = new List<Cell>();
+            finalList.Add(holdingList);
 
-            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X - 1, false)) && tempCell.Y.Equals(WrapEdges(referenceCell.Y - 1, true))));
-            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(referenceCell.X) && tempCell.Y.Equals(WrapEdges(referenceCell.Y - 1, true))));
-            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X + 1, false)) && tempCell.Y.Equals(WrapEdges(referenceCell.Y - 1, true))));
-
-            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X - 1, false)) && tempCell.Y.Equals(referenceCell.Y)));
-            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X + 1, false)) && tempCell.Y.Equals(referenceCell.Y)));
-
-            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X - 1, false)) && tempCell.Y.Equals(WrapEdges(referenceCell.Y + 1, true))));
-            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(referenceCell.X) && tempCell.Y.Equals(WrapEdges(referenceCell.Y + 1, true))));
-            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X + 1, false)) && tempCell.Y.Equals(WrapEdges(referenceCell.Y + 1, true))));
-
-            tempList.RemoveAll(tempCell => tempCell == null);
-
-            return tempList;
+            return holdingList;
         }
 
-        public List<Cell> CheckNeighborStateAndRunLogic()
+        private void CheckRules (List<Cell> list) 
         {
             foreach (var cell in initialList)
             {
@@ -98,8 +55,25 @@ namespace Leet_Game_Of_Life.Web.Models
 
                 neighborCount = 0;
             }
+        }
+        
+        public List<Cell> ProcessList(List<Cell> list)
+        {
+            List<Cell> processedList = grid.CreateGrid(15, 40);
+            
+            foreach (var cell in processedList.Reverse<Cell>())
+            {
+                var newCell = list.Find(tempCell => (tempCell.X.Equals(cell.X)) && (tempCell.Y.Equals(cell.Y)));
+                var index = processedList.IndexOf(cell);
+                
+                if (newCell != null)
+                {
+                    processedList.Remove(cell);
+                    processedList.Insert(index, newCell);
+                }
+            }
 
-            return holdingList;
+            return processedList;
         }
 
         private void IfCellHasTwoOrThreeLivingNeighbors(Cell cell)
@@ -120,18 +94,55 @@ namespace Leet_Game_Of_Life.Web.Models
             }
         }
 
-        public int FindRowCount()
+        private int FindRowCount()
         {
             int rowCount = 0;
             rowCount = initialList.FindAll(tempCell => tempCell.X.Equals(0)).Count;
             return rowCount;
         }
 
-        public int FindColumnCount()
+        private int FindColumnCount()
         {
             int colCount = 0;
             colCount = initialList.FindAll(tempCell => tempCell.Y.Equals(0)).Count;
             return colCount;
+        }
+
+        private int WrapEdges(int referenceCellPosition, bool isRow)
+        {
+            int value = 0;
+            value = isRow ? row : column;
+
+            if (referenceCellPosition < 0)
+            {
+                referenceCellPosition += value;
+            }
+            if (referenceCellPosition > value - 1)
+            {
+                referenceCellPosition -= value;
+            }
+
+            return referenceCellPosition;
+        }
+
+        private List<Cell> CreateContextGrid(List<Cell> initialGrid, Cell referenceCell)
+        {
+            var tempList = new List<Cell>();
+
+            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X - 1, false)) && tempCell.Y.Equals(WrapEdges(referenceCell.Y - 1, true))));
+            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(referenceCell.X) && tempCell.Y.Equals(WrapEdges(referenceCell.Y - 1, true))));
+            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X + 1, false)) && tempCell.Y.Equals(WrapEdges(referenceCell.Y - 1, true))));
+
+            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X - 1, false)) && tempCell.Y.Equals(referenceCell.Y)));
+            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X + 1, false)) && tempCell.Y.Equals(referenceCell.Y)));
+
+            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X - 1, false)) && tempCell.Y.Equals(WrapEdges(referenceCell.Y + 1, true))));
+            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(referenceCell.X) && tempCell.Y.Equals(WrapEdges(referenceCell.Y + 1, true))));
+            tempList.Add(initialList.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X + 1, false)) && tempCell.Y.Equals(WrapEdges(referenceCell.Y + 1, true))));
+
+            tempList.RemoveAll(tempCell => tempCell == null);
+
+            return tempList;
         }
     }
 }
