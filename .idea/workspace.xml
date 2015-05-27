@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca683e8-105c-47b8-a2d3-61ae95e1cf40" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css.map" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss" />
     </list>
@@ -42,8 +43,8 @@
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.39716312" vertical-offset="501" max-vertical-offset="1905">
-                  <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+                <state vertical-scroll-proportion="0.7092199" vertical-offset="540" max-vertical-offset="1905">
+                  <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
@@ -695,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39716312" vertical-offset="501" max-vertical-offset="1905">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.7092199" vertical-offset="540" max-vertical-offset="1905">
+          <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
           <folding />
         </state>
       </provider>
