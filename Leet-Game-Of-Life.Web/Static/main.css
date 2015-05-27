@@ -55,8 +55,11 @@ textarea {
 
 .grid-wrapper {
   margin: 3rem auto 3rem auto; }
+  .grid-wrapper td {
+    padding: 0;
+    margin: 0; }
   .grid-wrapper button {
-    background-color: #9c9a9b;
+    background-color: #dcdde0;
     border: none;
     font-size: 8px;
     height: 20px;

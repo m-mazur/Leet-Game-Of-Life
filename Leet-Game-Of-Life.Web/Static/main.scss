@@ -63,8 +63,13 @@ textarea {
 .grid-wrapper {
   margin: 3rem auto 3rem auto;
 
+  td {
+    padding: 0;
+    margin: 0;
+  }
+
   button {
-    background-color: $ninjagrayLight;
+    background-color: $katanagraySuperLight;
     border: none;
     font-size: 8px;
     height: 20px;

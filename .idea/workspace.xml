@@ -42,8 +42,8 @@
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.38534278" vertical-offset="501" max-vertical-offset="1830">
-                  <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+                <state vertical-scroll-proportion="0.39716312" vertical-offset="501" max-vertical-offset="1905">
+                  <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -69,8 +69,8 @@
           <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1560">
-                  <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1605">
+                  <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -81,10 +81,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="1320">
                   <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-                  <folding>
-                    <marker date="1432735003000" expanded="true" signature="1005:1225" placeholder="{...}" />
-                    <marker date="1432735003000" expanded="true" signature="1070:1197" placeholder="{...}" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -92,8 +89,8 @@
           <file leaf-file-name="_colors.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_colors.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
-                  <caret line="0" column="19" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="19" />
+                <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="330">
+                  <caret line="15" column="21" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -431,10 +428,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1335">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <marker date="1432735003000" expanded="true" signature="1005:1225" placeholder="{...}" />
-            <marker date="1432735003000" expanded="true" signature="1070:1197" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -482,10 +476,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1245">
           <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <marker date="1432735003000" expanded="true" signature="1005:1225" placeholder="{...}" />
-            <marker date="1432735003000" expanded="true" signature="1070:1197" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -533,10 +524,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1245">
           <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <marker date="1432735003000" expanded="true" signature="1005:1225" placeholder="{...}" />
-            <marker date="1432735003000" expanded="true" signature="1070:1197" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -584,10 +572,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="1245">
           <caret line="70" column="18" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="18" />
-          <folding>
-            <marker date="1432735003000" expanded="true" signature="1005:1225" placeholder="{...}" />
-            <marker date="1432735003000" expanded="true" signature="1070:1197" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,10 +620,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="1245">
           <caret line="70" column="18" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="18" />
-          <folding>
-            <marker date="1432735003000" expanded="true" signature="1005:1225" placeholder="{...}" />
-            <marker date="1432735003000" expanded="true" signature="1070:1197" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -658,17 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="1320">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1432735003000" expanded="true" signature="1005:1225" placeholder="{...}" />
-            <marker date="1432735003000" expanded="true" signature="1070:1197" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/i/grid.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -676,8 +647,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1560">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1605">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -698,14 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="735">
@@ -714,10 +677,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_colors.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="330">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="1320">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38534278" vertical-offset="501" max-vertical-offset="1830">
-          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.39716312" vertical-offset="501" max-vertical-offset="1905">
+          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
           <folding />
         </state>
       </provider>
