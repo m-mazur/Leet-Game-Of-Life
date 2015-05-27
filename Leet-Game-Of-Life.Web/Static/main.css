@@ -63,7 +63,8 @@ textarea {
     background-color: #8cc63c; }
   .grid-wrapper table {
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    background-color: #f7f8f9; }
 
 .counter {
   width: 550px;
