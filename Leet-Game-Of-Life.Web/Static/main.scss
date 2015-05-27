@@ -9,6 +9,10 @@ body {
   background-color: $ninjagray;
 }
 
+button:focus {
+  outline:0;
+}
+
 h1 {
   color: $coderwhite;
   text-transform: uppercase;

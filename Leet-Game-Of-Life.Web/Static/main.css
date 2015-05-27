@@ -13,6 +13,9 @@ body {
   font-family: 'Radikal-Thin';
   background-color: #4f5664; }
 
+button:focus {
+  outline: 0; }
+
 h1 {
   color: #f7f8f9;
   text-transform: uppercase;
