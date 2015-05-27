@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca683e8-105c-47b8-a2d3-61ae95e1cf40" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/fonts/Radikal-Thin.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/fonts/Radikal-Thin.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/fonts/Radikal-Thin.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_fonts.scss" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_fonts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css.map" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Leet-Game-Of-Life.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +33,8 @@
           <file leaf-file-name="grid.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-23.125" vertical-offset="0" max-vertical-offset="735">
-                  <caret line="37" column="12" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="12" />
+                <state vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="735">
+                  <caret line="29" column="136" selection-start-line="29" selection-start-column="136" selection-end-line="29" selection-end-column="136" />
                   <folding />
                 </state>
               </provider>
@@ -48,8 +43,8 @@
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.79196215" vertical-offset="510" max-vertical-offset="1830">
-                  <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+                <state vertical-scroll-proportion="0.3782506" vertical-offset="525" max-vertical-offset="1830">
+                  <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -98,8 +93,8 @@
           <file leaf-file-name="_colors.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_colors.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="330">
-                  <caret line="9" column="20" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="20" />
+                <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
+                  <caret line="0" column="19" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -133,8 +128,8 @@
         <option value="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.service.js" />
         <option value="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css" />
         <option value="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.js" />
-        <option value="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html" />
         <option value="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_fonts.scss" />
+        <option value="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html" />
         <option value="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss" />
       </list>
     </option>
@@ -680,14 +675,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="330">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1560">
@@ -704,6 +691,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_colors.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="735">
+          <caret line="29" column="136" selection-start-line="29" selection-start-column="136" selection-end-line="29" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="150">
@@ -712,18 +715,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.125" vertical-offset="0" max-vertical-offset="735">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79196215" vertical-offset="510" max-vertical-offset="1830">
-          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.3782506" vertical-offset="525" max-vertical-offset="1830">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
           <folding />
         </state>
       </provider>

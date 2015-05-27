@@ -57,14 +57,14 @@ textarea {
   margin: 3rem auto 3rem auto; }
   .grid-wrapper button {
     background-color: transparent;
-    border: solid 1px #565e67;
+    border: solid 0, 5px #565e67;
     font-size: 8px;
     height: 20px;
     width: 20px;
     padding: 2px;
     margin: 2px; }
   .grid-wrapper button:hover {
-    background-color: #8cc63c; }
+    background-color: #4f5664; }
   .grid-wrapper table {
     margin-left: auto;
     margin-right: auto; }
