@@ -5,7 +5,7 @@
 @font-face {
   font-family: 'Radikal-Thin';
   src: url("Radikal-Thin.eot");
-  src: url("Radikal-Thin.eot?#iefix") format("embedded-opentype"), url("Radikal-Thin.woff") format("woff"), url("Radikal-Thin.ttf") format("truetype"); }
+  src: url("Radikal-Thin.woff") format("woff"), url("Radikal-Thin.ttf") format("truetype"); }
 body {
   font-size: 16px;
   padding: 0;
