@@ -64,7 +64,7 @@ textarea {
   margin: 3rem auto 3rem auto;
 
   button {
-    background-color: transparent;
+    background-color: $leetgreen;
     border: none;
     font-size: 8px;
     height: 20px;
@@ -74,7 +74,7 @@ textarea {
   }
 
   button:hover {
-    background-color: $ninjagray;
+    background-color: $leetgreen;
   }
 
   table {
