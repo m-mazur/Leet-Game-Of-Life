@@ -6,6 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leet-Game-Of-Life.Tests", "Leet-Game-Of-Life.Tests\Leet-Game-Of-Life.Tests.csproj", "{2EA3E3E6-1A8B-464D-B9F6-53D0CE04E786}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leet-Game-Of-Life.Web", "Leet-Game-Of-Life.Web\Leet-Game-Of-Life.Web.csproj", "{FFD418AF-9D2D-41C9-875D-6D4F5630CD6E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5027DA51-BC19-4DBD-8C46-C921C79B8C8C} = {5027DA51-BC19-4DBD-8C46-C921C79B8C8C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leet-Game-Of-Life.Core", "Leet-Game-Of-Life.Core\Leet-Game-Of-Life.Core.csproj", "{5027DA51-BC19-4DBD-8C46-C921C79B8C8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{FFD418AF-9D2D-41C9-875D-6D4F5630CD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD418AF-9D2D-41C9-875D-6D4F5630CD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD418AF-9D2D-41C9-875D-6D4F5630CD6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5027DA51-BC19-4DBD-8C46-C921C79B8C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5027DA51-BC19-4DBD-8C46-C921C79B8C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5027DA51-BC19-4DBD-8C46-C921C79B8C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5027DA51-BC19-4DBD-8C46-C921C79B8C8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
