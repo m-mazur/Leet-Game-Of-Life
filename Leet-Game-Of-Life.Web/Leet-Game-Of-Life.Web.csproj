@@ -153,6 +153,7 @@
     </Compile>
     <Compile Include="Models\Cell.cs" />
     <Compile Include="Models\Grid.cs" />
+    <Compile Include="Models\GridProcessor.cs" />
     <Compile Include="Models\RulesProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

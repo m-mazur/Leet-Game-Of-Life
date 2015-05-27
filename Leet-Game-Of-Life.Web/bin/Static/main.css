@@ -6,8 +6,9 @@ body {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  background-color: #f7f8f9;
-  font-family: 'Radikal'; }
+  font-family: 'Radikal';
+  background: url("http://i.imgur.com/kb9B7ca.jpg");
+  background-size: cover; }
 
 h1 {
   color: #f7f8f9;
@@ -19,12 +20,10 @@ h1 {
 .header {
   text-align: center;
   width: 100%;
-  height: 12rem;
-  background: url("http://i.imgur.com/kb9B7ca.jpg");
-  background-size: cover; }
+  height: 8.5rem; }
   .header h1 {
     margin: 0;
-    padding-top: 4rem;
+    padding-top: 2rem;
     font-size: 3rem; }
   .header button {
     font-weight: 300;
@@ -34,7 +33,7 @@ h1 {
     background-color: #db4352;
     min-width: 200px;
     border: none;
-    margin: 2.5rem -2px 0 -2px;
+    margin: 18px -2px 0 -2px;
     padding: 18px 28px 16px 28px; }
   .header button:hover {
     background-color: #ea8294;
@@ -51,9 +50,7 @@ textarea {
   float: right; }
 
 .grid-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem; }
+  margin: 3rem auto 3rem auto; }
   .grid-wrapper button {
     background-color: transparent;
     border: solid 1px #565e67;
@@ -68,23 +65,26 @@ textarea {
     margin-left: auto;
     margin-right: auto; }
 
-.counter-wrapper {
-  width: 600px;
+.counter {
+  width: 550px;
   color: #4f5664;
   text-align: center;
-  margin-top: 2rem;
   background-color: #4f5664;
-  margin-right: auto;
-  margin-left: auto; }
-  .counter-wrapper img {
+  padding: 18px 28px 16px 28px;
+  margin: -2rem auto 0 auto; }
+  .counter img {
     margin-top: 1rem;
     max-height: 2rem; }
-  .counter-wrapper p {
-    margin-top: 0.3rem;
-    font-size: 2rem; }
+  .counter p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: #f7f8f9; }
 
 .game {
-  overflow: auto; }
+  overflow: auto;
+  margin: 0 170px 0 170px;
+  background-color: #f7f8f9; }
 
 footer {
   bottom: 0;

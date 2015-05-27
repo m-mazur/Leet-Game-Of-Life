@@ -3,8 +3,6 @@ c:\users\marcus mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Le
 c:\users\marcus mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Tests\obj\Debug\Leet-Game-Of-Life.Tests.csprojResolveAssemblyReference.cache
 c:\users\marcus mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Tests\obj\Debug\Leet-Game-Of-Life.Tests.dll
 c:\users\marcus mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Tests\obj\Debug\Leet-Game-Of-Life.Tests.pdb
-c:\users\marcus mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Tests\bin\Debug\Leet-Game-Of-Life.exe
-c:\users\marcus mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Tests\bin\Debug\Leet-Game-Of-Life.pdb
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Tests\obj\Debug\Leet-Game-Of-Life.Tests.csprojResolveAssemblyReference.cache
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Tests\obj\Debug\Leet-Game-Of-Life.Tests.dll
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Tests\bin\Debug\Leet-Game-Of-Life.Tests.dll

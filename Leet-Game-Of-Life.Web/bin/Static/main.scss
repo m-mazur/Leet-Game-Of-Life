@@ -5,8 +5,9 @@ body {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  background-color: $coderwhite;
   font-family: 'Radikal';
+  background: url('http://i.imgur.com/kb9B7ca.jpg');
+  background-size: cover;
 }
 
 h1 {
@@ -20,13 +21,11 @@ h1 {
 .header {
   text-align: center;
   width: 100%;
-  height: 12rem;
-  background: url('http://i.imgur.com/kb9B7ca.jpg');
-  background-size: cover;
+  height: 8.5rem;
 
   h1 {
     margin: 0;
-    padding-top: 4rem;
+    padding-top: 2rem;
     font-size: 3rem;
   }
 
@@ -38,7 +37,7 @@ h1 {
     background-color: $skyred;
     min-width: 200px;
     border: none;
-    margin: 2.5rem -2px 0 -2px;
+    margin: 18px -2px 0 -2px;
     padding: 18px 28px 16px 28px;
   }
 
@@ -62,9 +61,7 @@ textarea {
 }
 
 .grid-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
+  margin: 3rem auto 3rem auto;
 
   button {
     background-color: transparent;
@@ -86,14 +83,13 @@ textarea {
   }
 }
 
-.counter-wrapper {
-  width: 600px;
+.counter {
+  width: 550px;
   color: $ninjagray;
   text-align: center;
-  margin-top: 2rem;
   background-color: $ninjagray;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 18px 28px 16px 28px;
+  margin: -2rem auto 0 auto;
 
   img {
     margin-top: 1rem;
@@ -101,13 +97,17 @@ textarea {
   }
 
   p {
-    margin-top: 0.3rem;
-    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: $coderwhite;
   }
 }
 
 .game {
   overflow: auto;
+  margin: 0 170px 0 170px;
+  background-color: $coderwhite;
 }
 
 footer {
