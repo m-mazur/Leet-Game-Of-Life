@@ -41,6 +41,8 @@ var ViewModel = function (gridService) {
     }
 
     function countAliveCells(data) {
+        aliveCellCount = 0;
+        
         data.forEach(function (item) {
            if (!item.IsDead) {
                aliveCellCount++;
