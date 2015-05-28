@@ -1,10 +1,12 @@
 var ViewModel = function (gridService) {
     var self = this,
         update,
-        generationCount = 0;
+        generationCount = 0,
+        aliveCellCount = 0;
 
     self.grid = ko.observableArray([]);
     self.generationCount = ko.observable(generationCount);
+    self.aliveCellCount = ko.observable(aliveCellCount);
 
     function updateGrid(data) {
         self.grid(JSON.parse(data));
@@ -19,11 +21,9 @@ var ViewModel = function (gridService) {
             return data.Y;
         });
 
-        var mappedGrid = _.chain(groupedGrid).map(function (grid) {
+        return _.chain(groupedGrid).map(function (grid) {
             return grid;
         }).value();
-
-        return mappedGrid;
     }
 
     function unGroupGrid(data) {
@@ -40,11 +40,22 @@ var ViewModel = function (gridService) {
         return ungroupedListOfCells;
     }
 
+    function countAliveCells(data) {
+        data.foreach(function (item) {
+           if (!item.IsDead) {
+               aliveCellCount++;
+           }
+        });
+
+        return aliveCellCount;
+    }
+
     function getUpdatedGrid () {
         gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
             generationCount++;
-            self.generationCount(generationCount);
             populateGrid(data);
+            self.aliveCellCount(countAliveCells(data));
+            self.generationCount(generationCount);
         });
     }
 
@@ -73,7 +84,8 @@ var ViewModel = function (gridService) {
     };
 
     self.resetGame = function () {
-        generationCount = 0;
+        self.generationCount(0);
+        self.aliveCellCount(0);
         getInitialGrid();
     };
 
