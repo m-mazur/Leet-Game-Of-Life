@@ -493,7 +493,7 @@
     <Content Include="Static\js\grid.service.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\main.css">
+    <Content Include="Static\style\main.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Web.config" />
@@ -528,12 +528,6 @@
     <Content Include="Static\bower_components\knockout\LICENSE" />
     <Content Include="Static\bower_components\knockout\package.json" />
     <Content Include="Static\bower_components\knockout\README.md" />
-    <Content Include="Static\main.css.map">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Static\main.scss">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Static\bower_components\underscore\.bower.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -549,24 +543,21 @@
     <Content Include="Static\bower_components\underscore\underscore-min.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\_colors.scss">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Static\_fonts.scss">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Static\fonts\Radikal.eot">
+    <Content Include="Static\style\main.css.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\fonts\Radikal.ttf">
+    <Content Include="Static\style\main.scss">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\fonts\Radikal.woff">
+    <Content Include="Static\style\_colors.scss">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Static\style\_fonts.scss">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Static\fonts\Radikal-Thin.eot">
@@ -576,6 +567,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Static\fonts\Radikal-Thin.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Static\fonts\Radikal.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Static\fonts\Radikal.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Static\fonts\Radikal.woff">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
