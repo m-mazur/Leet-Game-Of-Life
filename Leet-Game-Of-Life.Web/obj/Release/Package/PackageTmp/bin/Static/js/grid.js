@@ -43,7 +43,6 @@ var ViewModel = function (gridService) {
     function getUpdatedGrid () {
         gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
             generationCount++;
-            console.log(generationCount);
             self.generationCount(generationCount);
             populateGrid(data);
         });
@@ -66,7 +65,7 @@ var ViewModel = function (gridService) {
     };
 
     self.startGame = function () {
-        update = setInterval(getUpdatedGrid, 150);
+        update = setInterval(getUpdatedGrid, 200);
     };
 
     self.pausGame = function () {
