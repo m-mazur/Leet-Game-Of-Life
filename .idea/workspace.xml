@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca683e8-105c-47b8-a2d3-61ae95e1cf40" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css.map" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss" />
@@ -35,7 +34,7 @@
           <file leaf-file-name="grid.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="735">
+                <state vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="735">
                   <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
                   <folding />
                 </state>
@@ -45,8 +44,8 @@
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.35530087" vertical-offset="1267" max-vertical-offset="1965">
-                  <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+                <state vertical-scroll-proportion="0.30588236" vertical-offset="60" max-vertical-offset="1830">
+                  <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -72,9 +71,18 @@
           <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1650">
-                  <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-                  <folding />
+                <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1530">
+                  <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+                  <folding>
+                    <marker date="1432800569000" expanded="true" signature="1058:1133" placeholder="{...}" />
+                    <marker date="1432800569000" expanded="true" signature="1184:1200" placeholder="{...}" />
+                    <marker date="1432800569000" expanded="true" signature="919:968" placeholder="{...}" />
+                    <marker date="1432800569000" expanded="true" signature="978:1026" placeholder="{...}" />
+                    <marker date="1432800569000" expanded="true" signature="928:1098" placeholder="{...}" />
+                    <marker date="1432800569000" expanded="true" signature="1185:1206" placeholder="{...}" />
+                    <marker date="1432800569000" expanded="true" signature="1197:1225" placeholder="{...}" />
+                    <marker date="1432800569000" expanded="true" signature="2032:2082" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -106,7 +114,7 @@
           <file leaf-file-name="grid.service.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.service.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.41551247" vertical-offset="0" max-vertical-offset="722">
+                <state vertical-scroll-proportion="0.23094688" vertical-offset="0" max-vertical-offset="1299">
                   <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
                   <folding />
                 </state>
@@ -137,9 +145,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1444" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="840" />
+    <option name="width" value="2552" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -164,6 +173,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,7 +270,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,10 +287,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -289,10 +302,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -331,7 +340,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="840" extended-state="6" />
+    <frame x="1444" y="23" width="2552" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -339,7 +348,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27484143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15408929" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326268" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -347,11 +356,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -369,9 +378,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -397,6 +406,47 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1650">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <marker date="1432800569000" expanded="true" signature="1058:1133" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1184:1200" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="919:968" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="978:1026" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="928:1098" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1185:1206" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1197:1225" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="2032:2082" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="1320">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/_colors.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="330">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="735">
@@ -430,7 +480,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1665">
           <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1432800569000" expanded="true" signature="1058:1133" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1184:1200" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="919:968" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="978:1026" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="928:1098" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1185:1206" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1197:1225" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="2032:2082" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -483,7 +542,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1545">
           <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1432800569000" expanded="true" signature="1058:1133" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1184:1200" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="919:968" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="978:1026" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="928:1098" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1185:1206" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1197:1225" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="2032:2082" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -531,7 +599,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="1305">
           <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1432800569000" expanded="true" signature="1058:1133" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1184:1200" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="919:968" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="978:1026" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="928:1098" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1185:1206" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1197:1225" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="2032:2082" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -579,7 +656,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1200">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1432800569000" expanded="true" signature="1058:1133" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1184:1200" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="919:968" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="978:1026" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="928:1098" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1185:1206" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1197:1225" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="2032:2082" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,7 +713,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1260" max-vertical-offset="2880">
           <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
-          <folding />
+          <folding>
+            <marker date="1432800569000" expanded="true" signature="1058:1133" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1184:1200" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="919:968" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="978:1026" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="928:1098" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1185:1206" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1197:1225" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="2032:2082" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -675,7 +770,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1191" max-vertical-offset="2880">
           <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
-          <folding />
+          <folding>
+            <marker date="1432800569000" expanded="true" signature="1058:1133" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1184:1200" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="919:968" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="978:1026" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="928:1098" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1185:1206" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1197:1225" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="2032:2082" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -710,9 +814,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1650">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1530">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <marker date="1432800569000" expanded="true" signature="1058:1133" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1184:1200" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="919:968" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="978:1026" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="928:1098" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1185:1206" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="1197:1225" placeholder="{...}" />
+            <marker date="1432800569000" expanded="true" signature="2032:2082" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -742,7 +855,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/js/grid.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41551247" vertical-offset="0" max-vertical-offset="722">
+        <state vertical-scroll-proportion="0.23094688" vertical-offset="0" max-vertical-offset="1299">
           <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding />
         </state>
@@ -750,7 +863,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="735">
+        <state vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="735">
           <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
           <folding />
         </state>
@@ -758,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35530087" vertical-offset="1267" max-vertical-offset="1965">
-          <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.30588236" vertical-offset="60" max-vertical-offset="1830">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding />
         </state>
       </provider>

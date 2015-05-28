@@ -51,45 +51,41 @@ h1 {
   }
 }
 
-.row-id {
-  background-color: black;
-  color: white;
-}
-
 .cell {
   float: left;
 }
 
-textarea {
-  float: right;
-}
+.game {
+  overflow: auto;
+  background-color: $coderwhite;
 
-.grid-wrapper {
-  margin: 3rem auto 3rem auto;
+  .grid-wrapper {
+    margin: 3rem auto 3rem auto;
 
-  td {
-    padding: 0;
-    margin: 0;
-  }
+    td {
+      padding: 0;
+      margin: 0;
+    }
 
-  button {
-    background-color: $katanagraySuperLight;
-    border: none;
-    font-size: 8px;
-    height: 20px;
-    width: 20px;
-    padding: 2px;
-    margin: 2px;
-  }
+    button {
+      background-color: $katanagraySuperLight;
+      border: none;
+      font-size: 8px;
+      height: 20px;
+      width: 20px;
+      padding: 2px;
+      margin: 2px;
+    }
 
-  button:hover {
-    background-color: $leetgreen;
-  }
+    button:hover {
+      background-color: $leetgreen;
+    }
 
-  table {
-    margin-left: auto;
-    margin-right: auto;
-    border-spacing: 0;
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      border-spacing: 0;
+    }
   }
 }
 
@@ -111,11 +107,6 @@ textarea {
     padding: 0;
     font-size: 0.8rem;
   }
-}
-
-.game {
-  overflow: auto;
-  background-color: $coderwhite;
 }
 
 .bottom-line {
