@@ -94,7 +94,7 @@ h1 {
   color: $coderwhite;
   text-align: center;
   background-color: $katanagray;
-  padding: 18px 28px 16px 28px;
+  padding: 18px 28px 36px 28px;
   margin: -1.5rem auto 0 auto;
 
   img {
@@ -105,10 +105,20 @@ h1 {
     margin: 0;
     padding: 0;
     font-size: 0.8rem;
+    display: inline;
+    text-transform: uppercase;
   }
 
   li {
     display: inline;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
   }
 }
 

@@ -38,8 +38,14 @@
     <div class="bottom-line">
     </div>
     <div class="counter">
-        <p data-bind="text: generationCount"></p>
-        <p data-bind="text: aliveCellCount"></p>
+        <div class="left">
+            <p><b>Generation count </b></p>
+            <p data-bind="text: generationCount"></p>
+        </div>
+        <div class="right">
+            <p><b>Alive cells count </b></p>
+            <p data-bind="text: aliveCellCount"></p>
+        </div>
     </div>
 </body>
 </html>
