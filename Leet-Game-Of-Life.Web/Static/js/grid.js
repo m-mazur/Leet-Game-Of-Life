@@ -1,7 +1,8 @@
 var ViewModel = function (gridService) {
     var self = this,
         update,
-        generationCount = 0;
+        generationCount = 0,
+        aliveCellCount = 0;
 
     self.grid = ko.observableArray([]);
     self.generationCount = ko.observable(generationCount);
