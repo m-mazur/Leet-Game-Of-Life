@@ -1,2 +1,7 @@
 *.scss
 *.css
+*.css.map
+
+*.eot
+*.ttf
+*.woff
