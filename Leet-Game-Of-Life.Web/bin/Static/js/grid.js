@@ -78,13 +78,12 @@ var ViewModel = function (gridService) {
         } else {
             cell.IsDead = false;
         }
-
+        
         updateGrid(ko.toJSON(self.grid));
     };
 
     self.startGame = function () {
         update = setInterval(getUpdatedGrid, 200);
-        //getUpdatedGrid();
     };
 
     self.pausGame = function () {
