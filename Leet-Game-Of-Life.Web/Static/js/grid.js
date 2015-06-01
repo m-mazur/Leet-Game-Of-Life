@@ -2,11 +2,23 @@ var ViewModel = function (gridService) {
     var self = this,
         update,
         generationCount = 0,
-        aliveCellCount = 0;
+        aliveCellCount = 0,
+        sizeOption = function () {
+            var sizes = [];
+
+            for (var i = 0; i < 30; i++) {
+                sizes.push(i + 1);
+            }
+
+            return sizes;
+        }
 
     self.grid = ko.observableArray([]);
     self.generationCount = ko.observable(generationCount);
     self.aliveCellCount = ko.observable(aliveCellCount);
+    self.rows = ko.observableArray(sizeOption());
+    self.columns = ko.observableArray(sizeOption());
+    self.selectedRows = ko.observable(10);
 
     function updateGrid(data) {
         self.grid(JSON.parse(data));
@@ -96,11 +108,13 @@ var ViewModel = function (gridService) {
         getInitialGrid(14, 34);
     };
 
+    self.selectedRows.subscribe(function (value) {
+        self.setGridSize(value, 10)
+    });
+
     self.setGridSize = function (y, x) {
         getInitialGrid(y, x)
-    }
-
-    self.myValues = ko.observbleArray([20, 16]);
+    };
 
     getInitialGrid(14,34);
 };

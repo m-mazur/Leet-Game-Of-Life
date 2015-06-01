@@ -22,7 +22,8 @@
     </section>
     <section class="game">
         <div class="grid-size">
-
+            <select data-bind="options: rows, value: selectedRows"></select>
+            <select data-bind="options: columns"></select>
         </div>
         <div class="grid-wrapper">
             <table>
