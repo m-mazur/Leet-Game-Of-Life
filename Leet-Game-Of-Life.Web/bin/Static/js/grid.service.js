@@ -6,7 +6,7 @@ var GridService = function () {
     }
 
     this.get = function (row, col) {
-        return ajaxHelper(gridGetUri(row,col), 'GET');
+        return ajaxHelper(gridGetUri(row, col), 'GET');
     }
 
     this.post = function (gridSnapshot) {

@@ -26,13 +26,13 @@ var ViewModel = function (gridService) {
         }).value();
     }
 
-    function unGroupGrid(data) {
+    function unGroupGrid(grid) {
         var ungroupedListOfCells = [];
 
-        data.forEach(function (item) {
-            item.forEach(function (object) {
-                if (!object.IsDead || (object === data[data.length - 1])) {
-                    ungroupedListOfCells.push(object);
+        grid.forEach(function (row) {
+            row.forEach(function (cell) {
+                if (!cell.IsDead || (cell === grid[grid.length - 1][row.length - 1])) {
+                    ungroupedListOfCells.push(cell);
                 }
             });
         });
@@ -40,11 +40,11 @@ var ViewModel = function (gridService) {
         return ungroupedListOfCells;
     }
 
-    function countAliveCells(data) {
+    function countAliveCells(grid) {
         aliveCellCount = 0;
         
-        data.forEach(function (item) {
-           if (!item.IsDead) {
+        grid.forEach(function (cell) {
+            if (!cell.IsDead) {
                aliveCellCount++;
            }
         });
@@ -78,8 +78,10 @@ var ViewModel = function (gridService) {
         } else {
             cell.IsDead = false;
         }
-
-        updateGrid(ko.toJSON(self.grid));
+        
+        self.grid.subscribe(function (grid) {
+            updateGrid(ko.toJSON(grid));
+        });
     };
 
     self.startGame = function () {
@@ -93,7 +95,7 @@ var ViewModel = function (gridService) {
     self.resetGame = function () {
         self.generationCount(0);
         self.aliveCellCount(0);
-        getInitialGrid();
+        getInitialGrid(14, 34);
     };
 
     getInitialGrid(14,34);

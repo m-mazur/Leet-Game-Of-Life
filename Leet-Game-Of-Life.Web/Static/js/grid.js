@@ -35,18 +35,16 @@ var ViewModel = function (gridService) {
                     ungroupedListOfCells.push(cell);
                 }
             });
-
-            console.log(ungroupedListOfCells);
         });
 
         return ungroupedListOfCells;
     }
 
-    function countAliveCells(data) {
+    function countAliveCells(grid) {
         aliveCellCount = 0;
         
-        data.forEach(function (item) {
-           if (!item.IsDead) {
+        grid.forEach(function (cell) {
+            if (!cell.IsDead) {
                aliveCellCount++;
            }
         });
@@ -80,8 +78,6 @@ var ViewModel = function (gridService) {
         } else {
             cell.IsDead = false;
         }
-
-        updateGrid(ko.toJSON(self.grid));
     };
 
     self.startGame = function () {
@@ -97,6 +93,10 @@ var ViewModel = function (gridService) {
         self.aliveCellCount(0);
         getInitialGrid(14, 34);
     };
+
+    self.setGridSize = function (y, x) {
+        getInitialGrid(y, x)
+    }
 
     getInitialGrid(14,34);
 };
