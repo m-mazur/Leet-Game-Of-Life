@@ -8,27 +8,39 @@ namespace Leet_Game_Of_Life.Core.Models
 {
     public class Grid
     {
-        private List<Cell> cellList;
+        private List<Cell> cells;
+
+        public List<Cell> Cells
+        {
+            get { return cells; }
+            set { cells = value; }
+        }
 
         public Grid()
         {
-            cellList = new List<Cell>();
+            cells = new List<Cell>();
         }
 
-        public List<Cell> CreateGrid(int column, int row)
+        public Grid(Grid tempGrid)
         {
+            Grid n = new Grid();
+            tempGrid = n;
+        }
 
+        public /*List<Cell>*/Grid CreateGrid(int column, int row)
+        {
+            Grid g = new Grid();
             for (int i = 0; i < row; i++)
             {
                 for (int j = 0; j < column; j++)
                 {
-                    cellList.Add(new Cell(i, j, true));
+                    g.Cells.Add(new Cell(i, j, true));
                 }
             }
 
-            return cellList;
+            return g;
         }
 
-       
+
     }
 }

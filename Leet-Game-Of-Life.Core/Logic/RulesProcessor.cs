@@ -15,21 +15,21 @@ namespace Leet_Game_Of_Life.Core.Logic
             this.gridProcessor = new GridProcessor();
         }
 
-        public List<Cell> CheckNeighborStateAndRunLogic(List<Cell> snapshot)
+        public Grid CheckNeighborStateAndRunLogic(Grid snapshot)//List<Cell> snapshot)
         {
             return CheckRules(gridProcessor.CreateProcessedList(snapshot));
         }
 
-        private List<Cell> CheckRules (List<Cell> grid) 
+        private Grid CheckRules (Grid grid)//List<Cell> grid) 
         {
+            //var holdingList = gridProcessor.CreateHoldingGrid(grid);
             var holdingList = gridProcessor.CreateHoldingGrid(grid);
-
-            foreach (var cell in grid)
+            foreach (var cell in grid.Cells)
             {
                 var contextGrid = gridProcessor.CreateContextGrid(grid, cell);
                 var neighborCount = 0;
 
-                foreach (var cellFromContext in contextGrid)
+                foreach (var cellFromContext in contextGrid.Cells)
                 {
                     if (!cellFromContext.IsDead)
                     {
@@ -39,14 +39,14 @@ namespace Leet_Game_Of_Life.Core.Logic
 
                 if (neighborCount < 2 || neighborCount > 3)
                 {
-                    holdingList.RemoveAt(grid.IndexOf(cell));
-                    holdingList.Insert(grid.IndexOf(cell), new Cell(cell.X, cell.Y, true));
+                    holdingList.Cells.RemoveAt(grid.Cells.IndexOf(cell));
+                    holdingList.Cells.Insert(grid.Cells.IndexOf(cell), new Cell(cell.X, cell.Y, true));
                 }
 
                 if (cell.IsDead && neighborCount == 3)
                 {
-                    holdingList.RemoveAt(grid.IndexOf(cell));
-                    holdingList.Insert(grid.IndexOf(cell), new Cell(cell.X, cell.Y, false));
+                    holdingList.Cells.RemoveAt(grid.Cells.IndexOf(cell));
+                    holdingList.Cells.Insert(grid.Cells.IndexOf(cell), new Cell(cell.X, cell.Y, false));
                 }
             }
 

@@ -35,6 +35,8 @@ var ViewModel = function (gridService) {
                     ungroupedListOfCells.push(cell);
                 }
             });
+
+            console.log(ungroupedListOfCells);
         });
 
         return ungroupedListOfCells;
@@ -85,7 +87,8 @@ var ViewModel = function (gridService) {
     };
 
     self.startGame = function () {
-        update = setInterval(getUpdatedGrid, 200);
+        // update = setInterval(getUpdatedGrid, 200);
+        getUpdatedGrid();
     };
 
     self.pausGame = function () {
