@@ -35,8 +35,6 @@ var ViewModel = function (gridService) {
                     ungroupedListOfCells.push(cell);
                 }
             });
-
-            console.log(ungroupedListOfCells);
         });
 
         return ungroupedListOfCells;
@@ -80,15 +78,12 @@ var ViewModel = function (gridService) {
         } else {
             cell.IsDead = false;
         }
-        
-        self.grid.subscribe(function (grid) {
-            updateGrid(ko.toJSON(grid));
-        });
+
+        updateGrid(ko.toJSON(self.grid));
     };
 
     self.startGame = function () {
-        // update = setInterval(getUpdatedGrid, 200);
-        getUpdatedGrid();
+        update = setInterval(getUpdatedGrid, 200);
     };
 
     self.pausGame = function () {
@@ -100,6 +95,10 @@ var ViewModel = function (gridService) {
         self.aliveCellCount(0);
         getInitialGrid(14, 34);
     };
+
+    self.setGridSize = function (y, x) {
+        getInitialGrid(y, x)
+    }
 
     getInitialGrid(14,34);
 };

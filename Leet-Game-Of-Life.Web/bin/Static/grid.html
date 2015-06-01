@@ -21,6 +21,10 @@
         <button data-bind="click: resetGame">Reset</button>
     </section>
     <section class="game">
+        <button data-bind="click: setGridSize.bind($data, 2, 2)">2 x 2</button>
+        <button data-bind="click: setGridSize.bind($data, 10, 10)">10 x 10</button>
+        <button data-bind="click: setGridSize.bind($data, 15, 30)">15 x 30</button>
+        <button data-bind="click: setGridSize.bind($data, 30, 70)">30 x 70</button>
         <div class="grid-wrapper">
             <table>
                 <tbody data-bind="foreach: grid">
