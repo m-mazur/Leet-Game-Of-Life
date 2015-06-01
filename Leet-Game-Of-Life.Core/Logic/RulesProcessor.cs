@@ -17,13 +17,15 @@ namespace Leet_Game_Of_Life.Core.Logic
 
         public Grid CheckNeighborStateAndRunLogic(Grid snapshot)//List<Cell> snapshot)
         {
+            List<Cell> l =  CheckRules(gridProcessor.CreateProcessedList(snapshot)).Cells.FindAll(tempCell => tempCell.IsDead == false);
             return CheckRules(gridProcessor.CreateProcessedList(snapshot));
         }
 
         private Grid CheckRules (Grid grid)//List<Cell> grid) 
-        {
-            //var holdingList = gridProcessor.CreateHoldingGrid(grid);
-            var holdingList = gridProcessor.CreateHoldingGrid(grid);
+        { 
+            var holdingList = gridProcessor.CreateHoldingGrid(grid.Cells);
+            Grid returnGrid = new Grid();
+            //holdingList.Cells = grid.Cells;
             foreach (var cell in grid.Cells)
             {
                 var contextGrid = gridProcessor.CreateContextGrid(grid, cell);
@@ -39,18 +41,18 @@ namespace Leet_Game_Of_Life.Core.Logic
 
                 if (neighborCount < 2 || neighborCount > 3)
                 {
-                    holdingList.Cells.RemoveAt(grid.Cells.IndexOf(cell));
-                    holdingList.Cells.Insert(grid.Cells.IndexOf(cell), new Cell(cell.X, cell.Y, true));
+                    holdingList.RemoveAt(grid.Cells.IndexOf(cell));
+                    holdingList.Insert(grid.Cells.IndexOf(cell), new Cell(cell.X, cell.Y, true));
                 }
 
                 if (cell.IsDead && neighborCount == 3)
                 {
-                    holdingList.Cells.RemoveAt(grid.Cells.IndexOf(cell));
-                    holdingList.Cells.Insert(grid.Cells.IndexOf(cell), new Cell(cell.X, cell.Y, false));
+                    holdingList.RemoveAt(grid.Cells.IndexOf(cell));
+                    holdingList.Insert(grid.Cells.IndexOf(cell), new Cell(cell.X, cell.Y, false));
                 }
             }
-
-            return holdingList;
+            returnGrid.Cells = holdingList;
+            return returnGrid;
         }
     }
 }

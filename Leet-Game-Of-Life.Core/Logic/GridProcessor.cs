@@ -22,7 +22,7 @@ namespace Leet_Game_Of_Life.Core.Logic
             //var processedList = grid.CreateGrid(14, 34);
             rowCount = unProcessedGrid.Cells.Last().X + 1;
             columnCount = unProcessedGrid.Cells.Last().Y + 1;
-            var processedList = grid.CreateGrid(rowCount, columnCount);
+            var processedList = grid.CreateGrid(columnCount, rowCount);
             foreach (var cell in processedList.Cells.Reverse<Cell>())
             {
                 var newCell = unProcessedGrid.Cells.Find(tempCell => (tempCell.X.Equals(cell.X)) && (tempCell.Y.Equals(cell.Y)));
@@ -60,9 +60,9 @@ namespace Leet_Game_Of_Life.Core.Logic
             return contextGrid;
         }
 
-        public Grid CreateHoldingGrid(Grid/*List<Cell>*/ grid) 
+        public List<Cell> CreateHoldingGrid(List<Cell> gridCells) 
         {
-            return new Grid(grid);
+            return new List<Cell>(gridCells);
         }
 
         private void SetRowAndColumnCount(List<Cell> processedGrid)
@@ -73,7 +73,7 @@ namespace Leet_Game_Of_Life.Core.Logic
 
         private int WrapEdges(int referenceCellPosition, bool isRow)
         {
-            var value = isRow ? rowCount : columnCount;
+            var value = isRow ? columnCount : rowCount;
 
             if (referenceCellPosition < 0)
             {

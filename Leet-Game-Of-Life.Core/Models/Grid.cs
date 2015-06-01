@@ -20,12 +20,7 @@ namespace Leet_Game_Of_Life.Core.Models
         {
             cells = new List<Cell>();
         }
-
-        public Grid(Grid tempGrid)
-        {
-            Grid n = new Grid();
-            tempGrid = n;
-        }
+         
 
         public /*List<Cell>*/Grid CreateGrid(int column, int row)
         {

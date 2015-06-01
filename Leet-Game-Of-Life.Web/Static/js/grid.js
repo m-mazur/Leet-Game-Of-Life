@@ -84,6 +84,7 @@ var ViewModel = function (gridService) {
 
     self.startGame = function () {
         update = setInterval(getUpdatedGrid, 200);
+        //getUpdatedGrid();
     };
 
     self.pausGame = function () {
