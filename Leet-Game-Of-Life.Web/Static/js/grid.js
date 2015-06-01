@@ -19,7 +19,7 @@ var ViewModel = function (gridService) {
     self.rows = ko.observableArray(sizeOption());
     self.columns = ko.observableArray(sizeOption());
     self.selectedRows = ko.observable(15);
-    seof.selectedColumns = ko.observable(30);
+    self.selectedColumns = ko.observable(30);
 
     function updateGrid(data) {
         self.grid(JSON.parse(data));
