@@ -31,7 +31,7 @@ var ViewModel = function (gridService) {
 
         data.forEach(function (item) {
             item.forEach(function (object) {
-                if (!object.IsDead) {
+                if (!object.IsDead || (object === data[data.length - 1])) {
                     ungroupedListOfCells.push(object);
                 }
             });
@@ -52,12 +52,17 @@ var ViewModel = function (gridService) {
         return aliveCellCount;
     }
 
+    function incrementGenerationCount () {
+        generationCount++;
+        self.generationCount(generationCount);
+    }
+
     function getUpdatedGrid () {
         gridService.post(unGroupGrid((self.grid()))).done(function (data) {
-            generationCount++;
             populateGrid(data);
+            incrementGenerationCount();
+
             self.aliveCellCount(countAliveCells(data));
-            self.generationCount(generationCount);
         });
     }
 
