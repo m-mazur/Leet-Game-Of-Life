@@ -52,15 +52,9 @@ h1 {
 .game {
   overflow: auto;
   background-color: #f7f8f9; }
-  .game .grid-size button {
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    color: #f7f8f9;
-    background-color: #db4352;
-    min-width: 200px;
-    border: none;
-    padding: 16px 28px 16px 28px; }
+  .game .grid-size {
+    width: 270px;
+    margin: 40px auto 0 auto; }
   .game .grid-wrapper {
     margin: 3rem auto 3rem auto; }
     .game .grid-wrapper td {
