@@ -114,7 +114,7 @@ var ViewModel = function (gridService) {
     });
 
     self.selectedColumns.subscribe(function (value) {
-       self.setGridSize(self.selectedRows, value);
+       self.setGridSize(self.selectedRows(), value);
     });
 
     self.setGridSize = function (y, x) {
