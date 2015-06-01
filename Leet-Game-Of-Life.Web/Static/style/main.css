@@ -55,6 +55,8 @@ h1 {
   .game .grid-size {
     width: 270px;
     margin: 40px auto 0 auto; }
+    .game .grid-size input:focus {
+      outline: 0; }
     .game .grid-size input[type=range] {
       -webkit-appearance: none; }
     .game .grid-size input[type=range]::-webkit-slider-runnable-track {

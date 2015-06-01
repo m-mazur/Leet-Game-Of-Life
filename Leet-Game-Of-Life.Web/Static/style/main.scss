@@ -63,6 +63,10 @@ h1 {
     width: 270px;
     margin: 40px auto 0 auto;
 
+    input:focus {
+      outline: 0;
+    }
+
     input[type=range] {
       -webkit-appearance: none;
     }
