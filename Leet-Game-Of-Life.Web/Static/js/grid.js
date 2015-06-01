@@ -26,13 +26,13 @@ var ViewModel = function (gridService) {
         }).value();
     }
 
-    function unGroupGrid(data) {
+    function unGroupGrid(grid) {
         var ungroupedListOfCells = [];
 
-        data.forEach(function (item) {
-            item.forEach(function (object) {
-                if (!object.IsDead || (object === data[data.length - 1][item.length - 1])) {
-                    ungroupedListOfCells.push(object);
+        grid.forEach(function (row) {
+            row.forEach(function (cell) {
+                if (!cell.IsDead || (cell === grid[grid.length - 1][row.length - 1])) {
+                    ungroupedListOfCells.push(cell);
                 }
             });
 
@@ -95,7 +95,7 @@ var ViewModel = function (gridService) {
     self.resetGame = function () {
         self.generationCount(0);
         self.aliveCellCount(0);
-        getInitialGrid();
+        getInitialGrid(14, 34);
     };
 
     getInitialGrid(14,34);
