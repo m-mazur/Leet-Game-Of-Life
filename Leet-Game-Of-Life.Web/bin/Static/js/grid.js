@@ -53,7 +53,7 @@ var ViewModel = function (gridService) {
     }
 
     function getUpdatedGrid () {
-        gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
+        gridService.post(unGroupGrid((self.grid()))).done(function (data) {
             generationCount++;
             populateGrid(data);
             self.aliveCellCount(countAliveCells(data));
@@ -62,7 +62,7 @@ var ViewModel = function (gridService) {
     }
 
     function getInitialGrid (row, col) {
-        gridService.getInitialGrid(row, col).done(function (data) {
+        gridService.get(row, col).done(function (data) {
             populateGrid(data);
         });
     }
