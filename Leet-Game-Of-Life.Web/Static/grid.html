@@ -22,10 +22,8 @@
     </section>
     <section class="game">
         <div class="grid-size">
-
-            <input type="radio" name="size" value="A" />
-            <input type="radio" name="size" value="B" />
-            <input type="radio" name="size" value="C" />
+            <input id="rows" type ="range" min ="1" max="50" step ="1" value ="1"/>
+            <input id="columns" type ="range" min ="1" max="50" step ="1" value ="1"/>
 
             <button data-bind="click: setGridSize.bind($data, 2, 2)">2 x 2</button>
             <button data-bind="click: setGridSize.bind($data, 10, 10)">10 x 10</button>
