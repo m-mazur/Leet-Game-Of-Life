@@ -52,7 +52,7 @@ h1 {
 .game {
   overflow: auto;
   background-color: #f7f8f9; }
-  .game button {
+  .game .grid-size button {
     font-weight: 100;
     text-transform: uppercase;
     font-size: 0.8rem;
