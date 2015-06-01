@@ -2,3 +2,4 @@ C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Le
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\bin\Release\Leet-Game-Of-Life.Core.pdb
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\obj\Release\Leet-Game-Of-Life.Core.dll
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\obj\Release\Leet-Game-Of-Life.Core.pdb
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\obj\Release\Leet-Game-Of-Life.Core.csprojResolveAssemblyReference.cache

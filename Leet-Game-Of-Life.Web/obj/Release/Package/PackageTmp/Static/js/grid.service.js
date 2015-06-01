@@ -1,12 +1,15 @@
 var GridService = function () {
-    var gridUri = '../api/game/';
-
-    this.getInitialGrid = function () {
-        return ajaxHelper(gridUri, 'GET');
+    var gridPostUri = '../api/game/',
+        gridGetUri = function (row, col) {
+        return '../api/game?pRow=' + row + '&pCol=' + col;
     }
 
-    this.postAndGetUpdateGrid = function (gridSnapshot) {
-        return ajaxHelper(gridUri, 'POST', gridSnapshot);
+    this.get = function (row, col) {
+        return ajaxHelper(gridGetUri(row, col), 'GET');
+    }
+
+    this.post = function (gridSnapshot) {
+        return ajaxHelper(gridPostUri, 'POST', gridSnapshot);
     }
 
     function ajaxHelper(uri, method, data) {

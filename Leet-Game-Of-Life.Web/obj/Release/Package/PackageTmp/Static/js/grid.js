@@ -1,10 +1,24 @@
 var ViewModel = function (gridService) {
     var self = this,
         update,
-        generationCount = 0;
+        generationCount = 0,
+        aliveCellCount = 0,
+        sizeOption = function () {
+            var sizes = [];
+
+            for (var i = 0; i < 30; i++) {
+                sizes.push(i + 1);
+            }
+
+            return sizes;
+        }
 
     self.grid = ko.observableArray([]);
     self.generationCount = ko.observable(generationCount);
+    self.aliveCellCount = ko.observable(aliveCellCount);
+    self.rows = ko.observableArray(sizeOption());
+    self.columns = ko.observableArray(sizeOption());
+    self.selectedRows = ko.observable(10);
 
     function updateGrid(data) {
         self.grid(JSON.parse(data));
@@ -19,20 +33,18 @@ var ViewModel = function (gridService) {
             return data.Y;
         });
 
-        var mappedGrid = _.chain(groupedGrid).map(function (grid) {
+        return _.chain(groupedGrid).map(function (grid) {
             return grid;
         }).value();
-
-        return mappedGrid;
     }
 
-    function unGroupGrid(data) {
+    function unGroupGrid(grid) {
         var ungroupedListOfCells = [];
 
-        data.forEach(function (item) {
-            item.forEach(function (object) {
-                if (!object.IsDead) {
-                    ungroupedListOfCells.push(object);
+        grid.forEach(function (row) {
+            row.forEach(function (cell) {
+                if (!cell.IsDead || (cell === grid[grid.length - 1][row.length - 1])) {
+                    ungroupedListOfCells.push(cell);
                 }
             });
         });
@@ -40,16 +52,34 @@ var ViewModel = function (gridService) {
         return ungroupedListOfCells;
     }
 
+    function countAliveCells(grid) {
+        aliveCellCount = 0;
+        
+        grid.forEach(function (cell) {
+            if (!cell.IsDead) {
+               aliveCellCount++;
+           }
+        });
+
+        return aliveCellCount;
+    }
+
+    function incrementGenerationCount () {
+        generationCount++;
+        self.generationCount(generationCount);
+    }
+
     function getUpdatedGrid () {
-        gridService.postAndGetUpdateGrid(unGroupGrid((self.grid()))).done(function (data) {
-            generationCount++;
-            self.generationCount(generationCount);
+        gridService.post(unGroupGrid((self.grid()))).done(function (data) {
             populateGrid(data);
+            incrementGenerationCount();
+
+            self.aliveCellCount(countAliveCells(data));
         });
     }
 
-    function getInitialGrid () {
-        gridService.getInitialGrid().done(function (data) {
+    function getInitialGrid (row, col) {
+        gridService.get(row, col).done(function (data) {
             populateGrid(data);
         });
     }
@@ -60,7 +90,7 @@ var ViewModel = function (gridService) {
         } else {
             cell.IsDead = false;
         }
-
+        
         updateGrid(ko.toJSON(self.grid));
     };
 
@@ -73,11 +103,20 @@ var ViewModel = function (gridService) {
     };
 
     self.resetGame = function () {
-        generationCount = 0;
-        getInitialGrid();
+        self.generationCount(0);
+        self.aliveCellCount(0);
+        getInitialGrid(14, 34);
     };
 
-    getInitialGrid();
+    self.selectedRows.subscribe(function (value) {
+        self.setGridSize(value, 10)
+    });
+
+    self.setGridSize = function (y, x) {
+        getInitialGrid(y, x)
+    };
+
+    getInitialGrid(14,34);
 };
 
 ko.applyBindings(new ViewModel(new GridService()));

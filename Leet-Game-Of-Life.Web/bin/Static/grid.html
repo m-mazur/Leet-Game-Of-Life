@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
 
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="bower_components/knockout-kendo/build/knockout-kendo.js"></script>
     <script type="text/javascript" src="bower_components/knockout/dist/knockout.js"></script>
     <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
     <script type="text/javascript" src="js/grid.service.js" defer="defer"></script>
@@ -23,10 +22,8 @@
     </section>
     <section class="game">
         <div class="grid-size">
-            <div data-bind="kendoRangeSlider: myValues">
-                <input />
-                <input />
-            </div>
+            <select data-bind="options: rows, value: selectedRows"></select>
+            <select data-bind="options: columns"></select>
         </div>
         <div class="grid-wrapper">
             <table>

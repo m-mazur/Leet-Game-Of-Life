@@ -21,6 +21,10 @@
         <button data-bind="click: resetGame">Reset</button>
     </section>
     <section class="game">
+        <div class="grid-size">
+            <select data-bind="options: rows, value: selectedRows"></select>
+            <select data-bind="options: columns"></select>
+        </div>
         <div class="grid-wrapper">
             <table>
                 <tbody data-bind="foreach: grid">
@@ -38,7 +42,14 @@
     <div class="bottom-line">
     </div>
     <div class="counter">
-    <img src="i/grid.png"> <p data-bind="text: generationCount"></p>
+        <div class="left">
+            <p><b>Generation count </b></p>
+            <p data-bind="text: generationCount"></p>
+        </div>
+        <div class="right">
+            <p><b>Alive cells count </b></p>
+            <p data-bind="text: aliveCellCount"></p>
+        </div>
     </div>
 </body>
 </html>

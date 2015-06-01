@@ -411,15 +411,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Static\bower_components\jquery\src\wrap.js" />
-    <Content Include="Static\bower_components\knockout-kendo\build\knockout-kendo.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Static\bower_components\knockout-kendo\build\knockout-kendo.min.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Static\bower_components\knockout-kendo\header.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Static\bower_components\knockout\build\fragments\amd-post.js" />
     <Content Include="Static\bower_components\knockout\build\fragments\amd-pre.js" />
     <Content Include="Static\bower_components\knockout\build\fragments\extern-post.js" />
@@ -585,18 +576,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Static\fonts\Radikal.woff">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Static\bower_components\knockout-kendo\.bower.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Static\bower_components\knockout-kendo\bower.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Static\bower_components\knockout-kendo\CONTRIBUTING.md">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Static\bower_components\knockout-kendo\README.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
