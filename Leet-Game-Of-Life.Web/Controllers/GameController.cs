@@ -12,9 +12,9 @@ namespace Leet_Game_Of_Life.Web.Controllers
     public class GameController : ApiController
     {
         //GET api/game/
-        public IEnumerable<Cell> Get()
+        public IEnumerable<Cell> Get(int pRow, int pCol)
         {
-            List<Cell> grid = new Grid().CreateGrid(14, 34);
+            List<Cell> grid = new Grid().CreateGrid(pRow, pCol);
             return grid;
         } 
 

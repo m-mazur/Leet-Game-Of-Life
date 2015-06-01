@@ -70,15 +70,12 @@ C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Gam
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\underscore\underscore-min.js
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\underscore\underscore.js
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\grid.html
-C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\main.css
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\.DS_Store
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\.idea\.name
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\.idea\game-of-life-prototype.iml
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower.json
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\jquery\dist\jquery.min.map
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\jquery\src\sizzle\dist\sizzle.min.map
-C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\main.css.map
-C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\main.scss
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\underscore\.bower.json
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\underscore\bower.json
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\bower_components\underscore\LICENSE
@@ -119,8 +116,6 @@ C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Gam
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\i\background.png
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.js
 C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.service.js
-C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\_colors.scss
-C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\_fonts.scss
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\obj\Debug\Leet-Game-Of-Life.Web.csprojResolveAssemblyReference.cache
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\.idea\encodings.xml
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\.idea\misc.xml
@@ -253,3 +248,17 @@ C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Le
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.eot
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.ttf
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.woff
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\i\grid.png
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\style\main.css
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\style\main.css.map
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\style\main.scss
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\style\_colors.scss
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\style\_fonts.scss
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal-Thin.eot
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal-Thin.ttf
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal-Thin.woff
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.eot
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.ttf
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.woff
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Leet-Game-Of-Life.Core.dll
+C:\Users\BegumD\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Leet-Game-Of-Life.Core.pdb

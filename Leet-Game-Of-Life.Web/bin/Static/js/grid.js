@@ -61,8 +61,8 @@ var ViewModel = function (gridService) {
         });
     }
 
-    function getInitialGrid () {
-        gridService.getInitialGrid().done(function (data) {
+    function getInitialGrid (row, col) {
+        gridService.getInitialGrid(row, col).done(function (data) {
             populateGrid(data);
         });
     }
@@ -91,7 +91,7 @@ var ViewModel = function (gridService) {
         getInitialGrid();
     };
 
-    getInitialGrid();
+    getInitialGrid(14,34);
 };
 
 ko.applyBindings(new ViewModel(new GridService()));
