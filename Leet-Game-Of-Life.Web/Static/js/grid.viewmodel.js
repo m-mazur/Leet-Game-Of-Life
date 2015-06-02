@@ -23,7 +23,6 @@ var ViewModel = function (gridService, gridHelpers) {
     function getUpdatedGrid () {
         gridService.post(gridHelpers.unGroupGrid((self.grid()))).done(function (data) {
             populateGrid(data);
-
             self.generationCount(gridHelpers.incrementGenerationCount(self.generationCount()));
             self.aliveCellCount(gridHelpers.countAliveCells(data));
         });
