@@ -1,4 +1,4 @@
-var ViewModel = function (gridService) {
+var ViewModel = function (gridService, gridHelpers) {
     var self = this,
         update,
         generationCount = 0,
@@ -26,31 +26,7 @@ var ViewModel = function (gridService) {
     }
 
     function populateGrid(data) {
-        self.grid(groupGrid(data));
-    }
-
-    function groupGrid(data) {
-        var groupedGrid = _.groupBy(data, function (data) {
-            return data.Y;
-        });
-
-        return _.chain(groupedGrid).map(function (grid) {
-            return grid;
-        }).value();
-    }
-
-    function unGroupGrid(grid) {
-        var ungroupedListOfCells = [];
-
-        grid.forEach(function (row) {
-            row.forEach(function (cell) {
-                if (!cell.IsDead || (cell === grid[grid.length - 1][row.length - 1])) {
-                    ungroupedListOfCells.push(cell);
-                }
-            });
-        });
-
-        return ungroupedListOfCells;
+        self.grid(gridHelpers.groupGrid(data));
     }
 
     function countAliveCells(grid) {
@@ -71,7 +47,7 @@ var ViewModel = function (gridService) {
     }
 
     function getUpdatedGrid () {
-        gridService.post(unGroupGrid((self.grid()))).done(function (data) {
+        gridService.post(gridHelpers.unGroupGrid((self.grid()))).done(function (data) {
             populateGrid(data);
             incrementGenerationCount();
 
@@ -124,4 +100,4 @@ var ViewModel = function (gridService) {
     getInitialGrid(14,34);
 };
 
-ko.applyBindings(new ViewModel(new GridService()));
+ko.applyBindings(new ViewModel(GridService, GridHelpers));

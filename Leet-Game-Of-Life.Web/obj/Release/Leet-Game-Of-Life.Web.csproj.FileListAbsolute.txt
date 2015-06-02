@@ -113,7 +113,6 @@ C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Le
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\obj\Release\Leet-Game-Of-Life.Web.dll
 C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\obj\Release\Leet-Game-Of-Life.Web.pdb
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\i\background.png
-C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.js
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.service.js
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.eot
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal.ttf
@@ -130,3 +129,5 @@ C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Le
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\fonts\Radikal-Thin.woff
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Leet-Game-Of-Life.Core.dll
 C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Leet-Game-Of-Life.Core.pdb
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.helpers.js
+C:\Users\Marcus Mazur\Documents\Visual Studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Web\bin\Static\js\grid.viewmodel.js
