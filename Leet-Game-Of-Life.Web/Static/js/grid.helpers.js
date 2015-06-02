@@ -10,6 +10,6 @@ var GridHelpers = function () {
     }
 
     return {
-        groupGrid: groupGrid(data)
+        groupGrid: groupGrid
     }
 }
