@@ -36,12 +36,7 @@ var ViewModel = function (gridService, gridHelpers) {
     }
 
     self.changeCellState = function (cell) {
-        if (!cell.IsDead) {
-            cell.IsDead = true;
-        } else {
-            cell.IsDead = false;
-        }
-
+        cell.IsDead = !cell.IsDead ? true : false;
         updateGrid(ko.toJSON(self.grid));
     };
 
