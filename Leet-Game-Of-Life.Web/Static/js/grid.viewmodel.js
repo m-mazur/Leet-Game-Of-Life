@@ -29,20 +29,6 @@ var ViewModel = function (gridService, gridHelpers) {
         self.grid(gridHelpers.groupGrid(data));
     }
 
-    function unGroupGrid(grid) {
-        var ungroupedListOfCells = [];
-
-        grid.forEach(function (row) {
-            row.forEach(function (cell) {
-                if (!cell.IsDead || (cell === grid[grid.length - 1][row.length - 1])) {
-                    ungroupedListOfCells.push(cell);
-                }
-            });
-        });
-
-        return ungroupedListOfCells;
-    }
-
     function countAliveCells(grid) {
         aliveCellCount = 0;
         
@@ -61,7 +47,7 @@ var ViewModel = function (gridService, gridHelpers) {
     }
 
     function getUpdatedGrid () {
-        gridService.post(unGroupGrid((self.grid()))).done(function (data) {
+        gridService.post(gridHelpers.unGroupGrid((self.grid()))).done(function (data) {
             populateGrid(data);
             incrementGenerationCount();
 

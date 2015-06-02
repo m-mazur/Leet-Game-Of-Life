@@ -10,7 +10,22 @@ var GridHelpers = (function () {
         }).value();
     }
 
+    function unGroupGrid(grid) {
+        var ungroupedListOfCells = [];
+
+        grid.forEach(function (row) {
+            row.forEach(function (cell) {
+                if (!cell.IsDead || (cell === grid[grid.length - 1][row.length - 1])) {
+                    ungroupedListOfCells.push(cell);
+                }
+            });
+        });
+
+        return ungroupedListOfCells;
+    }
+
     return {
-        groupGrid: groupGrid
+        groupGrid: groupGrid,
+        unGroupGrid: unGroupGrid
     }
 })();

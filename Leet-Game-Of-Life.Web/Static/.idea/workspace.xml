@@ -23,21 +23,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="grid.helpers.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="grid.helpers.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/grid.helpers.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.14037433">
-                  <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="grid.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="grid.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grid.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.0">
-                  <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+                <state vertical-scroll-proportion="0.16574585">
+                  <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
                   <folding />
                 </state>
               </provider>
@@ -87,11 +87,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="grid.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/grid.js">
+          <file leaf-file-name="grid.viewmodel.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/grid.viewmodel.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.87967914">
-                  <caret line="116" column="55" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
+                <state vertical-scroll-proportion="0.5534759">
+                  <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -116,10 +116,10 @@
         <option value="$PROJECT_DIR$/grid.js" />
         <option value="$PROJECT_DIR$/style/_fonts.scss" />
         <option value="$PROJECT_DIR$/style/main.scss" />
-        <option value="$PROJECT_DIR$/grid.html" />
         <option value="$PROJECT_DIR$/js/grid.service.js" />
         <option value="$PROJECT_DIR$/js/grid.helpers.js" />
         <option value="$PROJECT_DIR$/js/grid.js" />
+        <option value="$PROJECT_DIR$/grid.html" />
       </list>
     </option>
   </component>
@@ -361,7 +361,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/grid.js">
+    <entry file="file://$PROJECT_DIR$/js/grid.viewmodel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="116" column="50" selection-start-line="116" selection-start-column="50" selection-end-line="116" selection-end-column="50" />
@@ -401,7 +401,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/grid.js">
+    <entry file="file://$PROJECT_DIR$/js/grid.viewmodel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -457,14 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6875">
@@ -483,16 +475,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/grid.helpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14037433">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/grid.js">
+    <entry file="file://$PROJECT_DIR$/js/grid.viewmodel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87967914">
-          <caret line="116" column="55" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.5534759">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16574585">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
           <folding />
         </state>
       </provider>
