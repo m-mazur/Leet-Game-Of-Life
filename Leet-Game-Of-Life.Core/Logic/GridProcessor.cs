@@ -17,9 +17,8 @@ namespace Leet_Game_Of_Life.Core.Logic
             this.grid = new Grid();
         }
 
-        public Grid CreateProcessedList(Grid unProcessedGrid)//List<Cell> unProcessedGrid)
+        public Grid CreateProcessedList(Grid unProcessedGrid)
         {
-            //var processedList = grid.CreateGrid(14, 34);
             rowCount = unProcessedGrid.Cells.Last().X + 1;
             columnCount = unProcessedGrid.Cells.Last().Y + 1;
             var processedList = grid.CreateGrid(columnCount, rowCount);
@@ -38,11 +37,9 @@ namespace Leet_Game_Of_Life.Core.Logic
             return processedList;
         }
 
-        public Grid/*List<Cell>*/ CreateContextGrid(Grid/*List<Cell>*/ processedGrid, Cell referenceCell)
+        public Grid CreateContextGrid(Grid processedGrid, Cell referenceCell)
         {
-            //SetRowAndColumnCount(processedGrid);
-
-            var contextGrid = new Grid();//List<Cell>();
+            var contextGrid = new Grid();
 
             contextGrid.Cells.Add(processedGrid.Cells.Find(tempCell => tempCell.X.Equals(WrapEdges(referenceCell.X - 1, false)) && tempCell.Y.Equals(WrapEdges(referenceCell.Y - 1, true))));
             contextGrid.Cells.Add(processedGrid.Cells.Find(tempCell => tempCell.X.Equals(referenceCell.X) && tempCell.Y.Equals(WrapEdges(referenceCell.Y - 1, true))));
@@ -60,15 +57,9 @@ namespace Leet_Game_Of_Life.Core.Logic
             return contextGrid;
         }
 
-        public List<Cell> CreateHoldingGrid(List<Cell> gridCells) 
+        public List<Cell> CreateHoldingGrid(List<Cell> gridCells)
         {
             return new List<Cell>(gridCells);
-        }
-
-        private void SetRowAndColumnCount(List<Cell> processedGrid)
-        {
-            //rowCount = processedGrid.FindAll(tempCell => tempCell.X.Equals(0)).Count;
-            //columnCount = processedGrid.FindAll(tempCell => tempCell.Y.Equals(0)).Count; ;
         }
 
         private int WrapEdges(int referenceCellPosition, bool isRow)
@@ -79,7 +70,7 @@ namespace Leet_Game_Of_Life.Core.Logic
             {
                 referenceCellPosition += value;
             }
-            
+
             if (referenceCellPosition > value - 1)
             {
                 referenceCellPosition -= value;

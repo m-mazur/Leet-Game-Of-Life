@@ -15,17 +15,16 @@ namespace Leet_Game_Of_Life.Core.Logic
             this.gridProcessor = new GridProcessor();
         }
 
-        public Grid CheckNeighborStateAndRunLogic(Grid snapshot)//List<Cell> snapshot)
+        public Grid CheckNeighborStateAndRunLogic(Grid snapshot)
         {
-            List<Cell> l =  CheckRules(gridProcessor.CreateProcessedList(snapshot)).Cells.FindAll(tempCell => tempCell.IsDead == false);
             return CheckRules(gridProcessor.CreateProcessedList(snapshot));
         }
 
-        private Grid CheckRules (Grid grid)//List<Cell> grid) 
-        { 
+        private Grid CheckRules(Grid grid)
+        {
             var holdingList = gridProcessor.CreateHoldingGrid(grid.Cells);
             Grid returnGrid = new Grid();
-            //holdingList.Cells = grid.Cells;
+
             foreach (var cell in grid.Cells)
             {
                 var contextGrid = gridProcessor.CreateContextGrid(grid, cell);
@@ -52,6 +51,7 @@ namespace Leet_Game_Of_Life.Core.Logic
                 }
             }
             returnGrid.Cells = holdingList;
+
             return returnGrid;
         }
     }

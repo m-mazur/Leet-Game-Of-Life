@@ -9,7 +9,6 @@ namespace Leet_Game_Of_Life.Core.Models
     public class Grid
     {
         private List<Cell> cells;
-
         public List<Cell> Cells
         {
             get { return cells; }
@@ -20,9 +19,8 @@ namespace Leet_Game_Of_Life.Core.Models
         {
             cells = new List<Cell>();
         }
-         
 
-        public /*List<Cell>*/Grid CreateGrid(int column, int row)
+        public Grid CreateGrid(int column, int row)
         {
             Grid g = new Grid();
             for (int i = 0; i < row; i++)
