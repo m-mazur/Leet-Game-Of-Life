@@ -16,7 +16,7 @@ var ViewModel = function (gridService, gridHelpers) {
         self.grid(gridHelpers.parseGridFromJson(data));
     }
 
-    function populateGrid (data) {
+    function pop44ulateGrid (data) {
         self.grid(gridHelpers.groupGrid(data));
     }
 
