@@ -23,20 +23,17 @@ var GridHelpers = (function () {
                 });
             }
         }
+
         return grid;
     }
 
     function groupGrid (data) {
-        var groupedGrid = _.groupBy(data, function (data) {
+        return _.map(_.groupBy(data, function (data) {
             return data.Y;
-        });
-
-        return _.chain(groupedGrid).map(function (grid) {
-            return grid;
-        }).value();
+        }));
     }
 
-    function unGroupGrid (grid) {
+    function unGroupGrid(grid) {
         var ungroupedListOfCells = [];
 
         grid.forEach(function (row) {

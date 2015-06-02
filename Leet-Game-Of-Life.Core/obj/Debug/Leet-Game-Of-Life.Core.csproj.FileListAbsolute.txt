@@ -8,3 +8,8 @@ C:\Users\Marcus Mazur\Desktop\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\bin\Debug
 C:\Users\Marcus Mazur\Desktop\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\obj\Debug\Leet-Game-Of-Life.Core.csprojResolveAssemblyReference.cache
 C:\Users\Marcus Mazur\Desktop\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\obj\Debug\Leet-Game-Of-Life.Core.dll
 C:\Users\Marcus Mazur\Desktop\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\obj\Debug\Leet-Game-Of-Life.Core.pdb
+C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\bin\Debug\Leet-Game-Of-Life.Core.dll
+C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\bin\Debug\Leet-Game-Of-Life.Core.pdb
+C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\obj\Debug\Leet-Game-Of-Life.Core.csprojResolveAssemblyReference.cache
+C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\obj\Debug\Leet-Game-Of-Life.Core.dll
+C:\Users\Marcus Mazur\documents\visual studio 2013\Projects\Leet-Game-Of-Life\Leet-Game-Of-Life.Core\obj\Debug\Leet-Game-Of-Life.Core.pdb
