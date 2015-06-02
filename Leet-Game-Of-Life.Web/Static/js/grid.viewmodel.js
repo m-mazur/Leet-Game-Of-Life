@@ -12,23 +12,23 @@ var ViewModel = function (gridService, gridHelpers) {
     self.selectedRows = ko.observable(15);
     self.selectedColumns = ko.observable(30);
 
-    function updateGrid (data) {
+    function updateGrid(data) {
         self.grid(gridHelpers.parseGridFromJson(data));
     }
 
-    function pop44ulateGrid (data) {
+    function populateGrid(data) {
         self.grid(gridHelpers.groupGrid(data));
     }
 
-    function getUpdatedGrid () {
+    function getUpdatedGrid() {
         gridService.post(gridHelpers.unGroupGrid((self.grid()))).done(function (data) {
-            populateGrid(data);
+            populateGrid(gridHelpers.processGrid(data));
             self.generationCount(gridHelpers.incrementGenerationCount(self.generationCount()));
             self.aliveCellCount(gridHelpers.countAliveCells(data));
         });
     }
 
-    function getInitialGrid (row, col) {
+    function getInitialGrid(row, col) {
         gridService.get(row, col).done(function (data) {
             populateGrid(data);
         });
@@ -58,7 +58,7 @@ var ViewModel = function (gridService, gridHelpers) {
     });
 
     self.selectedColumns.subscribe(function (value) {
-       self.setGridSize(self.selectedRows(), value);
+        self.setGridSize(self.selectedRows(), value);
     });
 
     self.setGridSize = function (y, x) {

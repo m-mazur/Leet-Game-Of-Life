@@ -17,7 +17,7 @@ namespace Leet_Game_Of_Life.Core.Logic
 
         public Grid CheckNeighborStateAndRunLogic(Grid snapshot)
         {
-            return CheckRules(gridProcessor.CreateProcessedList(snapshot));
+            return gridProcessor.CreateGridForView(CheckRules(gridProcessor.CreateProcessedList(snapshot)));
         }
 
         private Grid CheckRules(Grid grid)
