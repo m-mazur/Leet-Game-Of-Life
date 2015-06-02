@@ -41,10 +41,20 @@ var GridHelpers = (function () {
         return generationCount;
     }
 
+    function parseGridToJson (grid) {
+        return ko.toJSON(grid);
+    }
+
+    function parseGridFromJson (data) {
+        return JSON.parse(data);
+    }
+
     return {
         groupGrid: groupGrid,
         unGroupGrid: unGroupGrid,
         countAliveCells: countAliveCells,
-        incrementGenerationCount: incrementGenerationCount
+        incrementGenerationCount: incrementGenerationCount,
+        parseGridToJson: parseGridToJson,
+        parseGridFromJson: parseGridFromJson
     }
 })();

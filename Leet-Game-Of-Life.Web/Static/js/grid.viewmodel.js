@@ -12,11 +12,11 @@ var ViewModel = function (gridService, gridHelpers) {
     self.selectedRows = ko.observable(15);
     self.selectedColumns = ko.observable(30);
 
-    function updateGrid(data) {
-        self.grid(JSON.parse(data));
+    function updateGrid (data) {
+        self.grid(gridHelpers.parseGridFromJson(data));
     }
 
-    function populateGrid(data) {
+    function populateGrid (data) {
         self.grid(gridHelpers.groupGrid(data));
     }
 
@@ -37,7 +37,7 @@ var ViewModel = function (gridService, gridHelpers) {
 
     self.changeCellState = function (cell) {
         cell.IsDead = !cell.IsDead ? true : false;
-        updateGrid(ko.toJSON(self.grid));
+        updateGrid(gridHelpers.parseGridToJson(self.grid()));
     };
 
     self.startGame = function () {
