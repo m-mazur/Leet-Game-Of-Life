@@ -2,22 +2,13 @@ var ViewModel = function (gridService, gridHelpers) {
     var self = this,
         update,
         generationCount = 0,
-        aliveCellCount = 0,
-        sizeOption = function () {
-            var sizes = [];
-
-            for (var i = 0; i < 30; i++) {
-                sizes.push(i + 1);
-            }
-
-            return sizes;
-        }
+        aliveCellCount = 0;
 
     self.grid = ko.observableArray([]);
     self.generationCount = ko.observable(generationCount);
     self.aliveCellCount = ko.observable(aliveCellCount);
-    self.rows = ko.observableArray(sizeOption());
-    self.columns = ko.observableArray(sizeOption());
+    self.rows = ko.observableArray();
+    self.columns = ko.observableArray();
     self.selectedRows = ko.observable(15);
     self.selectedColumns = ko.observable(30);
 
@@ -29,29 +20,12 @@ var ViewModel = function (gridService, gridHelpers) {
         self.grid(gridHelpers.groupGrid(data));
     }
 
-    function countAliveCells(grid) {
-        aliveCellCount = 0;
-        
-        grid.forEach(function (cell) {
-            if (!cell.IsDead) {
-               aliveCellCount++;
-           }
-        });
-
-        return aliveCellCount;
-    }
-
-    function incrementGenerationCount () {
-        generationCount++;
-        self.generationCount(generationCount);
-    }
-
     function getUpdatedGrid () {
         gridService.post(gridHelpers.unGroupGrid((self.grid()))).done(function (data) {
             populateGrid(data);
-            incrementGenerationCount();
 
-            self.aliveCellCount(countAliveCells(data));
+            self.generationCount(gridHelpers.incrementGenerationCount(self.generationCount()));
+            self.aliveCellCount(gridHelpers.countAliveCells(data));
         });
     }
 
@@ -62,12 +36,7 @@ var ViewModel = function (gridService, gridHelpers) {
     }
 
     self.changeCellState = function (cell) {
-        if (!cell.IsDead) {
-            cell.IsDead = true;
-        } else {
-            cell.IsDead = false;
-        }
-        
+        cell.IsDead = !cell.IsDead ? true : false;
         updateGrid(ko.toJSON(self.grid));
     };
 
@@ -82,7 +51,7 @@ var ViewModel = function (gridService, gridHelpers) {
     self.resetGame = function () {
         self.generationCount(0);
         self.aliveCellCount(0);
-        getInitialGrid(14, 34);
+        getInitialGrid(self.selectedRows(), self.selectedColumns());
     };
 
     self.selectedRows.subscribe(function (value) {
@@ -97,7 +66,7 @@ var ViewModel = function (gridService, gridHelpers) {
         getInitialGrid(y, x)
     };
 
-    getInitialGrid(14,34);
+    getInitialGrid(15, 30);
 };
 
 ko.applyBindings(new ViewModel(GridService, GridHelpers));
