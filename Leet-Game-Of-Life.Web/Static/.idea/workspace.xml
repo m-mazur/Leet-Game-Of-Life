@@ -56,8 +56,8 @@
           <file leaf-file-name="grid.service.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/grid.service.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4384411">
-                  <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.29229406">
+                  <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -118,8 +118,8 @@
         <option value="$PROJECT_DIR$/style/main.scss" />
         <option value="$PROJECT_DIR$/grid.html" />
         <option value="$PROJECT_DIR$/js/grid.helpers.js" />
-        <option value="$PROJECT_DIR$/js/grid.service.js" />
         <option value="$PROJECT_DIR$/js/grid.js" />
+        <option value="$PROJECT_DIR$/js/grid.service.js" />
       </list>
     </option>
   </component>
@@ -481,18 +481,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/grid.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4384411">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/grid.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.853853">
           <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/grid.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29229406">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>

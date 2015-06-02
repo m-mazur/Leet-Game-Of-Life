@@ -22,13 +22,8 @@ var GridService = (function () {
         return ajaxHelper(gridPostUri, 'POST', gridSnapshot);
     }
 
-    function hello () {
-        return "hello";
-    }
-
     return {
         get: get,
-        post: post,
-        hello: hello
+        post: post
     }
 })();
