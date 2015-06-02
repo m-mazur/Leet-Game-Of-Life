@@ -24,7 +24,7 @@ var ViewModel = function (gridService, gridHelpers) {
         gridService.post(gridHelpers.unGroupGrid((self.grid()))).done(function (data) {
             populateGrid(data);
 
-            self.generationCount(gridHelpers.incrementGenerationCount(generationCount));
+            self.generationCount(gridHelpers.incrementGenerationCount(self.generationCount()));
             self.aliveCellCount(gridHelpers.countAliveCells(data));
         });
     }
@@ -56,7 +56,7 @@ var ViewModel = function (gridService, gridHelpers) {
     self.resetGame = function () {
         self.generationCount(0);
         self.aliveCellCount(0);
-        getInitialGrid(14, 34);
+        getInitialGrid(self.selectedRows(), self.selectedColumns());
     };
 
     self.selectedRows.subscribe(function (value) {
