@@ -114,4 +114,4 @@ var ViewModel = function (gridService, gridHelpers) {
     getInitialGrid(14,34);
 };
 
-ko.applyBindings(new ViewModel(GridService));
+ko.applyBindings(new ViewModel(GridService, GridHelpers));
