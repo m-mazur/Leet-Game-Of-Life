@@ -2,22 +2,13 @@ var ViewModel = function (gridService, gridHelpers) {
     var self = this,
         update,
         generationCount = 0,
-        aliveCellCount = 0,
-        sizeOption = function () {
-            var sizes = [];
-
-            for (var i = 0; i < 30; i++) {
-                sizes.push(i + 1);
-            }
-
-            return sizes;
-        }
+        aliveCellCount = 0;
 
     self.grid = ko.observableArray([]);
     self.generationCount = ko.observable(generationCount);
     self.aliveCellCount = ko.observable(aliveCellCount);
-    self.rows = ko.observableArray(sizeOption());
-    self.columns = ko.observableArray(sizeOption());
+    self.rows = ko.observableArray();
+    self.columns = ko.observableArray();
     self.selectedRows = ko.observable(15);
     self.selectedColumns = ko.observable(30);
 
@@ -80,7 +71,7 @@ var ViewModel = function (gridService, gridHelpers) {
         getInitialGrid(y, x)
     };
 
-    getInitialGrid(14,34);
+    getInitialGrid(15, 30);
 };
 
 ko.applyBindings(new ViewModel(GridService, GridHelpers));
