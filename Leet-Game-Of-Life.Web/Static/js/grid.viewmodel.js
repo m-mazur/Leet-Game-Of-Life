@@ -29,16 +29,11 @@ var ViewModel = function (gridService, gridHelpers) {
         self.grid(gridHelpers.groupGrid(data));
     }
 
-    function incrementGenerationCount () {
-        generationCount++;
-        self.generationCount(generationCount);
-    }
-
     function getUpdatedGrid () {
         gridService.post(gridHelpers.unGroupGrid((self.grid()))).done(function (data) {
             populateGrid(data);
-            incrementGenerationCount();
 
+            self.generationCount(gridHelpers.incrementGenerationCount(generationCount));
             self.aliveCellCount(gridHelpers.countAliveCells(data));
         });
     }
@@ -55,7 +50,7 @@ var ViewModel = function (gridService, gridHelpers) {
         } else {
             cell.IsDead = false;
         }
-        
+
         updateGrid(ko.toJSON(self.grid));
     };
 

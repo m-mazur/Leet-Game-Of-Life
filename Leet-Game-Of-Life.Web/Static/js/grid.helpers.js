@@ -1,6 +1,6 @@
 var GridHelpers = (function () {
 
-    function groupGrid(data) {
+    function groupGrid (data) {
         var groupedGrid = _.groupBy(data, function (data) {
             return data.Y;
         });
@@ -10,7 +10,7 @@ var GridHelpers = (function () {
         }).value();
     }
 
-    function unGroupGrid(grid) {
+    function unGroupGrid (grid) {
         var ungroupedListOfCells = [];
 
         grid.forEach(function (row) {
@@ -24,7 +24,7 @@ var GridHelpers = (function () {
         return ungroupedListOfCells;
     }
 
-    function countAliveCells(grid) {
+    function countAliveCells (grid) {
         aliveCellCount = 0;
 
         grid.forEach(function (cell) {
@@ -36,9 +36,15 @@ var GridHelpers = (function () {
         return aliveCellCount;
     }
 
+    function incrementGenerationCount (generationCount) {
+        generationCount++;
+        return generationCount;
+    }
+
     return {
         groupGrid: groupGrid,
         unGroupGrid: unGroupGrid,
-        countAliveCells: countAliveCells
+        countAliveCells: countAliveCells,
+        incrementGenerationCount: incrementGenerationCount
     }
 })();
