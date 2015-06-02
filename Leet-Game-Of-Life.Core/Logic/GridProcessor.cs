@@ -21,7 +21,9 @@ namespace Leet_Game_Of_Life.Core.Logic
         {
             rowCount = unProcessedGrid.Cells.Last().X + 1;
             columnCount = unProcessedGrid.Cells.Last().Y + 1;
+
             var processedList = grid.CreateGrid(columnCount, rowCount);
+
             foreach (var cell in processedList.Cells.Reverse<Cell>())
             {
                 var newCell = unProcessedGrid.Cells.Find(tempCell => (tempCell.X.Equals(cell.X)) && (tempCell.Y.Equals(cell.Y)));
@@ -60,6 +62,23 @@ namespace Leet_Game_Of_Life.Core.Logic
         public List<Cell> CreateHoldingGrid(List<Cell> gridCells)
         {
             return new List<Cell>(gridCells);
+        }
+
+        public Grid CreateGridForView(Grid grid)
+        {
+            var lastCell = grid.Cells.Last();
+
+            foreach (var cell in grid.Cells.Reverse<Cell>())
+            {
+                if (cell.IsDead)
+                {
+                    grid.Cells.Remove(cell);
+                }
+            }
+
+            grid.Cells.Add(lastCell);
+
+            return grid;
         }
 
         private int WrapEdges(int referenceCellPosition, bool isRow)
