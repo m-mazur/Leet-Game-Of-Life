@@ -29,18 +29,6 @@ var ViewModel = function (gridService, gridHelpers) {
         self.grid(gridHelpers.groupGrid(data));
     }
 
-    function countAliveCells(grid) {
-        aliveCellCount = 0;
-        
-        grid.forEach(function (cell) {
-            if (!cell.IsDead) {
-               aliveCellCount++;
-           }
-        });
-
-        return aliveCellCount;
-    }
-
     function incrementGenerationCount () {
         generationCount++;
         self.generationCount(generationCount);
@@ -51,7 +39,7 @@ var ViewModel = function (gridService, gridHelpers) {
             populateGrid(data);
             incrementGenerationCount();
 
-            self.aliveCellCount(countAliveCells(data));
+            self.aliveCellCount(gridHelpers.countAliveCells(data));
         });
     }
 

@@ -24,8 +24,21 @@ var GridHelpers = (function () {
         return ungroupedListOfCells;
     }
 
+    function countAliveCells(grid) {
+        aliveCellCount = 0;
+
+        grid.forEach(function (cell) {
+            if (!cell.IsDead) {
+                aliveCellCount++;
+            }
+        });
+
+        return aliveCellCount;
+    }
+
     return {
         groupGrid: groupGrid,
-        unGroupGrid: unGroupGrid
+        unGroupGrid: unGroupGrid,
+        countAliveCells: countAliveCells
     }
 })();
