@@ -1,4 +1,5 @@
-var GridHelpers = function () {
+var GridHelpers = (function () {
+
     function groupGrid(data) {
         var groupedGrid = _.groupBy(data, function (data) {
             return data.Y;
@@ -12,4 +13,4 @@ var GridHelpers = function () {
     return {
         groupGrid: groupGrid
     }
-}
+})();
