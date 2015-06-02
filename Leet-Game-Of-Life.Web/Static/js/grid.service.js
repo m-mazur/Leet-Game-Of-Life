@@ -1,4 +1,4 @@
-var GridService = function () {
+var GridService = (function () {
     var gridPostUri = '../api/game/',
         gridGetUri = function (row, col) {
         return '../api/game?pRow=' + row + '&pCol=' + col;
@@ -26,4 +26,4 @@ var GridService = function () {
         get: get,
         post: post
     }
-};
+})();
