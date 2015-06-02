@@ -56,10 +56,11 @@ h1 {
     width: 500px;
     margin: 40px auto 0 auto; }
     .game .grid-size p {
-      display: inline;
       text-transform: uppercase;
       padding: 0 15px 0 15px;
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      display: inline;
+      clear: both; }
     .game .grid-size input:focus {
       outline: 0; }
     .game .grid-size input[type=range] {

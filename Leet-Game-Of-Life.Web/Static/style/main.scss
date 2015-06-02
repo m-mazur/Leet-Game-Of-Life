@@ -64,10 +64,11 @@ h1 {
     margin: 40px auto 0 auto;
 
     p {
-      display: inline;
       text-transform: uppercase;
       padding: 0 15px 0 15px;
       font-size: 0.8rem;
+      display: inline;
+      clear: both;
     }
 
     input:focus {
