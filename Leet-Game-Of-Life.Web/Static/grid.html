@@ -20,12 +20,12 @@
         <h1>Game of leet</h1>
         <button data-bind="click: startGame">Start</button>
         <button data-bind="click: pausGame">Paus</button>
-        <button data-bind="click: resetGame, disable: running, style: { backgroundColor: running === false ? '#8cc63c' : ''}">Reset</button>
+        <button data-bind="click: resetGame, disable: running">Reset</button>
     </section>
     <section class="game">
         <div class="grid-size">
-            <p>Rows</p><input type="range" data-bind="value: selectedRows" min="1" max="25" step="1"/>
-            <p>Columns</p><input type="range" data-bind="value: selectedColumns" min="1" max="45" step="1" />
+            <p>Rows</p><input type="range" data-bind="value: selectedRows, disable: running" min="1" max="25" step="1"/>
+            <p>Columns</p><input type="range" data-bind="value: selectedColumns, disable: running" min="1" max="45" step="1" />
         </div>
         <div class="grid-wrapper">
             <table>
