@@ -135,6 +135,10 @@ h1 {
     .header button {
       min-width: 100px; }
 
+  .game {
+    margin-top: 64px;
+    padding-top: 30px; }
+
   .grid-size {
     display: none; }
 
