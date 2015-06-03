@@ -12,6 +12,7 @@ var ViewModel = function (gridService, gridHelpers) {
     self.columns = ko.observableArray();
     self.selectedRows = ko.observable(10);
     self.selectedColumns = ko.observable(9);
+    self.running = ko.observable(false);
 
     function updateGrid(data) {
         self.grid(gridHelpers.parseGridFromJson(data));
@@ -42,10 +43,12 @@ var ViewModel = function (gridService, gridHelpers) {
 
     self.startGame = function () {
         update = setInterval(getUpdatedGrid, 200);
+        self.running(true);
     };
 
     self.pausGame = function () {
         clearInterval(update);
+        self.running(false);
     };
 
     self.resetGame = function () {
