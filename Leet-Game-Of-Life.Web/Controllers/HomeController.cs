@@ -10,7 +10,7 @@ namespace Leet_Game_Of_Life.Web.Controllers
     {
         public ActionResult Index()
         {
-            return Redirect("static/grid.html");;
+            return Redirect("web/grid.html");;
         }
     }
 }

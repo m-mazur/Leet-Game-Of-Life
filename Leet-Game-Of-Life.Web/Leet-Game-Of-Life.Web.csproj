@@ -118,34 +118,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
-    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
-    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
-    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
-    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
-    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -154,349 +126,325 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\HelpPage\HelpPage.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
-    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Web.config" />
-    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <None Include="Properties\PublishProfiles\game-of-leet.pubxml" />
-    <Content Include="Static\.idea\encodings.xml">
+    <Content Include="Web\.idea\encodings.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\.idea\misc.xml">
+    <Content Include="Web\.idea\misc.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\.idea\modules.xml">
+    <Content Include="Web\.idea\modules.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\.idea\scopes\scope_settings.xml">
+    <Content Include="Web\.idea\scopes\scope_settings.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\.idea\vcs.xml">
+    <Content Include="Web\.idea\vcs.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\.idea\watcherTasks.xml">
+    <Content Include="Web\.idea\watcherTasks.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\.idea\workspace.xml">
+    <Content Include="Web\.idea\workspace.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\dist\jquery.js">
+    <Content Include="Web\bower_components\jquery\dist\jquery.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\dist\jquery.min.js">
+    <Content Include="Web\bower_components\jquery\dist\jquery.min.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\MIT-LICENSE.txt" />
-    <Content Include="Static\bower_components\jquery\src\ajax.js" />
-    <Content Include="Static\bower_components\jquery\src\ajax\jsonp.js">
+    <Content Include="Web\bower_components\jquery\MIT-LICENSE.txt" />
+    <Content Include="Web\bower_components\jquery\src\ajax.js" />
+    <Content Include="Web\bower_components\jquery\src\ajax\jsonp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\ajax\load.js">
+    <Content Include="Web\bower_components\jquery\src\ajax\load.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\ajax\parseJSON.js">
+    <Content Include="Web\bower_components\jquery\src\ajax\parseJSON.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\ajax\parseXML.js">
+    <Content Include="Web\bower_components\jquery\src\ajax\parseXML.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\ajax\script.js">
+    <Content Include="Web\bower_components\jquery\src\ajax\script.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\ajax\var\nonce.js">
+    <Content Include="Web\bower_components\jquery\src\ajax\var\nonce.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\ajax\var\rquery.js">
+    <Content Include="Web\bower_components\jquery\src\ajax\var\rquery.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\ajax\xhr.js">
+    <Content Include="Web\bower_components\jquery\src\ajax\xhr.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\attributes.js" />
-    <Content Include="Static\bower_components\jquery\src\attributes\attr.js">
+    <Content Include="Web\bower_components\jquery\src\attributes.js" />
+    <Content Include="Web\bower_components\jquery\src\attributes\attr.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\attributes\classes.js">
+    <Content Include="Web\bower_components\jquery\src\attributes\classes.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\attributes\prop.js">
+    <Content Include="Web\bower_components\jquery\src\attributes\prop.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\attributes\support.js">
+    <Content Include="Web\bower_components\jquery\src\attributes\support.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\attributes\val.js">
+    <Content Include="Web\bower_components\jquery\src\attributes\val.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\callbacks.js" />
-    <Content Include="Static\bower_components\jquery\src\core.js" />
-    <Content Include="Static\bower_components\jquery\src\core\access.js">
+    <Content Include="Web\bower_components\jquery\src\callbacks.js" />
+    <Content Include="Web\bower_components\jquery\src\core.js" />
+    <Content Include="Web\bower_components\jquery\src\core\access.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\core\init.js">
+    <Content Include="Web\bower_components\jquery\src\core\init.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\core\parseHTML.js">
+    <Content Include="Web\bower_components\jquery\src\core\parseHTML.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\core\ready.js">
+    <Content Include="Web\bower_components\jquery\src\core\ready.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\core\var\rsingleTag.js">
+    <Content Include="Web\bower_components\jquery\src\core\var\rsingleTag.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css.js" />
-    <Content Include="Static\bower_components\jquery\src\css\addGetHookIf.js">
+    <Content Include="Web\bower_components\jquery\src\css.js" />
+    <Content Include="Web\bower_components\jquery\src\css\addGetHookIf.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css\curCSS.js">
+    <Content Include="Web\bower_components\jquery\src\css\curCSS.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css\defaultDisplay.js">
+    <Content Include="Web\bower_components\jquery\src\css\defaultDisplay.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css\hiddenVisibleSelectors.js">
+    <Content Include="Web\bower_components\jquery\src\css\hiddenVisibleSelectors.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css\support.js">
+    <Content Include="Web\bower_components\jquery\src\css\support.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css\swap.js">
+    <Content Include="Web\bower_components\jquery\src\css\swap.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css\var\cssExpand.js">
+    <Content Include="Web\bower_components\jquery\src\css\var\cssExpand.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css\var\getStyles.js">
+    <Content Include="Web\bower_components\jquery\src\css\var\getStyles.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css\var\isHidden.js">
+    <Content Include="Web\bower_components\jquery\src\css\var\isHidden.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css\var\rmargin.js">
+    <Content Include="Web\bower_components\jquery\src\css\var\rmargin.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\css\var\rnumnonpx.js">
+    <Content Include="Web\bower_components\jquery\src\css\var\rnumnonpx.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\data.js" />
-    <Content Include="Static\bower_components\jquery\src\data\accepts.js">
+    <Content Include="Web\bower_components\jquery\src\data.js" />
+    <Content Include="Web\bower_components\jquery\src\data\accepts.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\data\Data.js">
+    <Content Include="Web\bower_components\jquery\src\data\Data.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\data\var\data_priv.js">
+    <Content Include="Web\bower_components\jquery\src\data\var\data_priv.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\data\var\data_user.js">
+    <Content Include="Web\bower_components\jquery\src\data\var\data_user.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\deferred.js" />
-    <Content Include="Static\bower_components\jquery\src\deprecated.js" />
-    <Content Include="Static\bower_components\jquery\src\dimensions.js" />
-    <Content Include="Static\bower_components\jquery\src\effects.js" />
-    <Content Include="Static\bower_components\jquery\src\effects\animatedSelector.js">
+    <Content Include="Web\bower_components\jquery\src\deferred.js" />
+    <Content Include="Web\bower_components\jquery\src\deprecated.js" />
+    <Content Include="Web\bower_components\jquery\src\dimensions.js" />
+    <Content Include="Web\bower_components\jquery\src\effects.js" />
+    <Content Include="Web\bower_components\jquery\src\effects\animatedSelector.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\effects\Tween.js">
+    <Content Include="Web\bower_components\jquery\src\effects\Tween.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\event.js" />
-    <Content Include="Static\bower_components\jquery\src\event\ajax.js">
+    <Content Include="Web\bower_components\jquery\src\event.js" />
+    <Content Include="Web\bower_components\jquery\src\event\ajax.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\event\alias.js">
+    <Content Include="Web\bower_components\jquery\src\event\alias.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\event\support.js">
+    <Content Include="Web\bower_components\jquery\src\event\support.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\exports\amd.js">
+    <Content Include="Web\bower_components\jquery\src\exports\amd.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\exports\global.js">
+    <Content Include="Web\bower_components\jquery\src\exports\global.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\intro.js" />
-    <Content Include="Static\bower_components\jquery\src\jquery.js" />
-    <Content Include="Static\bower_components\jquery\src\manipulation.js" />
-    <Content Include="Static\bower_components\jquery\src\manipulation\support.js">
+    <Content Include="Web\bower_components\jquery\src\intro.js" />
+    <Content Include="Web\bower_components\jquery\src\jquery.js" />
+    <Content Include="Web\bower_components\jquery\src\manipulation.js" />
+    <Content Include="Web\bower_components\jquery\src\manipulation\support.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\manipulation\var\rcheckableType.js">
+    <Content Include="Web\bower_components\jquery\src\manipulation\var\rcheckableType.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\manipulation\_evalUrl.js">
+    <Content Include="Web\bower_components\jquery\src\manipulation\_evalUrl.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\offset.js" />
-    <Content Include="Static\bower_components\jquery\src\outro.js" />
-    <Content Include="Static\bower_components\jquery\src\queue.js" />
-    <Content Include="Static\bower_components\jquery\src\queue\delay.js">
+    <Content Include="Web\bower_components\jquery\src\offset.js" />
+    <Content Include="Web\bower_components\jquery\src\outro.js" />
+    <Content Include="Web\bower_components\jquery\src\queue.js" />
+    <Content Include="Web\bower_components\jquery\src\queue\delay.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\selector-native.js" />
-    <Content Include="Static\bower_components\jquery\src\selector-sizzle.js" />
-    <Content Include="Static\bower_components\jquery\src\selector.js" />
-    <Content Include="Static\bower_components\jquery\src\serialize.js" />
-    <Content Include="Static\bower_components\jquery\src\sizzle\dist\sizzle.js">
+    <Content Include="Web\bower_components\jquery\src\selector-native.js" />
+    <Content Include="Web\bower_components\jquery\src\selector-sizzle.js" />
+    <Content Include="Web\bower_components\jquery\src\selector.js" />
+    <Content Include="Web\bower_components\jquery\src\serialize.js" />
+    <Content Include="Web\bower_components\jquery\src\sizzle\dist\sizzle.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\sizzle\dist\sizzle.min.js">
+    <Content Include="Web\bower_components\jquery\src\sizzle\dist\sizzle.min.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\traversing.js" />
-    <Content Include="Static\bower_components\jquery\src\traversing\findFilter.js">
+    <Content Include="Web\bower_components\jquery\src\traversing.js" />
+    <Content Include="Web\bower_components\jquery\src\traversing\findFilter.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\traversing\var\rneedsContext.js">
+    <Content Include="Web\bower_components\jquery\src\traversing\var\rneedsContext.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\arr.js">
+    <Content Include="Web\bower_components\jquery\src\var\arr.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\class2type.js">
+    <Content Include="Web\bower_components\jquery\src\var\class2type.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\concat.js">
+    <Content Include="Web\bower_components\jquery\src\var\concat.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\hasOwn.js">
+    <Content Include="Web\bower_components\jquery\src\var\hasOwn.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\indexOf.js">
+    <Content Include="Web\bower_components\jquery\src\var\indexOf.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\pnum.js">
+    <Content Include="Web\bower_components\jquery\src\var\pnum.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\push.js">
+    <Content Include="Web\bower_components\jquery\src\var\push.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\rnotwhite.js">
+    <Content Include="Web\bower_components\jquery\src\var\rnotwhite.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\slice.js">
+    <Content Include="Web\bower_components\jquery\src\var\slice.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\strundefined.js">
+    <Content Include="Web\bower_components\jquery\src\var\strundefined.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\support.js">
+    <Content Include="Web\bower_components\jquery\src\var\support.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\var\toString.js">
+    <Content Include="Web\bower_components\jquery\src\var\toString.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\wrap.js" />
-    <Content Include="Static\bower_components\knockout\build\fragments\amd-post.js" />
-    <Content Include="Static\bower_components\knockout\build\fragments\amd-pre.js" />
-    <Content Include="Static\bower_components\knockout\build\fragments\extern-post.js" />
-    <Content Include="Static\bower_components\knockout\build\fragments\extern-pre.js" />
-    <Content Include="Static\bower_components\knockout\build\fragments\source-references.js" />
-    <Content Include="Static\bower_components\knockout\build\knockout-raw.js" />
-    <Content Include="Static\bower_components\knockout\dist\knockout.debug.js" />
-    <Content Include="Static\bower_components\knockout\dist\knockout.js" />
-    <Content Include="Static\bower_components\knockout\Gruntfile.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\bindingAttributeSyntax.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\bindingProvider.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\attr.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\checked.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\click.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\css.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\enableDisable.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\event.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\foreach.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\hasfocus.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\html.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\ifIfnotWith.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\options.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\selectedOptions.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\style.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\submit.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\text.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\textInput.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\uniqueName.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\value.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\defaultBindings\visible.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\editDetection\arrayToDomNodeChildren.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\editDetection\compareArrays.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\expressionRewriting.js" />
-    <Content Include="Static\bower_components\knockout\src\binding\selectExtensions.js" />
-    <Content Include="Static\bower_components\knockout\src\components\componentBinding.js" />
-    <Content Include="Static\bower_components\knockout\src\components\customElements.js" />
-    <Content Include="Static\bower_components\knockout\src\components\defaultLoader.js" />
-    <Content Include="Static\bower_components\knockout\src\components\loaderRegistry.js" />
-    <Content Include="Static\bower_components\knockout\src\google-closure-compiler-utils.js" />
-    <Content Include="Static\bower_components\knockout\src\memoization.js" />
-    <Content Include="Static\bower_components\knockout\src\namespace.js" />
-    <Content Include="Static\bower_components\knockout\src\subscribables\dependencyDetection.js" />
-    <Content Include="Static\bower_components\knockout\src\subscribables\dependentObservable.js" />
-    <Content Include="Static\bower_components\knockout\src\subscribables\extenders.js" />
-    <Content Include="Static\bower_components\knockout\src\subscribables\mappingHelpers.js" />
-    <Content Include="Static\bower_components\knockout\src\subscribables\observable.js" />
-    <Content Include="Static\bower_components\knockout\src\subscribables\observableArray.changeTracking.js" />
-    <Content Include="Static\bower_components\knockout\src\subscribables\observableArray.js" />
-    <Content Include="Static\bower_components\knockout\src\subscribables\subscribable.js" />
-    <Content Include="Static\bower_components\knockout\src\templating\jquery.tmpl\jqueryTmplTemplateEngine.js" />
-    <Content Include="Static\bower_components\knockout\src\templating\native\nativeTemplateEngine.js" />
-    <Content Include="Static\bower_components\knockout\src\templating\templateEngine.js" />
-    <Content Include="Static\bower_components\knockout\src\templating\templateRewriting.js" />
-    <Content Include="Static\bower_components\knockout\src\templating\templateSources.js" />
-    <Content Include="Static\bower_components\knockout\src\templating\templating.js" />
-    <Content Include="Static\bower_components\knockout\src\utils.domData.js" />
-    <Content Include="Static\bower_components\knockout\src\utils.domManipulation.js" />
-    <Content Include="Static\bower_components\knockout\src\utils.domNodeDisposal.js" />
-    <Content Include="Static\bower_components\knockout\src\utils.js" />
-    <Content Include="Static\bower_components\knockout\src\version.js" />
-    <Content Include="Static\bower_components\knockout\src\virtualElements.js" />
-    <Content Include="Static\bower_components\underscore\underscore-min.js">
+    <Content Include="Web\bower_components\jquery\src\wrap.js" />
+    <Content Include="Web\bower_components\knockout\build\fragments\amd-post.js" />
+    <Content Include="Web\bower_components\knockout\build\fragments\amd-pre.js" />
+    <Content Include="Web\bower_components\knockout\build\fragments\extern-post.js" />
+    <Content Include="Web\bower_components\knockout\build\fragments\extern-pre.js" />
+    <Content Include="Web\bower_components\knockout\build\fragments\source-references.js" />
+    <Content Include="Web\bower_components\knockout\build\knockout-raw.js" />
+    <Content Include="Web\bower_components\knockout\dist\knockout.debug.js" />
+    <Content Include="Web\bower_components\knockout\dist\knockout.js" />
+    <Content Include="Web\bower_components\knockout\Gruntfile.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\bindingAttributeSyntax.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\bindingProvider.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\attr.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\checked.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\click.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\css.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\enableDisable.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\event.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\foreach.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\hasfocus.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\html.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\ifIfnotWith.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\options.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\selectedOptions.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\style.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\submit.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\text.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\textInput.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\uniqueName.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\value.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\defaultBindings\visible.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\editDetection\arrayToDomNodeChildren.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\editDetection\compareArrays.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\expressionRewriting.js" />
+    <Content Include="Web\bower_components\knockout\src\binding\selectExtensions.js" />
+    <Content Include="Web\bower_components\knockout\src\components\componentBinding.js" />
+    <Content Include="Web\bower_components\knockout\src\components\customElements.js" />
+    <Content Include="Web\bower_components\knockout\src\components\defaultLoader.js" />
+    <Content Include="Web\bower_components\knockout\src\components\loaderRegistry.js" />
+    <Content Include="Web\bower_components\knockout\src\google-closure-compiler-utils.js" />
+    <Content Include="Web\bower_components\knockout\src\memoization.js" />
+    <Content Include="Web\bower_components\knockout\src\namespace.js" />
+    <Content Include="Web\bower_components\knockout\src\subscribables\dependencyDetection.js" />
+    <Content Include="Web\bower_components\knockout\src\subscribables\dependentObservable.js" />
+    <Content Include="Web\bower_components\knockout\src\subscribables\extenders.js" />
+    <Content Include="Web\bower_components\knockout\src\subscribables\mappingHelpers.js" />
+    <Content Include="Web\bower_components\knockout\src\subscribables\observable.js" />
+    <Content Include="Web\bower_components\knockout\src\subscribables\observableArray.changeTracking.js" />
+    <Content Include="Web\bower_components\knockout\src\subscribables\observableArray.js" />
+    <Content Include="Web\bower_components\knockout\src\subscribables\subscribable.js" />
+    <Content Include="Web\bower_components\knockout\src\templating\jquery.tmpl\jqueryTmplTemplateEngine.js" />
+    <Content Include="Web\bower_components\knockout\src\templating\native\nativeTemplateEngine.js" />
+    <Content Include="Web\bower_components\knockout\src\templating\templateEngine.js" />
+    <Content Include="Web\bower_components\knockout\src\templating\templateRewriting.js" />
+    <Content Include="Web\bower_components\knockout\src\templating\templateSources.js" />
+    <Content Include="Web\bower_components\knockout\src\templating\templating.js" />
+    <Content Include="Web\bower_components\knockout\src\utils.domData.js" />
+    <Content Include="Web\bower_components\knockout\src\utils.domManipulation.js" />
+    <Content Include="Web\bower_components\knockout\src\utils.domNodeDisposal.js" />
+    <Content Include="Web\bower_components\knockout\src\utils.js" />
+    <Content Include="Web\bower_components\knockout\src\version.js" />
+    <Content Include="Web\bower_components\knockout\src\virtualElements.js" />
+    <Content Include="Web\bower_components\underscore\underscore-min.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\underscore\underscore.js">
+    <Content Include="Web\bower_components\underscore\underscore.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\grid.html">
+    <Content Include="Web\grid.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\i\background.png">
+    <Content Include="Web\i\background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\i\grid.png">
+    <Content Include="Web\i\grid.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\js\grid.helpers.js">
+    <Content Include="Web\js\grid.helpers.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\js\grid.service.js">
+    <Content Include="Web\js\grid.service.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\js\grid.viewmodel.js">
+    <Content Include="Web\js\grid.viewmodel.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\style\main.css">
+    <Content Include="Web\style\main.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Web.config" />
@@ -506,78 +454,74 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Static\.DS_Store">
+    <Content Include="Web\.DS_Store">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\.idea\.name">
+    <Content Include="Web\.idea\.name">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\.idea\game-of-life-prototype.iml">
+    <Content Include="Web\.idea\game-of-life-prototype.iml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower.json">
+    <Content Include="Web\bower.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\.bower.json" />
-    <Content Include="Static\bower_components\jquery\bower.json" />
-    <Content Include="Static\bower_components\jquery\dist\jquery.min.map">
+    <Content Include="Web\bower_components\jquery\.bower.json" />
+    <Content Include="Web\bower_components\jquery\bower.json" />
+    <Content Include="Web\bower_components\jquery\dist\jquery.min.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\jquery\src\sizzle\dist\sizzle.min.map">
+    <Content Include="Web\bower_components\jquery\src\sizzle\dist\sizzle.min.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\knockout\.bower.json" />
-    <Content Include="Static\bower_components\knockout\bower.json" />
-    <Content Include="Static\bower_components\knockout\LICENSE" />
-    <Content Include="Static\bower_components\knockout\package.json" />
-    <Content Include="Static\bower_components\knockout\README.md" />
-    <Content Include="Static\bower_components\underscore\.bower.json">
+    <Content Include="Web\bower_components\knockout\.bower.json" />
+    <Content Include="Web\bower_components\knockout\bower.json" />
+    <Content Include="Web\bower_components\knockout\LICENSE" />
+    <Content Include="Web\bower_components\knockout\package.json" />
+    <Content Include="Web\bower_components\knockout\README.md" />
+    <Content Include="Web\bower_components\underscore\.bower.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\underscore\bower.json">
+    <Content Include="Web\bower_components\underscore\bower.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\underscore\LICENSE">
+    <Content Include="Web\bower_components\underscore\LICENSE">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\underscore\README.md">
+    <Content Include="Web\bower_components\underscore\README.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\bower_components\underscore\underscore-min.map">
+    <Content Include="Web\bower_components\underscore\underscore-min.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Static\style\main.css.map">
+    <Content Include="Web\style\main.css.map">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\style\main.scss">
+    <Content Include="Web\style\main.scss">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\style\_colors.scss">
+    <Content Include="Web\style\_colors.scss">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\style\_fonts.scss">
+    <Content Include="Web\style\_fonts.scss">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\fonts\Radikal-Thin.eot">
+    <Content Include="Web\fonts\Radikal-Thin.eot">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\fonts\Radikal-Thin.ttf">
+    <Content Include="Web\fonts\Radikal-Thin.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\fonts\Radikal-Thin.woff">
+    <Content Include="Web\fonts\Radikal-Thin.woff">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\fonts\Radikal.eot">
+    <Content Include="Web\fonts\Radikal.eot">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\fonts\Radikal.ttf">
+    <Content Include="Web\fonts\Radikal.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Static\fonts\Radikal.woff">
+    <Content Include="Web\fonts\Radikal.woff">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
