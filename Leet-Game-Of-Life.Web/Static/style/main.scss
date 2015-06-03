@@ -164,3 +164,28 @@ h1 {
   text-align: center;
   background-color: $ninjagraySuperLight;
 }
+
+@media (max-width: 800px) {
+  .header {
+    background: none;
+    background-size: cover;
+    text-align: center;
+    height: 0;
+
+    h1 {
+      display: none;
+    }
+
+    button {
+      min-width: 100px;
+    }
+  }
+
+  .grid-size {
+    display: none;
+  }
+
+  .counter {
+    display: none;
+  }
+}
