@@ -54,7 +54,8 @@ h1 {
   background-color: #f7f8f9; }
   .game .grid-size {
     width: 500px;
-    margin: 40px auto 0 auto; }
+    margin: 40px auto 0 auto;
+    padding: 0 0 0 45px; }
     .game .grid-size p {
       text-transform: uppercase;
       padding: 0 15px 0 15px;
@@ -123,6 +124,7 @@ h1 {
   text-align: center;
   background-color: #deddde; }
 
+/* Mobile */
 @media (max-width: 800px) {
   .header {
     background: none;

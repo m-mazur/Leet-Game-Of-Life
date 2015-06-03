@@ -10,8 +10,8 @@ var ViewModel = function (gridService, gridHelpers) {
     self.aliveCellCount = ko.observable(aliveCellCount);
     self.rows = ko.observableArray();
     self.columns = ko.observableArray();
-    self.selectedRows = ko.observable(15);
-    self.selectedColumns = ko.observable(30);
+    self.selectedRows = ko.observable(10);
+    self.selectedColumns = ko.observable(9);
 
     function updateGrid(data) {
         self.grid(gridHelpers.parseGridFromJson(data));
@@ -68,10 +68,10 @@ var ViewModel = function (gridService, gridHelpers) {
 
     if (media.matches) {
         getInitialGrid(10, 9);
-        self.selectedRows(10);
-        self.selectedColumns(9);
     } else {
         getInitialGrid(15, 30);
+        self.selectedRows(15);
+        self.selectedColumns(30);
     }
 };
 
