@@ -58,7 +58,7 @@ var ViewModel = function (gridService, gridHelpers) {
     };
 
     self.selectedRows.subscribe(function (value) {
-        self.setGridSize(value, self.selectedColumns())
+        self.setGridSize(value, self.selectedColumns());
     });
 
     self.selectedColumns.subscribe(function (value) {
@@ -66,7 +66,8 @@ var ViewModel = function (gridService, gridHelpers) {
     });
 
     self.setGridSize = function (y, x) {
-        getInitialGrid(y, x)
+        getInitialGrid(y, x);
+        self.resetGame();
     };
 
     if (media.matches) {
