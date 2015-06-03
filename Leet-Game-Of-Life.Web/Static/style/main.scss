@@ -62,6 +62,7 @@ h1 {
   .grid-size {
     width: 500px;
     margin: 40px auto 0 auto;
+    padding: 0 0 0 45px;
 
     p {
       text-transform: uppercase;
@@ -163,6 +164,8 @@ h1 {
   text-align: center;
   background-color: $ninjagraySuperLight;
 }
+
+/* Mobile */
 
 @media (max-width: 800px) {
   .header {
