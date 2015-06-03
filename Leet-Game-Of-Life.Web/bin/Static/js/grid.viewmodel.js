@@ -9,8 +9,8 @@ var ViewModel = function (gridService, gridHelpers) {
     self.aliveCellCount = ko.observable(aliveCellCount);
     self.rows = ko.observableArray();
     self.columns = ko.observableArray();
-    self.selectedRows = ko.observable(15);
-    self.selectedColumns = ko.observable(30);
+    self.selectedRows = ko.observable(5);
+    self.selectedColumns = ko.observable(5);
 
     function updateGrid(data) {
         self.grid(gridHelpers.parseGridFromJson(data));
