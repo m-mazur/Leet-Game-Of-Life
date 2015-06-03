@@ -142,9 +142,9 @@ h1 {
     .game .grid-wrapper button {
       background-color: #dcdde0;
       border: none;
-      height: 30px;
-      width: 30px;
-      padding: 1px;
+      height: 25px;
+      width: 25px;
+      padding: 2px;
       margin: 2px; }
 
   .grid-size {
