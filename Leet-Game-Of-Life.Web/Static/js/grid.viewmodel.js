@@ -27,7 +27,6 @@ var ViewModel = function (gridService, gridHelpers) {
             if (data.length === 1) {
                 self.pausGame();
                 self.resetGame();
-                alert("Ohh noo, no alive cells in grid!");
             } else {
                 populateGrid(gridHelpers.processGrid(data));
                 self.generationCount(gridHelpers.incrementGenerationCount(self.generationCount()));
