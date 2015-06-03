@@ -106,7 +106,6 @@ h1 {
     button {
       background-color: $katanagraySuperLight;
       border: none;
-      font-size: 8px;
       height: 20px;
       width: 20px;
       padding: 2px;
@@ -184,6 +183,17 @@ h1 {
   .game {
     margin-top: 64px;
     padding-top: 30px;
+
+    .grid-wrapper {
+      button {
+        background-color: $katanagraySuperLight;
+        border: none;
+        height: 30px;
+        width: 30px;
+        padding: 1px;
+        margin: 1px;
+      }
+    }
   }
 
   .grid-size {
