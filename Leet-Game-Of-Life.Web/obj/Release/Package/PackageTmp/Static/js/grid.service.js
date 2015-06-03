@@ -1,7 +1,7 @@
 var GridService = (function () {
     var gridPostUri = '../api/game/',
         gridGetUri = function (row, col) {
-        return '../api/game?pRow=' + row + '&pCol=' + col;
+        return '../api/game?row=' + row + '&column=' + col;
     };
 
     function ajaxHelper(uri, method, data) {

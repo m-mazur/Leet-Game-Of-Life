@@ -25,7 +25,7 @@ var ViewModel = function (gridService, gridHelpers) {
             populateGrid(gridHelpers.processGrid(data));
             self.generationCount(gridHelpers.incrementGenerationCount(self.generationCount()));
             self.aliveCellCount(gridHelpers.countAliveCells(data));
-        });s
+        });
     }
 
     function getInitialGrid(row, col) {
