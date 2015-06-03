@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eca683e8-105c-47b8-a2d3-61ae95e1cf40" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html" afterPath="$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Leet-Game-Of-Life.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="grid.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2669903">
-              <caret line="22" column="105" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
+            <state vertical-scroll-proportion="0.3276699">
+              <caret line="27" column="97" selection-start-line="27" selection-start-column="97" selection-end-line="27" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -585,8 +584,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Leet-Game-Of-Life.Web/Static/grid.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2669903">
-          <caret line="22" column="105" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
+        <state vertical-scroll-proportion="0.3276699">
+          <caret line="27" column="97" selection-start-line="27" selection-start-column="97" selection-end-line="27" selection-end-column="97" />
           <folding />
         </state>
       </provider>
