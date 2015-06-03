@@ -24,6 +24,12 @@ var ViewModel = function (gridService, gridHelpers) {
 
     function getUpdatedGrid() {
         gridService.post(gridHelpers.unGroupGrid((self.grid()))).done(function (data) {
+
+            if (gridHelpers.processGrid(data) === false) {
+                self.pausGame();
+                alert("Please select starting cells");
+            }
+
             populateGrid(gridHelpers.processGrid(data));
             self.generationCount(gridHelpers.incrementGenerationCount(self.generationCount()));
             self.aliveCellCount(gridHelpers.countAliveCells(data));

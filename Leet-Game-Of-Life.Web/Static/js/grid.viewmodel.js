@@ -16,25 +16,30 @@ var ViewModel = function (gridService, gridHelpers) {
 
     function updateGrid(data) {
         self.grid(gridHelpers.parseGridFromJson(data));
-    }
+    };
 
     function populateGrid(data) {
         self.grid(gridHelpers.groupGrid(data));
-    }
+    };
 
     function getUpdatedGrid() {
         gridService.post(gridHelpers.unGroupGrid((self.grid()))).done(function (data) {
-            populateGrid(gridHelpers.processGrid(data));
-            self.generationCount(gridHelpers.incrementGenerationCount(self.generationCount()));
-            self.aliveCellCount(gridHelpers.countAliveCells(data));
+            if (data.length === 1) {
+                self.pausGame();
+                self.resetGame();
+            } else {
+                populateGrid(gridHelpers.processGrid(data));
+                self.generationCount(gridHelpers.incrementGenerationCount(self.generationCount()));
+                self.aliveCellCount(gridHelpers.countAliveCells(data));
+            }
         });
-    }
+    };
 
     function getInitialGrid(row, col) {
         gridService.get(row, col).done(function (data) {
             populateGrid(data);
         });
-    }
+    };
 
     self.changeCellState = function (cell) {
         cell.IsDead = !cell.IsDead ? true : false;

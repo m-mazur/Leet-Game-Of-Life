@@ -19,8 +19,8 @@
     <section class="header">
         <h1>Game of leet</h1>
         <button data-bind="click: startGame">Start</button>
-        <button data-bind="click: pausGame, disable: running">Paus</button>
-        <button data-bind="click: resetGame, disable: running">Reset</button>
+        <button data-bind="click: pausGame">Paus</button>
+        <button data-bind="click: resetGame, disable: running, style: { backgroundColor: running === false ? '#8cc63c' : ''}">Reset</button>
     </section>
     <section class="game">
         <div class="grid-size">
@@ -33,7 +33,7 @@
                 <tr>
                     <td data-bind="foreach: $data">
                         <div class="cell">
-                            <button data-bind="click: $root.changeCellState, style: { backgroundColor: IsDead === false ? '#8cc63c' : ''}"></button>
+                            <button data-bind="click: $root.changeCellState, disable: $root.running, style: { backgroundColor: IsDead === false ? '#8cc63c' : ''}"></button>
                         </div>
                     </td>
                 </tr>

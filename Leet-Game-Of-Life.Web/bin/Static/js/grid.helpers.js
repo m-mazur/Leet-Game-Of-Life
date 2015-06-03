@@ -10,21 +10,24 @@ var GridHelpers = (function () {
         var refCell = data[data.length - 1];
         var grid = [];
 
-        for (var i = 0; i < refCell.Y + 1; i++) {
-            for (var j = 0; j < refCell.X + 1; j++) {
-                grid.push(new Cell(j, i, true));
+        if (data.length > 1) {
+            for (var i = 0; i < refCell.Y + 1; i++) {
+                for (var j = 0; j < refCell.X + 1; j++) {
+                    grid.push(new Cell(j, i, true));
 
-                data.forEach(function (cell) {
-                    if (cell.X === j && cell.Y === i) {
-                        grid.push(cell);
-                        var index = grid.indexOf(cell);
-                        grid.splice(index - 1, 1);
-                    }
-                });
+                    data.forEach(function (cell) {
+                        if (cell.X === j && cell.Y === i) {
+                            grid.push(cell);
+                            var index = grid.indexOf(cell);
+                            grid.splice(index - 1, 1);
+                        }
+                    });
+                }
             }
+            return grid;
+        } else {
+            return false;
         }
-
-        return grid;
     }
 
     function groupGrid (data) {
