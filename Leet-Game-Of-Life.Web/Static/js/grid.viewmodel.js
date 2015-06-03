@@ -2,7 +2,8 @@ var ViewModel = function (gridService, gridHelpers) {
     var self = this,
         update,
         generationCount = 0,
-        aliveCellCount = 0;
+        aliveCellCount = 0,
+        media = window.matchMedia( "(max-width: 800px)" );
 
     self.grid = ko.observableArray([]);
     self.generationCount = ko.observable(generationCount);
@@ -65,7 +66,11 @@ var ViewModel = function (gridService, gridHelpers) {
         getInitialGrid(y, x)
     };
 
-    getInitialGrid(10, 12);
+    if (media.matches) {
+        getInitialGrid(10, 12);
+    }else {
+        getInitialGrid(15, 25);
+    }
 };
 
 ko.applyBindings(new ViewModel(GridService, GridHelpers));
