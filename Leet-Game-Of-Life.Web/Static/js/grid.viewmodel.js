@@ -67,7 +67,7 @@ var ViewModel = function (gridService, gridHelpers) {
     };
 
     if (media.matches) {
-        getInitialGrid(14, 12);
+        getInitialGrid(13, 12);
     }else {
         getInitialGrid(15, 25);
     }
